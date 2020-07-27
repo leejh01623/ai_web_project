@@ -13,13 +13,13 @@
 			crossorigin="anonymous"
 		/>
 
-		<title>Hello, world!</title>
+		<title>Fun Fun AI</title>
 		<link rel="stylesheet" href="stylePage1.css" />
 		
 		<!-- Go to www.addthis.com/dashboard to customize your tools -->
 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1f0db73bbe7b4a"></script>
 		
-		<meta name="naver-site-verification" content="3f83529b30cfe1c1603ebcef56945fc4153c018a" />
+		
 	</head>
 	<body>
 		<!-- 네비게이션바 -->
@@ -42,10 +42,10 @@
 						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="page1.html">Page1</a>
+						<a class="nav-link" href="#">메뉴1</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">문의하기</a>
+						<a class="nav-link" href="#">메뉴2</a>
 					</li>
 				</ul>
 			</div>
@@ -84,11 +84,14 @@
 				</div>
 				<div class="file-upload-content">
 					<img class="file-upload-image" id="upload_img" src="#" alt="your image" />
-					<div id="loading" class="animated bounce">
-						<div class="spinner-border text-info" style="width: 3rem; height: 3rem;" role="status">
-						  <span class="sr-only">Loading...</span>
+					<div class="loadingframe">
+						<div id="loading" class="animated bounce">
+							<div class="spinner-border text-info" style="width: 3rem; height: 3rem;" role="status">
+							  <span class="sr-only">Loading...</span>
+							</div>
 						</div>
 					</div>
+					
 					<div class="label-container" id="label-container"></div>
 					<div class="image-title-wrap">
 						<button type="button" onclick="removeUpload()" class="remove-image">

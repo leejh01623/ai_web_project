@@ -55,14 +55,6 @@ body {
 	margin: 2% 2%;
 }
 
-.section-3 {
-	text-align: center;
-	padding-top: 1.5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	margin: 2% 2%;
-}
-
 .btn-matchidol {
 	width: 100%;
 	color: #fff;
@@ -96,6 +88,14 @@ body {
 	outline:0;
 }
 
+.section-3 {
+	text-align: center;
+	padding-top: 1.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 2% 2%;
+}
+
 .btn-facestyle {
 	width: 100%;
 	color: #fff;
@@ -127,6 +127,30 @@ body {
 .btn-facestyle:focus {
 	background-color: #FF4000;
 	outline:0;
+}
+
+.section-4 {
+	text-align: center;
+	padding-top: 1.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 2% 2%;
+}
+
+.bottom-1 {
+	margin: 10% 5%;	
+}
+
+.copyright{
+	line-height: 1.71;
+	text-align:center;
+	color: #ffffff;
+}
+
+.help {
+	line-height: 1.71;
+	text-align:center;
+	color: #ffffff;
 }
 
 @media (max-width: 480px){

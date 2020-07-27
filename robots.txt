@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://funai.netlify.app/sitemap.xml

@@ -221,6 +221,10 @@ body {
 	padding-right: 5%;
 }
 
+.loadingframe {
+	margin: 3% 3%;
+}
+
 .label-container {
 	line-height: 1.7;
 	text-align: center;
@@ -234,6 +238,7 @@ body {
 	width:100%;
 	text-align: center;
 }
+
 .admin-1 {
 	line-height: 1.7;
 	text-align: center;
