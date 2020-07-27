@@ -1,0 +1,136 @@
+body {
+	font-family: sans-serif;
+	background-color: #f88379;
+}
+
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+.all-section {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.section-1 {
+	line-height: 1.7;
+	color: #FFFFFF;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 5%;
+	
+}
+
+.div-title {
+	position: relative;
+	width:100%;
+	height:300px;
+	text-align: center; 
+	border:3px solid white;
+	border-radius: 15px;
+}
+
+.title {
+	position: absolute;
+	width:100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.section-2 {
+	text-align: center;
+	padding-top: 1.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 2% 2%;
+}
+
+.section-3 {
+	text-align: center;
+	padding-top: 1.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 2% 2%;
+}
+
+.btn-matchidol {
+	width: 100%;
+	color: #fff;
+	background: #f88379;
+	border: 3px solid #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	overflow: hidden;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+	transition: 0.15s;
+}
+
+.btn-matchidol:hover {
+	filter: blur(0px);
+	transform: scale(1.1);
+	background: #FF4000;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.btn-matchidol:active {
+	background: #FF4000;
+	color: #ffffff;
+}
+
+.btn-matchidol:focus {
+	background-color: #FF4000;
+	outline:0;
+}
+
+.btn-facestyle {
+	width: 100%;
+	color: #fff;
+	background: #f88379;
+	border: 3px solid #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	overflow: hidden;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+	transition: 0.15s;
+}
+
+.btn-facestyle:hover {
+	filter: blur(0px);
+	transform: scale(1.1);
+	background: #FF4000;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.btn-facestyle:active {
+  background: #FF4000;
+  color: #ffffff;
+}
+
+.btn-facestyle:focus {
+	background-color: #FF4000;
+	outline:0;
+}
+
+@media (max-width: 480px){
+	.all-section {
+		width: auto;
+	}
+}
