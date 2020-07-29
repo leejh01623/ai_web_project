@@ -1,6 +1,11 @@
 body {
-  font-family: sans-serif;
+  font-family: "beraR", sans-serif;
   background-color: #2ECCFA;
+}
+
+@font-face {
+	font-family: "beraR";
+	src: url("./beraR.ttf");
 }
 
 .file-upload {
@@ -240,9 +245,15 @@ body {
 }
 
 .admin-1 {
-	line-height: 1.7;
-	text-align: center;
-	color: #FFFFFF;
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.admin-2 {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 5%;
 }
 
 @media (max-width: 480px){

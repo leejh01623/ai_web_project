@@ -1,6 +1,11 @@
 body {
-	font-family: sans-serif;
+	font-family: "beraR", sans-serif;
 	background-color: #f88379;
+}
+
+@font-face {
+	font-family: "beraR";
+	src: url("./beraR.ttf");
 }
 
 .navbar-padding {
@@ -42,7 +47,7 @@ body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 30px;
+	font-size: 40px;
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
@@ -137,8 +142,21 @@ body {
 	margin: 2% 2%;
 }
 
+.admin-1 {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.admin-2 {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
 .bottom-1 {
-	margin: 10% 5%;	
+	margin-top: 2%;
+	margin-bottom: 5%;	
 }
 
 .copyright{
