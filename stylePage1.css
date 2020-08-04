@@ -256,6 +256,11 @@ body {
 	margin-top: 5%;
 }
 
+
+.name {
+	font-size: 2rem;
+}
+
 @media (max-width: 480px){
 	.file-upload {
 		width: auto;

@@ -41,12 +41,14 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
+					<!--
 					<li class="nav-item">
 						<a class="nav-link" href="#">Notice</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">About Us</a>
 					</li>
+					-->
 				</ul>
 			</div>
 		</nav>
@@ -157,22 +159,60 @@
 					console.log(prediction);
 					// 결과값 추가
 					var className = prediction[0].className;
+					var className2 = prediction[1].className;
+					var className3 = prediction[2].className;
+					
 					var probability = prediction[0].probability;
+					var probability2 = prediction[1].probability;
+					var probability3 = prediction[2].probability;
+					
 					var probability_tmp = probability * 100;
-					var probability_res = probability_tmp.toFixed(2);
+					var probability_tmp2 = probability2 * 100;
+					var probability_tmp3 = probability3 * 100;
+					
+					var probability_res = probability_tmp.toFixed(1);
+					var probability_res2 = probability_tmp2.toFixed(1);
+					var probability_res3 = probability_tmp3.toFixed(1);
+					
 					var name;
+					var name2;
+					var name3;
+					
 					var res;
+					var res2;
+					var res3;
 					
 					if(className.indexOf("_") != -1){
 						// 문자열에 _ 포함
 						var className_arr = className.split('_');
-						name = className_arr[0] + " - " + className_arr[1];
+						//name = className_arr[0] + " - " + className_arr[1];
+						name = className_arr[0] + "<br>" + className_arr[1];
 					} else {
 						// 문자열에 _ 포함 안함
 						name = className;
 					}
+					if(className2.indexOf("_") != -1){
+						// 문자열에 _ 포함
+						var className_arr2 = className2.split('_');
+						//name2 = className_arr2[0] + " - " + className_arr2[1];
+						name2 = className_arr2[0] + "<br>" + className_arr2[1];
+					} else {
+						// 문자열에 _ 포함 안함
+						name2 = className2;
+					}
+					if(className3.indexOf("_") != -1){
+						// 문자열에 _ 포함
+						var className_arr3 = className3.split('_');
+						//name3 = className_arr3[0] + " - " + className_arr3[1];
+						name3 = className_arr3[0] + "<br>" + className_arr3[1];
+					} else {
+						// 문자열에 _ 포함 안함
+						name3 = className3;
+					}
 					
-					res = name + " " + probability_res + "%";
+					//res = "<span class='name'>" + name + " " + probability_res + "%</span><br>" + name2 + " " + probability_res2 + "%<br>" + name3 + " " + probability_res3 + "%";
+					
+					res = "<div class='card-deck'><div class='card text-white bg-warning mb-3' style='max-width: 18rem;'><div class='card-body'><h3 class='card-title'>" + probability_res + "%</h3><h5 class='card-text'>" + name + "</h5></div></div><div class='card text-white bg-danger mb-3' style='max-width: 18rem;'><div class='card-body'><h3 class='card-title'>" + probability_res2 + "%</h3><h5 class='card-text'>" + name2 + "</h5></div></div><div class='card text-white bg-primary mb-3' style='max-width: 18rem;'><div class='card-body'><h3 class='card-title'>" + probability_res3 + "%</h3><h5 class='card-text'>" + name3 + "</h5></div></div></div>"
 										
 					//labelContainer.childNodes[0].innerHTML = prediction[0].className;
 					labelContainer.childNodes[0].innerHTML = res;
@@ -237,6 +277,8 @@
 				$('.image-upload-wrap').bind('dragleave', function () {
 					$('.image-upload-wrap').removeClass('image-dropping');
 				});	
+				
+				
 			</script>
 			
 			<section class="section-3">
