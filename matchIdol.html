@@ -185,8 +185,8 @@
 					if(className.indexOf("_") != -1){
 						// 문자열에 _ 포함
 						var className_arr = className.split('_');
-						//name = className_arr[0] + " - " + className_arr[1];
-						name = className_arr[0] + "<br>" + className_arr[1];
+						name = className_arr[0] + " - " + className_arr[1];
+						//name = className_arr[0] + "<br>" + className_arr[1];
 					} else {
 						// 문자열에 _ 포함 안함
 						name = className;
@@ -194,8 +194,8 @@
 					if(className2.indexOf("_") != -1){
 						// 문자열에 _ 포함
 						var className_arr2 = className2.split('_');
-						//name2 = className_arr2[0] + " - " + className_arr2[1];
-						name2 = className_arr2[0] + "<br>" + className_arr2[1];
+						name2 = className_arr2[0] + " - " + className_arr2[1];
+						//name2 = className_arr2[0] + "<br>" + className_arr2[1];
 					} else {
 						// 문자열에 _ 포함 안함
 						name2 = className2;
@@ -203,16 +203,16 @@
 					if(className3.indexOf("_") != -1){
 						// 문자열에 _ 포함
 						var className_arr3 = className3.split('_');
-						//name3 = className_arr3[0] + " - " + className_arr3[1];
-						name3 = className_arr3[0] + "<br>" + className_arr3[1];
+						name3 = className_arr3[0] + " - " + className_arr3[1];
+						//name3 = className_arr3[0] + "<br>" + className_arr3[1];
 					} else {
 						// 문자열에 _ 포함 안함
 						name3 = className3;
 					}
 					
-					//res = "<span class='name'>" + name + " " + probability_res + "%</span><br>" + name2 + " " + probability_res2 + "%<br>" + name3 + " " + probability_res3 + "%";
+					res = "<span class='name'>" + name + " " + probability_res + "%</span><br>" + name2 + " " + probability_res2 + "%<br>" + name3 + " " + probability_res3 + "%";
 					
-					res = "<div class='card-deck'><div class='card text-white bg-warning mb-3' style='max-width: 18rem;'><div class='card-body'><h3 class='card-title'>" + probability_res + "%</h3><h5 class='card-text'>" + name + "</h5></div></div><div class='card text-white bg-danger mb-3' style='max-width: 18rem;'><div class='card-body'><h3 class='card-title'>" + probability_res2 + "%</h3><h5 class='card-text'>" + name2 + "</h5></div></div><div class='card text-white bg-primary mb-3' style='max-width: 18rem;'><div class='card-body'><h3 class='card-title'>" + probability_res3 + "%</h3><h5 class='card-text'>" + name3 + "</h5></div></div></div>"
+					//res = "<div class='card-deck'><div class='card text-white bg-warning mb-3' style='max-width: 18rem;'><div class='card-body'><h3 class='card-title'>" + probability_res + "%</h3><h5 class='card-text'>" + name + "</h5></div></div><div class='card text-white bg-danger mb-3' style='max-width: 18rem;'><div class='card-body'><h3 class='card-title'>" + probability_res2 + "%</h3><h5 class='card-text'>" + name2 + "</h5></div></div><div class='card text-white bg-primary mb-3' style='max-width: 18rem;'><div class='card-body'><h3 class='card-title'>" + probability_res3 + "%</h3><h5 class='card-text'>" + name3 + "</h5></div></div></div>"
 										
 					//labelContainer.childNodes[0].innerHTML = prediction[0].className;
 					labelContainer.childNodes[0].innerHTML = res;
