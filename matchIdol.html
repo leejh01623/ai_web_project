@@ -20,6 +20,18 @@
 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1f0db73bbe7b4a"></script>
 		
 		
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="js/load_image/load-image.js"></script>
+		<script src="js/load_image/load-image-scale.js"></script>
+		<script src="js/load_image/load-image-meta.js"></script>
+		<script src="js/load_image/load-image-fetch.js"></script>
+		<script src="js/load_image/load-image-orientation.js"></script>
+		<script src="js/load_image/load-image-exif.js"></script>
+		<script src="js/load_image/load-image-exif-map.js"></script>
+		<script src="js/load_image/load-image-iptc.js"></script>
+		<script src="js/load_image/load-image-iptc-map.js"></script>
+		<script src="js/load_image/vendor/jquery.Jcrop.js"></script>
+		
 	</head>
 	<body>
 		<!-- 네비게이션바 -->
@@ -250,8 +262,23 @@
 						var reader = new FileReader();
 
 						reader.onload = function (e) {
+							var file = e.target.result;
+							var options = {
+								maxWidth: 500,
+								canvas: true,
+								pixelRatio: window.devicePixelRatio,
+								downsamplingRatio: 0.5,
+								orientation: true
+							}
+							if (!file) {
+								return
+							}
+							displayImage(file, options)
+							
+							var newFile = file;
+							
 							$('.image-upload-wrap').hide();
-							$('.file-upload-image').attr('src', e.target.result);
+							$('.file-upload-image').attr('src', newFile);
 							$('.file-upload-content').show();
 							$('.image-title').html(input.files[0].name);
 							$('#loading').show();
@@ -266,6 +293,82 @@
 						removeUpload();
 						labelContainer.childNodes[0].innerHTML = "";
 					}
+				}
+				
+				function displayImage(file, options) {
+					currentFile = file
+					if (!loadImage(file, updateResults, options)) {
+						result.children().replaceWith()
+					}
+				}
+				
+				function updateResults(img, data) {
+					var fileName = currentFile.name
+					var href = img.src
+					var dataURLStart
+					var content
+					if (!(img.src || img instanceof HTMLCanvasElement)) {
+
+					} else {
+
+						displayMetaData(data);
+					}
+				}
+
+				function displayMetaData(data) {
+
+					if (!data) return
+					var exif = data.exif
+					var iptc = data.iptc
+
+					if (exif) {
+						if (exif.get('Orientation') == null) {
+							orientation = 1;
+						} else {
+							orientation = exif.get('Orientation');
+						}
+					} else {
+						orientation = 1;
+					}
+
+					alert(orientation);
+					
+					switch (orientation) {
+						case 1:
+							orientation = 0;
+							break;
+
+						case 2:
+							orientation = 0;
+							break;	
+
+						case 3:
+							orientation = 2;
+							break;
+
+						case 4:
+							orientation = 2;
+							break;
+
+						case 5:
+							orientation = 1;
+							break;
+
+						case 6:
+							orientation = 1;
+							break;
+
+						case 7:
+							orientation = 3;
+							break;
+
+						case 8:
+							orientation = 3;
+							break;
+
+						}
+						
+						console.log(orientation);
 				}
 
 				function removeUpload() {
