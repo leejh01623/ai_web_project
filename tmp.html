@@ -134,3 +134,113 @@
 				</div>
 			  </div>
 			</div>
+
+
+
+
+
+				function displayImage(file, options) {
+					currentFile = file
+					if (!loadImage(file, updateResults, options)) {
+						result.children().replaceWith()
+					}
+				}
+				
+				function updateResults(img, data) {
+					var fileName = currentFile.name
+					var href = img.src
+					var dataURLStart
+					var content
+					if (!(img.src || img instanceof HTMLCanvasElement)) {
+
+					} else {
+
+						displayMetaData(img, data);
+					}
+				}
+
+				function displayMetaData(img, data) {
+
+					if (!data) return
+					var exif = data.exif
+					var iptc = data.iptc
+
+					if (exif) {
+						if (exif.get('Orientation') == null) {
+							orientation = 1;
+						} else {
+							orientation = exif.get('Orientation');
+						}
+					} else {
+						orientation = 1;
+					}
+
+					alert(orientation);
+					
+					switch (orientation) {
+						case 1:
+							orientation = 0;
+							break;
+
+						case 2:
+							orientation = 0;
+							break;	
+
+						case 3:
+							orientation = 2;
+							break;
+
+						case 4:
+							orientation = 2;
+							break;
+
+						case 5:
+							orientation = 1;
+							break;
+
+						case 6:
+							orientation = 1;
+							break;
+
+						case 7:
+							orientation = 3;
+							break;
+
+						case 8:
+							orientation = 3;
+							break;
+
+						}
+						
+						if(orientation != 0) {
+							BufferedImage oldImage = ImageIO.read(img);
+							BufferedImage newImage1 = new BufferedImage(oldImage.getHeight(),oldImage.getWidth(), oldImage.getType());
+							Graphics2D graphics = (Graphics2D) newImage1.getGraphics();
+							graphics.rotate(Math.toRadians(90 * orientation), newImage1.getWidth() / 2, newImage1.getHeight() / 2);
+							graphics.translate((newImage1.getWidth() - oldImage.getWidth()) / 2, (newImage1.getHeight() - oldImage.getHeight()) / 2);
+							graphics.drawImage(oldImage, 0, 0, oldImage.getWidth(), oldImage.getHeight(), null);
+							File thumbFile = new File(thumbName);
+							ImageIO.write(newImage1, ext, thumbFile);
+						}
+				}
+
+
+var file = e.target.result;
+							var options = {
+								maxWidth: 500,
+								canvas: true,
+								pixelRatio: window.devicePixelRatio,
+								downsamplingRatio: 0.5,
+								orientation: true
+							}
+							if (!file) {
+								return
+							}
+							displayImage(file, options)
+							
+							var newFile = file;
+							
+
+
+
+				function rotateImage(e){ var files = e.target.files; var fileType = files[0].type; loadImage(files[0], function(img, data) { img.toBlob(function(blob){ var rotateFile = new File([blob], files[0].name, {type:fileType}); sel_file = rotateFile; var reader = new FileReader(); reader.onload = function(e){ $("#img").attr("src",e.target.result); } reader.readAsDataURL(rotateFile); },fileType)}, { orientation:true} );//end loadImage }

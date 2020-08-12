@@ -98,6 +98,7 @@
 				</div>
 				<div class="file-upload-content">
 					<img class="file-upload-image" id="upload_img" src="#" alt="your image" />
+					<canvas id="canvas" style="display:none;"></canvas>
 					<div class="loadingframe">
 						<div id="loading" class="animated bounce">
 							<div class="spinner-border text-info" style="width: 3rem; height: 3rem;" role="status">
@@ -278,7 +279,7 @@
 							var newFile = file;
 							
 							$('.image-upload-wrap').hide();
-							$('.file-upload-image').attr('src', newFile);
+							//$('.file-upload-image').attr('src', newFile);
 							$('.file-upload-content').show();
 							$('.image-title').html(input.files[0].name);
 							$('#loading').show();
@@ -311,11 +312,11 @@
 
 					} else {
 
-						displayMetaData(data);
+						displayMetaData(img, data);
 					}
 				}
 
-				function displayMetaData(data) {
+				function displayMetaData(img, data) {
 
 					if (!data) return
 					var exif = data.exif
@@ -333,42 +334,36 @@
 
 					alert(orientation);
 					
+					var width = img.width;
+        			var height = img.height;
+					var canvas = document.getElementById("canvas");
+					var ctx = canvas.getContext("2d");
+					
+					
+					if (4 < orientation && orientation < 9) {
+						canvas.width = height;
+						canvas.height = width;
+					} else {
+						canvas.width = width;
+						canvas.height = height;
+					}
+					
 					switch (orientation) {
-						case 1:
-							orientation = 0;
-							break;
+					  case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
+					  case 3: ctx.transform(-1, 0, 0, -1, width, height); break;
+					  case 4: ctx.transform(1, 0, 0, -1, 0, height); break;
+					  case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
+					  case 6: ctx.transform(0, 1, -1, 0, height, 0); break;
+					  case 7: ctx.transform(0, -1, -1, 0, height, width); break;
+					  case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+					  default: break;
+					}
 
-						case 2:
-							orientation = 0;
-							break;	
-
-						case 3:
-							orientation = 2;
-							break;
-
-						case 4:
-							orientation = 2;
-							break;
-
-						case 5:
-							orientation = 1;
-							break;
-
-						case 6:
-							orientation = 1;
-							break;
-
-						case 7:
-							orientation = 3;
-							break;
-
-						case 8:
-							orientation = 3;
-							break;
-
-						}
-						
-						console.log(orientation);
+					// draw image
+					ctx.drawImage(img, 0, 0);
+					
+					let dataURI = canvas.toDataURL("image/jpeg");
+					document.querySelector("#upload_img").src = dataURI;
 				}
 
 				function removeUpload() {
