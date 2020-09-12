@@ -44,7 +44,7 @@
 			>
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand" href="#">RaccoonForest</a>
+			<a class="navbar-brand" href="index.html">RaccoonForest</a>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
@@ -74,33 +74,65 @@
 				</div>
 			</section>
 			
-			<section class="section-2">
-				<button type="button" class="btn-matchidol" onclick="location.href='matchIdol.html'"><h4 class="button-title-1">나와 닮은꼴 아이돌은?</h4></button>
-			</section>
-			
-			<section class="section-3">
-				<button type="button" class="btn-facestyle" onclick="location.href='facestyle.html'"><h4 class="button-title-1">나는 어떤 얼굴형일까?</h4></button>
-			</section>
-			
-			<!--
-			<section class="section-4">
-				<button type="button" class="btn-facestyle" onclick="womanFunc()">???</button>
-				
-			</section>
-			-->			
+			<div class="select-item-section">
+				<div class="ai-section">
+					<div class="ai-section-title">AI Test</div>
+					<div class="ai-section-group">
+						<section class="ai-section-1">
+							<button type="button" class="btn-matchidol" onclick="location.href='matchIdol.html'"><h4 class="button-title-1">나와 닮은꼴<br>아이돌은?</h4></button>
+						</section>
 
+						<section class="ai-section-2">
+							<button type="button" class="btn-matchidol" onclick="location.href='facestyle.html'"><h4 class="button-title-1">나는 어떤<br>얼굴형일까?</h4></button>
+						</section>
+
+						<section class="ai-section-3">
+							<button type="button" class="btn-matchidol" onclick="location.href='facelook.html'"><h4 class="button-title-1">나는 어떤<br>얼굴상일까?</h4></button>
+
+						</section>
+					</div>
+				</div>
+				
+					
+				<div class="etc-section">
+					<div class="etc-section-title">Play Fun</div>
+					<div class="etc-section-group">
+						<section class="etc-section-1">
+							<button type="button" class="btn-etc-style" onclick="gotoPage();"><h4 class="button-title-1">그림 일기</h4></button>
+						</section>
+
+						<section class="etc-section-2">
+							<button type="button" class="btn-etc-style" onclick="developingFunc();">???</button>
+
+						</section>
+					</div>
+				</div>
+			</div>
+		
 			<div class="admin-1">
+				<!--
+				<div style="width:320px; height: 100px;">
+					
+				</div>
+				 -->
 				<ins class="kakao_ad_area" style="display:none;" 
 				 data-ad-unit    = "DAN-rkxa9uond84h" 
 				 data-ad-width   = "320" 
 				 data-ad-height  = "100"></ins> 
+
 			</div>
 			
 			<div class="admin-2">
+				<!-- 
+				<div style="width:320px; height: 100px;">
+					
+				</div>
+				-->
 				<ins class="kakao_ad_area" style="display:none;" 
 					 data-ad-unit    = "DAN-1hrj94pgf6yjq" 
 					 data-ad-width   = "320" 
 					 data-ad-height  = "100"></ins> 
+
 			</div>
 			
 			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
@@ -113,6 +145,24 @@
 				<h6>제작 도움: 조코딩 유튜브 채널</h6></a>
 			</div>
 		</section>
+		
+		<script>
+			function developingFunc() {
+				alert("준비 중입니다!");
+			}
+			
+			function gotoPage(){
+				let filter = "win16|win32|win64|mac|macintel";
+				if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+					console.log("Client platform : Mobile");
+					location.href='intent://match-idol-pvoit.run.goorm.io/match_idol/picturediary.html#Intent;scheme=http;package=com.android.chrome;end' 
+					//location.href = "picturediary.html";
+				}else{
+					console.log("Client platform : PC");
+					location.href = "picturediary.html";
+				}
+			}
+		</script>
 		
 		<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

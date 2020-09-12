@@ -8,6 +8,17 @@ body {
 	src: url("./beraR.ttf");
 }
 
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
 .file-upload {
   background-color: #0F4C81;
   width: 500px;
