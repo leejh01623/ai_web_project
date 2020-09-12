@@ -265,7 +265,7 @@
 								margin-left: 5px;
 								font-size: 14px;
 							"
-							onclick="colorSelect('white');"
+							onclick="removeFunc();"
 						>
 							지우개
 						</button>
@@ -1150,6 +1150,10 @@
 			
 			function colorChange(event){
 				context.strokeStyle = event.target.value;
+			}
+			
+			function removeFunc(){
+				context.strokeStyle = '#FFFFFF';
 			}
 			
 			function init() {
