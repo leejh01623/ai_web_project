@@ -1037,7 +1037,7 @@
 			var defaultLineWidthValue;
 			var maxLineWidthValue, minLineWidthValue;
 			var defaultColor;
-			var strokeColor;
+			var strokeColor, tmpStrokeColor;
 			var year, month, day;
 			var downFileName;
 			
@@ -1148,11 +1148,16 @@
 				return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
 			}
 			
+			function colorOnClick(event){
+				context.strokeStyle = tmpStrokeColor;
+			}
+			
 			function colorChange(event){
 				context.strokeStyle = event.target.value;
 			}
 			
 			function removeFunc(){
+				tmpStrokeColor = context.strokeStyle;
 				context.strokeStyle = '#FFFFFF';
 			}
 			
@@ -1167,6 +1172,7 @@
 				defaultColor = '#000000';
 				
 				strokeColor = document.getElementById('strokeColor');
+				strokeColor.addEventListener("click", colorOnClick, false);
 				strokeColor.addEventListener("change", colorChange, false);
 				lineWidthValue = document.getElementById('lineWidthValue');
 				canvas = document.getElementById('FRESH');
@@ -1292,7 +1298,7 @@
 
 			function out(e) {
 				e.preventDefault();
-				drawing = false;
+				//drawing = false;
 			}
 		</script>
 		
