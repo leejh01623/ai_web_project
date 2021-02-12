@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+
+		<title>AI 자판기</title>
+		<link rel="stylesheet" href="styleSubPage2_1.css" />
+		
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1f0db73bbe7b4a"></script>
+		
+		<!-- 카카오 SDK -->
+		<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light navbar-padding">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">RaccoonForest</a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<!--
+					<li class="nav-item">
+						<a class="nav-link" href="#">Notice</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					-->
+				</ul>
+			</div>
+		</nav>
+		
+		<section class="cleanres-all-section" id="value"  style='text-align:center;'>
+			<section class="cleanres-section-1" id="resImg">
+				
+			</section>
+			<section class="cleanres-section-2">
+				
+			</section>
+			<section class="cleanres-section-3" id="shareBtn">
+				<button type="button" class="btn-share" id="create-kakao-link-btn" href="javascript:;">공유하기</button>
+				<button type="button" class="btn-refresh" onclick="refreshFunc();">새로하기</button>
+				<!-- <a id="create-kakao-link-btn" href="javascript:;">
+				  공유하기
+				</a> -->
+			</section>  
+			
+			<section>
+				<div class="admin-1">
+					<ins class="kakao_ad_area" style="display:none;" 
+						 data-ad-unit    = "DAN-rWt8oCQrKNPZPk8d" 
+						 data-ad-width   = "320" 
+						 data-ad-height  = "100"></ins> 
+				</div>
+				<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+			</section>
+		</section>
+		<script type="text/javascript">
+			var imgResArr = ['a1.png', 'a2.png', 'a3.png', 'a4.png'];
+			var temp = location.href.split("?");
+			var data = temp[1];
+			var curretnLink = document.location.href;
+			var imgUrl = "./img/qres.png";
+			
+			switch(data){
+				case '0':
+				case '1':
+				case '2':
+					document.getElementById("resImg").innerHTML = "<img src='./img/" + imgResArr[0] + "' class='cleanres-image'>";
+					break;
+					
+				case '3':
+				case '4':
+				case '5':
+					document.getElementById("resImg").innerHTML = "<img src='./img/" + imgResArr[1] + "' class='cleanres-image'>";
+					break;
+					
+				case '6':
+				case '7':
+				case '8':	
+					document.getElementById("resImg").innerHTML = "<img src='./img/" + imgResArr[2] + "' class='cleanres-image'>";
+					break;
+					
+				case '9':
+				case '10':	
+					document.getElementById("resImg").innerHTML = "<img src='./img/" + imgResArr[3] + "' class='cleanres-image'>";
+					break;
+					
+				default:
+					break;
+			}
+			
+			function refreshFunc(){
+				location.href = "cleanscore.html"
+			}
+			
+			Kakao.init('14052c0020a6164d5fe1b1fe4383eda7');
+			Kakao.Link.createDefaultButton({
+				container: '#create-kakao-link-btn',
+				objectType: 'feed',
+				content: {
+				  title: '청결도 테스트',
+				  description: '#청결 #코로나바이러스 #개인방역 #개인위생',
+				  imageUrl:
+					'',
+				  link: {
+					mobileWebUrl: curretnLink,
+					webUrl: curretnLink,
+				  },
+				},
+				
+				//social: {
+				  //likeCount: 286,
+				  //commentCount: 45,
+				  //sharedCount: 845,
+				//},
+				buttons: [
+				  {
+					title: '웹으로 보기',
+					link: {
+					  mobileWebUrl: curretnLink,
+					  webUrl: curretnLink,
+					},
+				  },
+				],
+			})
+		</script>
+	</body>
+</html>
