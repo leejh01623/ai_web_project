@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+
+		<title>AI 자판기</title>
+		<link rel="stylesheet" href="styleSubPage3.css" />
+		<meta property="og:url" content="https://aizapangi.netlify.app/abbreviation.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="AI 자판기(신조어 테스트)" />
+		<meta property="og:description" content="과연 당신은 인싸일까? 아싸일까?"/>
+		<meta property="og:image" content="https://github.com/leejh01623/ai_web_project/blob/master/img/qres.png?raw=true" />
+		
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1f0db73bbe7b4a"></script>
+	</head>
+	<body onload="init();">
+		<!-- 네비게이션바 -->
+		<nav class="navbar navbar-expand-lg navbar-light navbar-padding">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">RaccoonForest</a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<!--
+					<li class="nav-item">
+						<a class="nav-link" href="#">Notice</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					-->
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- 번호 영역 -->
+		<!--<div class="number" id="number_id">
+			
+		</div>
+		 -->
+		
+		<!-- 문제 영역 -->
+		<div class="problem" id="problem_id">
+			
+		</div>
+		
+		<!-- 보기 영역 -->
+		<div class="answer" id="answer_id">
+			
+		</div>
+		
+		<!-- 광고 영역 -->
+		<div class="admin_1">
+			<ins class="kakao_ad_area" style="display:none;" 
+				data-ad-unit    = "DAN-2YiHpaXtLeFweNaz" 
+				data-ad-width   = "320" 
+				data-ad-height  = "100"></ins> 
+		</div>
+		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		
+		<script>
+			var number_id, problem_id, answer_id, button_o_id, button_x_id;
+			var problem_arr = ['qa1.png', 'qa2.png', 'qa3.png',
+							   'qa4.png', 'qa5.png', 'qa6.png',
+							   'qa7.png', 'qa8.png', 'qa9.png',
+							   'qa10.png', 'qares.png'];
+			
+			var problem_arr_sub_1 = ['아가리벌리면구라', '빠른태세전환', '스스로불러온재앙',
+									'아이스바닐라라떼','제목이 곧 내용이다','네 말이 곧 내 말이다',
+									'불타는 소통','남아서 공부나 해','주소불러',
+									'우월한 유전자를 가진 남자'];
+			
+			var problem_arr_sub_2 = ['아벌써구정인가', '빠다먹태', '스트레스불태우고 재만남았다.',
+									'아기를 봐라','제가곧내려요','니꺼가 곧 내꺼',
+									'불고기와 소고기','남아프리카공화국','주식으로불로소득',
+									'피부가 하얀 남자'];
+			
+			var answer_arr = ['아가리벌리면구라', '빠른태세전환', '스스로불러온재앙',
+								'아이스바닐라라떼','제목이 곧 내용이다','네 말이 곧 내 말이다',
+								'불타는 소통','남아서 공부나 해','주소불러',
+								'우월한 유전자를 가진 남자'];
+			
+			var selectAnswer, score;
+			var imgNum, startNum, endNum;
+			var rand;
+			
+			function init(){
+				//number_id = document.getElementById("number_id");
+				problem_id = document.getElementById("problem_id");
+				answer_id = document.getElementById("answer_id");
+				button_o_id = document.getElementById("button_o_id");
+				button_x_id = document.getElementById("button_x_id");
+				
+				startNum = 0;
+				endNum = 10;
+				score = 0;
+				rand = 0;
+				
+				setProblem();
+			}
+			
+			function setProblem(){
+				problem_id.innerHTML = "<img src='./img/" + problem_arr[startNum] + "' class='problem_img'>";
+				
+				if(startNum == endNum){
+					//number_id.innerHTML = "<span class='label'>< 결과보기 ></span>";
+					answer_id.innerHTML = "<button type='button' class='button res' onclick='btnResFunc();'>결과보기</button>";
+				} else {
+					//number_id.innerHTML = "<span class='label'>< " + parseInt(startNum + 1) + " ></span>";
+					
+					rand = Math.floor(Math.random() * 2);
+					if(rand == 0){
+						answer_id.innerHTML = "<button type='button' class='button o' id='button_o_id' value='" + problem_arr_sub_1[startNum] + "' onclick='btnOFunc();'>" + problem_arr_sub_1[startNum] + "</button><button type='button' class='button x' id='button_x_id' value='" + problem_arr_sub_2[startNum] + "' onclick='btnXFunc();'>" + problem_arr_sub_2[startNum] + "</button>";
+					} else if(rand == 1){
+						answer_id.innerHTML = "<button type='button' class='button o' id='button_o_id' value='" + problem_arr_sub_2[startNum] + "' onclick='btnOFunc();'>" + problem_arr_sub_2[startNum] + "</button><button type='button' class='button x' id='button_x_id' value='" + problem_arr_sub_1[startNum] + "' onclick='btnXFunc();'>" + problem_arr_sub_1[startNum] + "</button>";
+					}
+				}
+			}
+			
+			function btnOFunc(){
+				selectAnswer = document.getElementById("button_o_id").value;
+				
+				if(answer_arr[startNum] == selectAnswer){
+					score++;
+				}
+				startNum++;
+				setProblem();
+			}
+			
+			function btnXFunc(){
+				selectAnswer = document.getElementById("button_x_id").value;
+				
+				if(answer_arr[startNum] == selectAnswer){
+					score++;
+				}
+				startNum++;
+				setProblem();
+			}
+			
+			function btnResFunc(){
+				//alert("당신의 점수는 " + score + "점입니다.");
+				location.href = "abbreviation_result.html?" + score;
+			}
+			
+		</script>
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>

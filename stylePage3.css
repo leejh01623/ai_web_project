@@ -16,6 +16,13 @@ body {
 	font-weight: bold;
 }
 
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+	line-height: 1.7;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 120%;
+}
+
 .file-upload {
   background-color: #6e5b7a;
   width: 500px;

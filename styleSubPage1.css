@@ -15,6 +15,13 @@
 	font-weight: bold;
 }
 
+.nav-link {
+	line-height: 1.7;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 120%;
+}
+
 body {
 	background-color: #F9F5EA;
 	font-size: 17px;

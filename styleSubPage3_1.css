@@ -1,0 +1,139 @@
+@font-face {
+	src: url("BMJUA_ttf.ttf");
+	font-family: "jua";
+}
+
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.nav-link {
+	line-height: 1.7;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+body {
+	background-color: #fce3c2;
+}
+
+.myscore {
+	width: 400px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #4b7057;
+}
+
+.myscore_score_text {
+	font-size: 800%;
+	font-weight: bold;
+	font-family: "jua";
+	color: #ffffff;
+	padding-top: 10px;
+}
+
+.myscore_desc_text {
+	font-size: 150%;
+	font-family: "jua";
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+
+.scoredesc {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	background-color: #4b7057;
+	font-size: 100%;
+	font-family: "jua";
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.scoredesc_table {
+	width: 100%;
+}
+
+.button {
+	text-align: center;	
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.button_refresh {
+	width: 150px;
+	color: #fff;
+	background: #e0b68c;
+	border: 2px solid #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-right: 10px;
+}
+
+.button_refresh:hover {
+	background: #d09050;
+	color: #fff;
+	cursor: pointer;
+}
+
+.button_refresh:active {
+	background: #d09050;
+	color: #ffffff;
+}
+
+.button_refresh:focus {
+	background-color: #d09050;
+	outline:0;
+}
+
+.button_share {
+	width: 150px;
+	color: #fff;
+	background: #05d69d;
+	border: 2px solid #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-left: 10px;
+}
+
+.button_share:hover {
+	background: #038b66;
+	color: #fff;
+	cursor: pointer;
+}
+
+.button_share:active {
+	background: #038b66;
+	color: #ffffff;
+}
+
+.button_share:focus {
+	background-color: #038b66;
+	outline:0;
+}
+
+.admin_1 {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 3%;
+}

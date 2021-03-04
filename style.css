@@ -16,6 +16,13 @@ body {
 	font-weight: bold;
 }
 
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+	line-height: 1.7;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 120%; 
+}
+
 .all-section {
 	width: 500px;
 	margin: 0 auto;
@@ -240,6 +247,15 @@ body {
 }
 
 .etc-section-2 {
+	text-align: center;
+	padding-top: 1.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 1.5%;
+	margin: 5% 5%;
+}
+
+.etc-section-3 {
 	text-align: center;
 	padding-top: 1.5%;
 	padding-left: 5%;

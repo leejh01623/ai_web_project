@@ -14,7 +14,7 @@
 		/>
 
 		<title>AI 자판기</title>
-		<link rel="stylesheet" href="styleSubPage2_1.css" />
+		<link rel="stylesheet" href="styleSubPage3_1.css" />
 		
 		<!-- Go to www.addthis.com/dashboard to customize your tools -->
 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1f0db73bbe7b4a"></script>
@@ -22,6 +22,7 @@
 		<!-- 카카오 SDK -->
 		<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 	</head>
+	
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light navbar-padding">
 			<button
@@ -33,13 +34,13 @@
 				aria-expanded="false"
 				aria-label="Toggle navigation"
 			>
-				<span class="navbar-toggler-icon"></span>
+				<div class="navbar-toggler-icon"></div>
 			</button>
 			<a class="navbar-brand" href="index.html">RaccoonForest</a>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="index.html">Home <div class="sr-only">(current)</div></a>
 					</li>
 					<!--
 					<li class="nav-item">
@@ -53,68 +54,92 @@
 			</div>
 		</nav>
 		
-		<section class="cleanres-all-section" id="value"  style='text-align:center;'>
-			<section class="cleanres-section-1" id="resImg">
-				
-			</section>
-			<section class="cleanres-section-2">
-				
-			</section>
-			<section class="cleanres-section-3" id="shareBtn">
-				<button type="button" class="btn-share" id="create-kakao-link-btn" href="javascript:;">공유하기</button>
-				<button type="button" class="btn-refresh" onclick="refreshFunc();">새로하기</button>
-				<!-- <a id="create-kakao-link-btn" href="javascript:;">
-				  공유하기
-				</a> -->
-			</section>  
-			
-			<section>
-				<div class="admin-1">
-					<ins class="kakao_ad_area" style="display:none;" 
-						 data-ad-unit    = "DAN-rWt8oCQrKNPZPk8d" 
-						 data-ad-width   = "320" 
-						 data-ad-height  = "100"></ins> 
-				</div>
-				<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-			</section>
-		</section>
+		
+		<!-- 점수 표시 영역 -->
+		<div class="myscore">
+			<h1 class="myscore_score_text" id="myscore_score"></h1>
+			<h3 class="myscore_desc_text" id="myscore_desc"></h3>
+		</div>
+		<!-- 점수 설명 영역 -->
+		<div class="scoredesc">
+			<table class="scoredesc_table">
+				<tr>
+					<td>10점</td>
+					<td>킹정할 수 밖에 없는 MZ세대!!</td>
+				</tr>
+				<tr>
+					<td>6~9점</td>
+					<td>내가 신조어 좀 꽤 알지 엣헴</td>
+				</tr>
+				<tr>
+					<td>3~5점</td>
+					<td>그래 이정도 알면 됐지 뭐 만족^^</td>
+				</tr>
+				<tr>
+					<td>1~2점</td>
+					<td>거참 라떼와는 다르구만 하하하하</td>
+				</tr>
+				<tr>
+					<td>0점</td>
+					<td>아재아재 바라아재....</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- 다시 하기 및 공유 하기 -->
+		<div class="button">
+			<button type='button' class='button_refresh' onclick='refreshFunc();'>다시하기</button>
+			<button type='button' class='button_share' id='create-kakao-link-btn' href='javascript:;'>공유하기</button>
+		</div>
+		
+		<!-- 광고 영역 -->
+		<div class="admin_1">
+			<ins class="kakao_ad_area" style="display:none;" 
+				data-ad-unit    = "DAN-5HQsu3rCuHZbpoWt" 
+				data-ad-width   = "320" 
+				data-ad-height  = "100"></ins>
+		</div>
+		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		
 		<script type="text/javascript">
-			var imgResArr = ['a1.png', 'a2.png', 'a3.png', 'a4.png'];
 			var temp = location.href.split("?");
 			var data = temp[1];
 			var curretnLink = document.location.href;
-			var imgUrl = "./img/qres.png";
 			
+			document.getElementById("myscore_score").innerHTML = data + "점";
 			switch(data){
-				case '0':
-				case '1':
-				case '2':
-					document.getElementById("resImg").innerHTML = "<img src='./img/" + imgResArr[0] + "' class='cleanres-image'>";
-					break;
+					case '0':
+						document.getElementById("myscore_desc").innerHTML = "아재아재 바라아재....";
+						break;
 					
-				case '3':
-				case '4':
-				case '5':
-					document.getElementById("resImg").innerHTML = "<img src='./img/" + imgResArr[1] + "' class='cleanres-image'>";
-					break;
-					
-				case '6':
-				case '7':
-				case '8':	
-					document.getElementById("resImg").innerHTML = "<img src='./img/" + imgResArr[2] + "' class='cleanres-image'>";
-					break;
-					
-				case '9':
-				case '10':	
-					document.getElementById("resImg").innerHTML = "<img src='./img/" + imgResArr[3] + "' class='cleanres-image'>";
-					break;
-					
-				default:
-					break;
+					case '1':
+					case '2':
+						document.getElementById("myscore_desc").innerHTML = "거참 라떼와는 다르구만 하하하하";
+						break;
+
+					case '3':
+					case '4':
+					case '5':
+						document.getElementById("myscore_desc").innerHTML = "그래 이정도 알면 됐지 뭐 만족^^";
+						break;
+
+					case '6':
+					case '7':
+					case '8':	
+					case '9':
+						document.getElementById("myscore_desc").innerHTML = "내가 신조어 좀 꽤 알지 엣헴";
+						break;
+
+					case '10':	
+						document.getElementById("myscore_desc").innerHTML = "킹정할 수 밖에 없는 MZ세대!!";
+						break;
+
+					default:
+						break;
 			}
 			
 			function refreshFunc(){
-				location.href = "cleanscore.html"
+				location.href = "abbreviation.html"
 			}
 			
 			Kakao.init('14052c0020a6164d5fe1b1fe4383eda7');
@@ -122,8 +147,8 @@
 				container: '#create-kakao-link-btn',
 				objectType: 'feed',
 				content: {
-				  title: '청결도 테스트',
-				  description: '#청결 #코로나바이러스 #개인방역 #개인위생',
+				  title: '신조어 테스트',
+				  description: '#신조어테스트 #줄임말테스트 #인싸용어 #MZ세대용어',
 				  imageUrl:
 					'',
 				  link: {
