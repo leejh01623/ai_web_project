@@ -1,0 +1,384 @@
+@font-face {
+	src: url("YanoljaYachaebold.TTF");
+	font-family: "yanolja";
+}
+
+body {
+	
+}
+
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #3B3838;
+	font-weight: bold;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+	line-height: 1.7;
+	color: #3B3838;
+	font-weight: bold;
+	font-size: 120%; 
+}
+
+.background_img {
+	width: 400px;
+	overflow:hidden;
+    height:auto;
+	margin: 0 auto;
+	background-image: url(img/zapangi_backgroundImage.png);
+	background-position: center;
+	background-repeat: no-repeat;  
+	background-size: cover;
+	
+}
+
+.top {
+	margin: 0 auto;
+	border-top: 2px solid #2B65A8;
+	border-right: 2px solid #2B65A8;
+	border-left: 2px solid #2B65A8;
+	border-bottom: 2px solid #2B65A8;
+	background: #ffffff;
+}
+
+.top_title {
+	text-align: center; 
+	font-size: 30px;
+	font-family: "yanolja";
+	color: #fff;
+	background: #2B65A8;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.middle {
+	height: 400px;
+	margin: 0 auto;
+	border-right: 2px solid #2B65A8;
+	border-left: 2px solid #2B65A8;
+	border-bottom: 2px solid #2B65A8;
+	text-align: center;
+}
+
+.middle_left {
+	width: 296px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.middle_left_top {
+	border: 5px double #F2F2F2;
+	margin: 10px;
+	border-radius: 30px;
+	background: #2B65A8;
+	float: left;
+}
+
+.group_1_title {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center; 
+	font-size: 25px;
+	font-family: "yanolja";
+	color: #fff;
+	background: #2B65A8;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border-bottom: 3px solid #F2F2F2;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.g_1_item_1 {
+	width: 50%;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+}
+
+.g_1_item_1_btn {
+	width: 80%;
+	height: 70px;
+	margin: 5px;
+	font-size: 23px;
+	font-family: "yanolja";
+	color: #3B3838;
+	background: #FFFFFF;
+	border: 2px solid #F3B15D;
+}
+
+.g_1_item_2 {
+	width: 50%;
+	height: 80px;
+	float: right;
+	margin-top: 10px;
+}
+
+.g_1_item_2_btn {
+	width: 80%;
+	height: 70px;
+	margin: 5px;
+	font-size: 23px;
+	font-family: "yanolja";
+	color: #3B3838;
+	background: #FFFFFF;
+	border: 2px solid #F3B15D;
+}
+
+.g_1_item_3 {
+	width: 50%;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.g_1_item_3_btn {
+	width: 80%;
+	height: 70px;
+	margin: 5px;
+	font-size: 23px;
+	font-family: "yanolja";
+	color: #3B3838;
+	background: #FFFFFF;
+	border: 2px solid #F3B15D;
+}
+
+.g_1_item_4 {
+	width: 50%;
+	height: 80px;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.g_1_item_4_btn {
+	width: 80%;
+	height: 70px;
+	margin: 5px;
+	font-size: 23px;
+	font-family: "yanolja";
+	color: #3B3838;
+	background: #FFFFFF;
+	border: 2px solid #F3B15D;
+}
+
+.group_2_title {
+	border-top: 3px solid #F2F2F2;
+	border-bottom: 3px solid #F2F2F2;
+	text-align: center; 
+	font-size: 25px;
+	font-family: "yanolja";
+	color: #fff;
+	background: #2B65A8;
+	clear: both;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.g_2_item_1 {
+	width: 50%;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+}
+
+.g_2_item_1_btn {
+	width: 80%;
+	height: 70px;
+	margin: 5px;
+	font-size: 22px;
+	font-family: "yanolja";
+	color: #3B3838;
+	background: #FFFFFF;
+	border: 2px solid #F3B15D;
+}
+
+.g_2_item_2 {
+	width: 50%;
+	height: 80px;
+	float: right;
+	margin-top: 10px;
+}
+
+.g_2_item_2_btn {
+	width: 80%;
+	height: 70px;
+	margin: 5px;
+	font-size: 22px;
+	font-family: "yanolja";
+	color: #3B3838;
+	background: #FFFFFF;
+	border: 2px solid #F3B15D;
+}
+
+.g_2_item_3 {
+	width: 50%;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.g_2_item_3_btn {
+	width: 80%;
+	height: 70px;
+	margin: 5px;
+	font-size: 22px;
+	font-family: "yanolja";
+	color: #3B3838;
+	background: #FFFFFF;
+	border: 2px solid #F3B15D;
+}
+
+.g_2_item_4 {
+	width: 50%;
+	height: 80px;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.g_2_item_4_btn {
+	width: 80%;
+	height: 70px;
+	margin: 5px;
+	font-size: 22px;
+	font-family: "yanolja";
+	color: #3B3838;
+	background: #FFFFFF;
+	border: 2px solid #F3B15D;
+}
+
+.middle_left_bottom {
+	width: 200px;
+	height: 80px;
+	border: 2px solid #7F7F7F;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	background: #3B3838;;
+	margin: 0 auto;
+	clear: both;
+}
+
+.middle_left_bottom_title {
+	text-align: center; 
+	font-size: 25px;
+	font-family: "yanolja";
+	color: #fff;
+}
+
+.middle_right {
+	width: 100px;
+	float: right;
+}
+
+.middle_right_title {
+	text-align: center; 
+	font-size: 15px;
+	font-style: bold;
+	font-family: "yanolja";
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.middle_right_top {
+	width: 70px;
+	height: 50px;
+	background: #3B3838;
+	margin: 0 auto;
+	border: 2px solid #7F7F7F;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.middle_right_top_move {
+	font-size: 30px;
+	font-family: "yanolja";
+	color: #ff4040;
+}
+
+.middle_right_cash {
+	width: 70px;
+	height: 50px;
+	background: #3B3838;
+	margin: 0 auto;
+	border: 2px solid #7F7F7F;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+.middle_right_cash_img {
+	width: 50px;
+	height: 40px;
+}
+
+.middle_right_middle {
+	width: 70px;
+	height: 30px;
+	background: #3B3838;
+	margin: 0 auto;
+	border: 1px solid #A6A6A6;
+	border-radius: 5px;
+	margin-top: 50px;
+}
+
+.middle_right_coin_img {
+	width: 100px;
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.middle_right_bottom {
+	width: 50px;
+	height: 30px;
+	background: #3B3838;
+	float: right;
+	border: 2px solid #7F7F7F;
+	border-radius: 5px;
+	margin-top: 150px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+
+.admin-1 {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.admin-2 {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.bottom-1 {
+	margin-top: 2%;
+	margin-bottom: 5%;	
+}
+
+.copyright{
+	font-family: "yanolja";
+	color: #3B3838;
+	line-height: 1.71;
+	text-align:center;
+}
+
+.help {
+	line-height: 1.71;
+	text-align:center;
+	color: #ffffff;
+}
+
+@media (max-width: 480px){
+	.all-section {
+		width: auto;
+	}
+}
