@@ -1,0 +1,231 @@
+@font-face {
+	src: url("BMJUA_ttf.ttf");
+	font-family: "jua";
+}
+
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.nav-link {
+	line-height: 1.7;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+body {
+	background-color: #f89879;
+	background: url(./img2/muindo5.jpg);
+	background-repeat: no-repeat;
+	height: 100vh;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.day {
+	width: 400px;
+	margin: 0px auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.day_name {
+	display: inline-table;
+}
+
+.day_value {
+	display: inline-table;
+}
+
+.day_name_p {
+	display: table-cell;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 140%;
+	font-family: "jua";
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.day_value_p {
+	display: table-cell;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 140%;
+	font-family: "jua";
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.choice_image {
+	width: 400px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.left_image {
+	width: 200px;
+	height: 198px;
+	display: inline-table;
+	float: left;
+}
+
+.left_image:hover {
+	border: 5px solid #fff;
+}
+
+.left_image_div{
+	display: table-row;
+}
+
+.left_img {
+	display: table-cell;
+	width: 180px;
+	height: 150px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 10px grey;
+	/*border: 5px solid green;*/
+}
+
+.left_text_div{
+	display: table-row;
+}
+
+.left_text {
+	display: table-cell;
+	color: #ffffff;
+	font-size: 140%;
+	font-family: "jua";
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.right_image {
+	width: 200px;
+	height: 198px;
+	display: inline-table;
+	float: left;
+}
+
+.right_image:hover {
+	border: 5px solid #fff;
+}
+
+.right_image_div{
+	display: table-row;
+}
+
+.right_img {
+	display: table-cell;
+	width: 180px;
+	height: 150px;
+	margin: 0 auto;
+	box-shadow:5px 5px 10px grey;
+}
+
+.right_text_div{
+	display: table-row;
+}
+
+.right_text {
+	display: table-cell;
+	color: #ffffff;
+	font-size: 140%;
+	font-family: "jua";
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.my_state {
+	width: 400px;
+	margin: 0px auto;
+}
+
+.state_name {
+	display: inline-table;
+	margin: 5px;
+	width: 20%;
+	text-align: center;
+}
+
+.progressDiv {
+	display: inline-table;
+	width: 50%;
+	vertical-align: middle;
+}
+
+@-webkit-keyframes state {
+	from{
+		margin-top: 0px;
+	}
+	to{
+		margin-top: -10px;
+	}
+}
+
+.state_upDown {
+	display: inline-table;
+	float: right;
+	margin-top: 0px;
+	animation: state 2s ease 1 normal;
+	width: 10%;
+	text-align: right;
+}
+
+.state_value {
+	display: inline-table;
+	float: right;
+	margin: 5px;
+	width: 10%;
+}
+
+.name {
+	display: table-cell;
+	color: #ffffff;
+	font-size: 140%;
+	font-family: "jua";
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.progressItem {
+	width: 100%;
+	height: 2rem;
+	vertical-align: middle;
+	margin-top: -5px;
+}
+
+.upDownPlus {
+	display: table-cell;
+	color: #0d48ef;
+	font-size: 100%;
+	font-family: "jua";
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.upDownMinus {
+	display: table-cell;
+	color: #ef430d;
+	font-size: 100%;
+	font-family: "jua";
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.value {
+	display: table-cell;
+	color: #ffffff;
+	font-size: 140%;
+	font-family: "jua";
+	text-shadow: 2px 2px 4px #000000;
+}
+
+
+

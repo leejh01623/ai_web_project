@@ -115,6 +115,11 @@
 							<button type="button" class="btn-etc-style" onclick="gotoLottoPage();"><h4 class="button-title-1">행운 로또<br>예측</h4></button>
 
 						</section>
+						
+						<section class="etc-section-5">
+							<button type="button" class="btn-etc-style" onclick="gotoSurviveGamePage();"><h4 class="button-title-1">무인도<br>인생극장</h4></button>
+
+						</section>
 					</div>
 				</div>
 			</div>
@@ -206,6 +211,18 @@
 				}else{
 					console.log("Client platform : PC");
 					location.href = "lottoDraw.html";
+				}
+			}
+			
+			function gotoSurviveGamePage(){
+				let filter = "win16|win32|win64|mac|macintel";
+				if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+					console.log("Client platform : Mobile");
+					location.href='intent://aizapangi.netlify.app/survivegameDesc.html#Intent;scheme=http;package=com.android.chrome;end' 
+					//location.href = "picturediary.html";
+				}else{
+					console.log("Client platform : PC");
+					location.href = "survivegameDesc.html";
 				}
 			}
 		</script>

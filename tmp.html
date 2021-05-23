@@ -244,3 +244,27 @@ var file = e.target.result;
 
 
 				function rotateImage(e){ var files = e.target.files; var fileType = files[0].type; loadImage(files[0], function(img, data) { img.toBlob(function(blob){ var rotateFile = new File([blob], files[0].name, {type:fileType}); sel_file = rotateFile; var reader = new FileReader(); reader.onload = function(e){ $("#img").attr("src",e.target.result); } reader.readAsDataURL(rotateFile); },fileType)}, { orientation:true} );//end loadImage }
+
+
+
+
+export default class Crab {
+	constructor(kind, hungry, thirst, tan, dan, ji, vi, mu){
+		this.kind = kind;
+		this.hungry = hungry;
+		this.thirst = thirst;
+		this.tan = tan;
+		this.dan = dan;
+		this.ji = ji;
+		this.vi = vi;
+		this.mu = mu;
+	}
+	
+	callFunc(){
+		alert(this.kind + ", " + this.hungry + ", " + this.thirst + ", " + this.tan + ", " + this.dan);
+	}
+}
+
+
+//const crab = new Crab("2", "20", "20", "20", "20", "20", "20", "20");
+				//crab.callFunc();
