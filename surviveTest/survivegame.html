@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		
+		<title>Play 자판기</title>
+		<link rel="stylesheet" href="styleSubPage5.css" />
+		<meta property="og:url" content="https://playzapangi.netlify.app/survivegameDesc.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Play 자판기(무인도 인생극장)" />
+		<meta property="og:description" content="그래! 결심했어! 오늘의 무인도 저녁 메뉴는 바로 이거야!"/>
+		<meta property="og:image" content="https://github.com/leejh01623/ai_web_project/blob/master/img2/muindo_thumb.jpg?raw=true" />
+		
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1f0db73bbe7b4a"></script>
+		
+		<!-- sweetAlert
+		<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	</head>
+	<body>
+		<!-- 네비게이션바 -->
+		<nav class="navbar navbar-expand-lg navbar-light navbar-padding">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html">RaccoonForest</a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<!--
+					<li class="nav-item">
+						<a class="nav-link" href="#">Notice</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					-->
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- 날짜 영역 -->
+		<div class="day">
+			<div class="day_name">
+				<p class="day_name_p">
+					Day
+				</p>
+			</div>
+			<div class="day_value">
+				<p class="day_value_p" id="day_value_p">
+					
+				</p>
+			</div>
+		</div>
+		
+		<!-- 이미지 영역 -->
+		<div class="choice_image">
+			<div class="nextDay left_image">
+				<div class="left_image_div">
+					<img class="left_img" id="left_item_img">
+				</div>
+				<div class="left_text_div">
+					<p class="left_text" id="left_item_name"></p>
+				</div>
+			</div>
+			<div class="nextDay right_image">
+				<div class="right_image_div">
+					<img class="right_img" id="right_item_img">
+				</div>
+				<div class="right_text_div">
+					<p class="right_text" id="right_item_name"></p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 수치 영역 -->
+		<div class="my_state">
+			<div class="hungry" id="hungry">
+				<div class="state_name">
+					<p class="name">
+						배고픔
+					</p>
+				</div>
+				<div class="progressDiv">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" id="hungry_progress">30</div>
+					</div>
+				</div>
+				<div class="state_value">
+					<p class="value" id="hungry_value">
+						
+					</p>
+				</div>
+			</div>
+			<div class="thirst" id="thirst">
+				<div class="state_name">
+					<p class="name">
+						목마름
+					</p>
+				</div>
+				<div class="progressDiv">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" id="thirst_progress"></div>
+					</div>
+				</div>
+				<div class="state_value">
+					<p class="value" id="thirst_value">
+						
+					</p>
+				</div>
+				
+			</div>
+			<div class="tan" id="tan">
+				<div class="state_name">
+					<p class="name">
+						탄수화물
+					</p>
+				</div>
+				<div class="progressDiv">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" id="tan_progress"></div>
+					</div>
+				</div>
+				<div class="state_value">
+					<p class="value" id="tan_value">
+						
+					</p>
+				</div>
+			</div>
+			<div class="dan" id="dan">
+				<div class="state_name">
+					<p class="name">
+						단백질
+					</p>
+				</div>
+				<div class="progressDiv">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" id="dan_progress"></div>
+					</div>
+				</div>
+				<div class="state_value">
+					<p class="value" id="dan_value">
+						
+					</p>
+				</div>
+			</div>
+			<div class="ji" id="ji">
+				<div class="state_name">
+					<p class="name">
+						지방
+					</p>
+				</div>
+				<div class="progressDiv">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" id="ji_progress"></div>
+					</div>
+				</div>
+				<div class="state_value">
+					<p class="value" id="ji_value">
+						
+					</p>
+				</div>
+			</div>
+			<div class="vi" id="vi">
+				<div class="state_name">
+					<p class="name">
+						비타민
+					</p>
+				</div>
+				<div class="progressDiv">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" id="vi_progress"></div>
+					</div>
+				</div>
+				<div class="state_value">
+					<p class="value" id="vi_value">
+						
+					</p>
+				</div>
+			</div>
+			<div class="mu" id="mu">
+				<div class="state_name">
+					<p class="name">
+						무기질
+					</p>
+				</div>
+				<div class="progressDiv">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" id="mu_progress"></div>
+					</div>
+				</div>
+				<div class="state_value">
+					<p class="value" id="mu_value">
+						
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--
+		<div>
+			<p id="popup">
+				팝업
+			</p>
+		</div>
+		-->
+		<script type="module" src="js/survivegame-fn.js"></script>
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>

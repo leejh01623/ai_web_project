@@ -1,0 +1,190 @@
+@font-face {
+	src: url("../font/BMJUA_ttf.ttf");
+	font-family: "jua";
+}
+
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.nav-link {
+	line-height: 1.7;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+body {
+	background-color: #fce3c2;
+}
+
+.number {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.label {
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.problem {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.problem_img {
+	width: 300px;
+	height: 250px;
+	object-fit: cover;
+}
+
+.answer {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.button.o {
+	width: 300px;
+	color: #fff;
+	background: #f88379;
+	border: 2px solid #ffffff;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	font-size: 150%;
+	font-family: "jua";
+}
+
+.button.o:hover {
+	background: #e63a00;
+	color: #fff;
+	cursor: pointer;
+}
+
+.button.o:active {
+	background: #e63a00;
+	color: #ffffff;
+}
+
+.button.o:focus {
+	background-color: #e63a00;
+	outline:0;
+}
+
+.button.x {
+	width: 300px;
+	color: #fff;
+	background: #f88379;
+	border: 2px solid #ffffff;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 150%;
+	font-family: "jua";
+}
+
+.button.x:hover {
+	background: #e63a00;
+	color: #fff;
+	cursor: pointer;
+}
+
+.button.x:active {
+	background: #e63a00;
+	color: #ffffff;
+}
+
+.button.x:focus {
+	background-color: #e63a00;
+	outline:0;
+}
+
+.button.res {
+	width: 150px;
+	color: #fff;
+	background: #79aff8;
+	border: 2px solid #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	margin-right: 3%;
+}
+
+.button.res:hover {
+	background: #3084f4;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.button.res:active {
+	background: #3084f4;
+	color: #ffffff;
+}
+
+.button.res:focus {
+	background-color: #3084f4;
+	outline:0;
+}
+
+.button.restart {
+	width: 150px;
+	color: #fff;
+	background: #f88379;
+	border: 2px solid #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 3%;
+}
+
+.button.restart:hover {
+	background: #e63a00;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.button.restart:active {
+	background: #e63a00;
+	color: #ffffff;
+}
+
+.button.restart:focus {
+	background-color: #e63a00;
+	outline:0;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.hide-scrollbar {
+	overflow: -moz-hidden-unscrollable;
+	overflow: hidden;
+}
+
+.admin_1 {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.bottom {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+@media (max-width: 480px){
+	body {
+		width: auto;
+	}
+}

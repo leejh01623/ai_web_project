@@ -13,219 +13,270 @@
 			crossorigin="anonymous"
 		/>
 
-		<title>AI 자판기</title>
-		<meta name="title" content="AI 자판기">
+		<title>Play 자판기</title>
+		<meta name="title" content="Play 자판기">
 		<meta name="subject" content="인공지능으로 알아보는 나의 얼굴, 다양한 테스트로 내 얼굴의 진실과 마주해보세요.">
 		<meta name="keywords" content="나와 닮은 연예인, 닮은꼴 연예인, 아이돌 얼굴, 아이돌상, idolface, 얼굴형 테스트, 얼굴형 찾기, 인공지능 테스트, AI 테스트, AI 얼굴형, 인공지능 분석, AI분석">
 		<meta name="description" content="당신의 얼굴에 대해 알고싶으신가요? 대표 연예인 얼굴을 기반으로 학습된 인공지능이 당신의 얼굴을 요목조목 분석해 드립니다. 별도의 회원가입도 필요없습니다. 당신의 사진 한 장이면 충분합니다. 업로드한 사진은 테스트에만 사용됩니다.">
 		<meta name="author" content="RaccoonForest">
 		<link rel="stylesheet" href="style.css" />
-		<link rel="canonical" href="https://aizapangi.netlify.app">
-		<meta property="og:url" content="https://aizapangi.netlify.app" />
+		<link rel="canonical" href="https://playzapangi.netlify.app">
+		<meta property="og:url" content="https://playzapangi.netlify.app" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="AI 자판기" />
+		<meta property="og:title" content="Play 자판기" />
 		<meta property="og:description" content="당신의 얼굴에 대해 알고싶으신가요? 대표 연예인 얼굴을 기반으로 학습된 인공지능이 당신의 얼굴을 요목조목 분석해 드립니다. 별도의 회원가입도 필요없습니다. 당신의 사진 한 장이면 충분합니다. 업로드한 사진은 테스트에만 사용됩니다."
 		/>
 		
 		<!-- 네이버 웹마스터 도구 승인 -->
-		<meta name="naver-site-verification" content="5fb7edbf8734b7497ee3899c5692699b9eeec350" />
+		<!-- <meta name="naver-site-verification" content="5fb7edbf8734b7497ee3899c5692699b9eeec350" /> -->
+		<meta name="naver-site-verification" content="9abe3a1628bc48448406bda0617e081cde22282c" />
+		
 	</head>
-	<body>
-		<!-- 네비게이션바 -->
-		<nav class="navbar navbar-expand-lg navbar-light navbar-padding">
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand" href="index.html">RaccoonForest</a>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<!--
-					<li class="nav-item">
-						<a class="nav-link" href="#">Notice</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">About Us</a>
-					</li>
-					-->
-				</ul>
-			</div>
-		</nav>
-		
-		<section class="all-section">
-			<section class="section-1">
-				<div class="div-maintitle">
-					<div class="div-title">
-						<span class="title">AI 자판기</span>
-					</div>
-					<div class="div-subtitle">
-						<span class="subtitle">↓↓↓ PUSH ↓↓↓</span>
-					</div>
-				</div>
-			</section>
-			
-			<div class="select-item-section">
-				<div class="ai-section">
-					<div class="ai-section-title">AI Test</div>
-					<div class="ai-section-group">
-						<section class="ai-section-1">
-							<button type="button" class="btn-matchidol" onclick="location.href='matchIdol.html'"><h4 class="button-title-1">나와 닮은꼴<br>아이돌은?</h4></button>
-						</section>
-
-						<section class="ai-section-2">
-							<button type="button" class="btn-matchidol" onclick="location.href='facestyle.html'"><h4 class="button-title-1">나는 어떤<br>얼굴형일까?</h4></button>
-						</section>
-
-						<section class="ai-section-3">
-							<button type="button" class="btn-matchidol" onclick="location.href='facelook.html'"><h4 class="button-title-1">나는 어떤<br>얼굴상일까?</h4></button>
-
-						</section>
-					</div>
-				</div>
-				
-					
-				<div class="etc-section">
-					<div class="etc-section-title">Play Fun</div>
-					<div class="etc-section-group">
-						<section class="etc-section-1">
-							<button type="button" class="btn-etc-style" onclick="gotoPage();"><h4 class="button-title-1">그림 일기</h4></button>
-						</section>
-
-						<section class="etc-section-2">
-							<button type="button" class="btn-etc-style" onclick="gotoCleanscorePage();"><h4 class="button-title-1">청결도<br>테스트</h4></button>
-
-						</section>
-						
-						<section class="etc-section-3">
-							<button type="button" class="btn-etc-style" onclick="gotoAbbreviationPage();"><h4 class="button-title-1">신조어<br>테스트</h4></button>
-
-						</section>
-						
-						<section class="etc-section-4">
-							<button type="button" class="btn-etc-style" onclick="gotoLottoPage();"><h4 class="button-title-1">행운 로또<br>예측</h4></button>
-
-						</section>
-						
-						<section class="etc-section-5">
-							<button type="button" class="btn-etc-style" onclick="gotoSurviveGamePage();"><h4 class="button-title-1">무인도<br>인생극장</h4></button>
-
-						</section>
-					</div>
+	<body>		
+		<!-- body 영역 -->
+		<div class="background_img">
+			<div class="top">
+				<div class="top_title">
+					Play 자판기
 				</div>
 			</div>
-		
-			<div class="admin-1">
-				<!--
-				<div style="width:320px; height: 100px;">
+
+			<div class="middle">
+				<div class="middle_left">
+					<div class="middle_left_top">
+						<div class="group_1_title">
+							Play Fun
+						</div>
+						
+						<div class="g_item_line">
+							<div class="g_1_item">
+								<button class="g_1_item_btn" onclick="gotoPage();">
+									그림<br>일기
+								</button>
+							</div>
+							<div class="g_1_item">
+								<button class="g_1_item_btn" onclick="gotoCleanscorePage();">
+									청결도<br>테스트
+								</button>
+							</div>
+							<div class="g_1_item">
+								<button class="g_1_item_btn" onclick="gotoAbbreviationPage();">
+									신조어<br>테스트
+								</button>
+							</div>
+						</div>
+						
+						<div class="g_item_line_bottom">
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									<div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									 <div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									 <div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="g_item_line">
+							<div class="g_1_item">
+								<button class="g_1_item_btn" onclick="gotoLottoPage();">
+									행운 로또<br>예측
+								</button>
+							</div>
+							<div class="g_1_item">
+								<button class="g_1_item_btn" onclick="gotoSurviveGamePage();">
+									무인도<br>인생극장
+								</button>
+							</div>
+							<div class="g_1_item">
+								<button class="g_1_item_btn" onclick="developingFunc();">
+									Coming<br>Soon
+								</button>
+							</div>
+						</div>
+						
+						<div class="g_item_line_bottom">
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									<div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									 <div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									 <div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="group_2_title">
+							Play AI Test
+						</div>
+
+						<div class="g_item_line">
+							<div class="g_2_item">
+								<button class="g_2_item_btn" onclick="gotoMatchIdolPage();">
+									나와 닮은<br>아이돌은?
+								</button>
+							</div>
+							<div class="g_2_item">
+								<button class="g_2_item_btn" onclick="gotoFaceStylePage();">
+									나는 어떤<br>얼굴형?
+								</button>
+							</div>
+							<div class="g_2_item">
+								<button class="g_2_item_btn" onclick="gotoFaceLookPage();">
+									나는 어떤<br>얼굴상?
+								</button>
+							</div>
+						</div>
+						
+						<div class="g_item_line_bottom">
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									<div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									 <div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									 <div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="g_item_line">
+							<div class="g_2_item">
+								<button class="g_2_item_btn" onclick="developingFunc();">
+									Coming<br>Soon
+								</button>
+							</div>
+						</div>
+						
+						<div class="g_item_line_bottom">
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									<div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									 <div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+							<div class="g_item_line_bottom_btn_section">
+								<div class="g_item_line_bottom_btn">
+									 <div class="g_item_line_bottom_btn_red">
+										 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					
+					<div class="middle_left_bottom">
+						<div class="middle_left_bottom_title">
+							RaccoonForest
+						</div>
+					</div>
 				</div>
-				 -->
-				<ins class="kakao_ad_area" style="display:none;" 
-				 data-ad-unit    = "DAN-rkxa9uond84h" 
+
+				<div class="middle_right">
+					<div class="middle_right_title">
+						RaccoonForest
+					</div>
+					<div class="middle_right_top">
+						<MARQUEE class="middle_right_top_move">판매중</MARQUEE>
+					</div>
+					<div class="middle_right_cash">
+						<img src="./img/cash_input.png" class="middle_right_cash_img"/>
+					</div>
+					<div class="middle_right_middle">
+						
+					</div>
+					<div class="middle_right_coin">
+						<img src="./img/coin_input.png" class="middle_right_coin_img"/>
+					</div>
+					<div class="middle_right_bottom">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom">
+
+			</div>
+		</div>
+		
+		<div class="admin-1">
+			<!--
+			<div style="width:320px; height: 100px;">
+
+			</div>
+			 -->
+			<ins class="kakao_ad_area" style="display:none;" 
+			 data-ad-unit    = "DAN-rkxa9uond84h" 
+			 data-ad-width   = "320" 
+			 data-ad-height  = "100"></ins> 
+
+		</div>
+
+		<div class="admin-2">
+			<!-- 
+			<div style="width:320px; height: 100px;">
+
+			</div>
+			-->
+			<ins class="kakao_ad_area" style="display:none;" 
+				 data-ad-unit    = "DAN-1hrj94pgf6yjq" 
 				 data-ad-width   = "320" 
 				 data-ad-height  = "100"></ins> 
+		</div>
 
-			</div>
-			
-			<div class="admin-2">
-				<!-- 
-				<div style="width:320px; height: 100px;">
-					
-				</div>
-				-->
-				<ins class="kakao_ad_area" style="display:none;" 
-					 data-ad-unit    = "DAN-1hrj94pgf6yjq" 
-					 data-ad-width   = "320" 
-					 data-ad-height  = "100"></ins> 
-
-			</div>
-			
-			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-			
-			<div class="bottom-1">
-				<h6 class="copyright">
-					ⓒ 2020. (RaccoonForest) all rights reserved.
-				</h6>
-				<a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="help">
-				<h6>제작 도움: 조코딩 유튜브 채널</h6></a>
-			</div>
-		</section>
+		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 		
-		<script>
-			function developingFunc() {
-				alert("준비 중입니다!");
-			}
-			
-			function gotoPage(){
-				let filter = "win16|win32|win64|mac|macintel";
-				if(0 > filter.indexOf(navigator.platform.toLowerCase())){
-					console.log("Client platform : Mobile");
-					location.href='intent://aizapangi.netlify.app/picturediary.html#Intent;scheme=http;package=com.android.chrome;end' 
-					//location.href = "picturediary.html";
-				}else{
-					console.log("Client platform : PC");
-					location.href = "picturediary.html";
-				}
-			}
-			
-			function gotoCleanscorePage(){
-				let filter = "win16|win32|win64|mac|macintel";
-				if(0 > filter.indexOf(navigator.platform.toLowerCase())){
-					console.log("Client platform : Mobile");
-					location.href='intent://aizapangi.netlify.app/cleanscore.html#Intent;scheme=http;package=com.android.chrome;end' 
-					//location.href = "picturediary.html";
-				}else{
-					console.log("Client platform : PC");
-					location.href = "cleanscore.html";
-				}
-			}
-			
-			function gotoAbbreviationPage(){
-				let filter = "win16|win32|win64|mac|macintel";
-				if(0 > filter.indexOf(navigator.platform.toLowerCase())){
-					console.log("Client platform : Mobile");
-					location.href='intent://aizapangi.netlify.app/abbreviation.html#Intent;scheme=http;package=com.android.chrome;end' 
-					//location.href = "picturediary.html";
-				}else{
-					console.log("Client platform : PC");
-					location.href = "abbreviation.html";
-				}
-			}
-			
-			function gotoLottoPage(){
-				let filter = "win16|win32|win64|mac|macintel";
-				if(0 > filter.indexOf(navigator.platform.toLowerCase())){
-					console.log("Client platform : Mobile");
-					location.href='intent://aizapangi.netlify.app/lottoDraw.html#Intent;scheme=http;package=com.android.chrome;end' 
-					//location.href = "picturediary.html";
-				}else{
-					console.log("Client platform : PC");
-					location.href = "lottoDraw.html";
-				}
-			}
-			
-			function gotoSurviveGamePage(){
-				let filter = "win16|win32|win64|mac|macintel";
-				if(0 > filter.indexOf(navigator.platform.toLowerCase())){
-					console.log("Client platform : Mobile");
-					location.href='intent://aizapangi.netlify.app/survivegameDesc.html#Intent;scheme=http;package=com.android.chrome;end' 
-					//location.href = "picturediary.html";
-				}else{
-					console.log("Client platform : PC");
-					location.href = "survivegameDesc.html";
-				}
-			}
-		</script>
+		<div class="bottom">
+			<h6>ⓒ 2020. (RaccoonForest) all rights reserved.</h6>
+		</div>
+		
+		<script src="js/index-fn.js"></script>
 		
 		<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

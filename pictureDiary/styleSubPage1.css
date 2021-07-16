@@ -1,0 +1,173 @@
+
+@font-face {
+	src: url("font/Syi1570352276011.ttf");
+	font-family: "somin";
+}
+
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.nav-link {
+	line-height: 1.7;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+body {
+	background-color: #F9F5EA;
+	font-size: 17px;
+}
+
+table#calendar {
+	width: 400px;
+	border: 1px solid black;
+	font-weight: bold;
+	margin: 10px;
+	padding: 5px;
+}
+
+table#dailytitle {
+	width: 400px;
+	border: 1px solid black;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+table#dailytext {
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-collapse: collapse;
+}
+
+tr#dailytexttr {
+	border: 1px solid black;
+}
+
+td#dailytexttd {
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+}
+
+.dailyedit {
+	width: 100%;
+	border: none; 
+	background: transparent; 
+	outline: none;
+	text-align: center;
+}
+
+canvas {
+	border: 1px solid black;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.toolbox {
+	background-color: white;
+	border: 1px solid black;
+	margin: 10px;
+	width: 400px;
+	height: 50px;
+}
+
+.btn-circle {
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.capturebtn {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.section-3 {
+	text-align: center;
+	padding-top: 1.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.admin-1 {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.admin-2 {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.hide-scrollbar {
+	overflow: -moz-hidden-unscrollable;
+	overflow: hidden;
+}
+
+.bottom {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+@media (max-width: 480px){
+	.allbodyDiv {
+		width: auto;
+	}
+	
+	.bodyDiv {
+		width: auto;
+	}
+	
+	.canvas {
+		width: 370px;
+	}
+	
+	.toolbox {
+		width: 370px;
+	}
+	
+	table#calendar {
+		width: 370px;
+	}
+	
+	table#dailytitle {
+		width: 370px;
+	}
+	
+	table#dailytext {
+		width: 370px;
+	}
+}

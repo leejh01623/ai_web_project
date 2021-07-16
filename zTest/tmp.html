@@ -1,0 +1,270 @@
+<div>Teachable Machine Image Model</div>
+<button type="button" onclick="init()">Start</button>
+<div id="webcam-container"></div>
+<div id="label-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script type="text/javascript">
+    // More API functions here:
+    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+    // the link to your model provided by Teachable Machine export panel
+    const womanURL = "https://teachablemachine.withgoogle.com/models/1H7FkKybJ/";
+
+    let model, webcam, labelContainer, maxPredictions;
+
+    // Load the image model and setup the webcam
+    async function init() {
+        const modelURL = womanURL + "model.json";
+        const metadataURL = womanURL + "metadata.json";
+
+        // load the model and metadata
+        // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+        // or files from your local hard drive
+        // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
+        
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) { // and class labels
+            labelContainer.appendChild(document.createElement("div"));
+        }
+    }
+
+    // run the webcam image through the image model
+    async function predict() {
+        // predict can take in an image, video or canvas html element
+		var wImg = document.getElementById("upload_img");
+        const prediction = await model.predict(webcam.canvas);
+        for (let i = 0; i < maxPredictions; i++) {
+            const classPrediction =
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+        }
+    }
+</script>
+
+
+
+.btn {
+	background-color: #2ECCFA;
+}
+
+.btn-primary {
+	background-color: #2ECCFA;
+}
+.btn-primary:hover {
+	background-color: #0489B1;
+}
+
+
+.btn-default {
+	background-color: #2ECCFA;
+}
+.btn-default:hover {
+	background-color: #0489B1;
+}
+
+
+.button-class1 {
+	border: 2px solid white;
+	border-radius: 5px;
+	color: white;
+}
+
+.button-class2 {
+	border: 2px solid white;
+	border-radius: 5px;
+	color: white;
+}
+
+
+				$(function() {
+					$('.button-class1').click(function(){
+						if( $(this).hasClass('btn-default') ) $(this).removeClass('btn-default');
+						if( !$(this).hasClass('btn-primary') ) $(this).addClass('btn-primary');
+						if( $('.button-class2').hasClass('btn-primary') ) $('.button-class2').removeClass('btn-primary');
+						if( !$('.button-class2').hasClass('btn-default') ) $('.button-class2').addClass('btn-default');
+					});
+
+					$('.button-class2').click(function(){
+						if( $(this).hasClass('btn-default') ) $(this).removeClass('btn-default');
+						if( !$(this).hasClass('btn-primary') ) $(this).addClass('btn-primary');
+						if( $('.button-class1').hasClass('btn-primary') ) $('.button-class1').removeClass('btn-primary');
+						if( !$('.button-class1').hasClass('btn-default') ) $('.button-class1').addClass('btn-default');
+					});
+
+				});
+
+
+<button type="button" class="btn btn-primary button-class1" onclick="manFunc()">남자</button>
+				<button type="button" class="btn btn-default button-class2" onclick="womanFunc()">여자</button>
+
+
+
+.btn-woman:active {
+  background: #0489B1;
+  color: #ffffff;
+}
+
+.btn-woman:focus {
+	background-color: #0489B1;
+	outline:0;
+}
+
+			
+			
+			<div class="card-deck">
+			  <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+				<div class="card-body">
+				  <h5 class="card-title">1st</h5>
+				  <p class="card-text">32.7%</p>
+				</div>
+			  </div>
+			  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+				<div class="card-body">
+				  <h5 class="card-title">32.7%</h5>
+				  <p class="card-text">소녀시대<br>윤아</p>
+				</div>
+			  </div>
+			  <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+				<div class="card-body">
+				  <h5 class="card-title">소녀시대<br>윤아</h5>
+				  <p class="card-text">32.7%</p>
+				</div>
+			  </div>
+			</div>
+
+
+
+
+
+				function displayImage(file, options) {
+					currentFile = file
+					if (!loadImage(file, updateResults, options)) {
+						result.children().replaceWith()
+					}
+				}
+				
+				function updateResults(img, data) {
+					var fileName = currentFile.name
+					var href = img.src
+					var dataURLStart
+					var content
+					if (!(img.src || img instanceof HTMLCanvasElement)) {
+
+					} else {
+
+						displayMetaData(img, data);
+					}
+				}
+
+				function displayMetaData(img, data) {
+
+					if (!data) return
+					var exif = data.exif
+					var iptc = data.iptc
+
+					if (exif) {
+						if (exif.get('Orientation') == null) {
+							orientation = 1;
+						} else {
+							orientation = exif.get('Orientation');
+						}
+					} else {
+						orientation = 1;
+					}
+
+					alert(orientation);
+					
+					switch (orientation) {
+						case 1:
+							orientation = 0;
+							break;
+
+						case 2:
+							orientation = 0;
+							break;	
+
+						case 3:
+							orientation = 2;
+							break;
+
+						case 4:
+							orientation = 2;
+							break;
+
+						case 5:
+							orientation = 1;
+							break;
+
+						case 6:
+							orientation = 1;
+							break;
+
+						case 7:
+							orientation = 3;
+							break;
+
+						case 8:
+							orientation = 3;
+							break;
+
+						}
+						
+						if(orientation != 0) {
+							BufferedImage oldImage = ImageIO.read(img);
+							BufferedImage newImage1 = new BufferedImage(oldImage.getHeight(),oldImage.getWidth(), oldImage.getType());
+							Graphics2D graphics = (Graphics2D) newImage1.getGraphics();
+							graphics.rotate(Math.toRadians(90 * orientation), newImage1.getWidth() / 2, newImage1.getHeight() / 2);
+							graphics.translate((newImage1.getWidth() - oldImage.getWidth()) / 2, (newImage1.getHeight() - oldImage.getHeight()) / 2);
+							graphics.drawImage(oldImage, 0, 0, oldImage.getWidth(), oldImage.getHeight(), null);
+							File thumbFile = new File(thumbName);
+							ImageIO.write(newImage1, ext, thumbFile);
+						}
+				}
+
+
+var file = e.target.result;
+							var options = {
+								maxWidth: 500,
+								canvas: true,
+								pixelRatio: window.devicePixelRatio,
+								downsamplingRatio: 0.5,
+								orientation: true
+							}
+							if (!file) {
+								return
+							}
+							displayImage(file, options)
+							
+							var newFile = file;
+							
+
+
+
+				function rotateImage(e){ var files = e.target.files; var fileType = files[0].type; loadImage(files[0], function(img, data) { img.toBlob(function(blob){ var rotateFile = new File([blob], files[0].name, {type:fileType}); sel_file = rotateFile; var reader = new FileReader(); reader.onload = function(e){ $("#img").attr("src",e.target.result); } reader.readAsDataURL(rotateFile); },fileType)}, { orientation:true} );//end loadImage }
+
+
+
+
+export default class Crab {
+	constructor(kind, hungry, thirst, tan, dan, ji, vi, mu){
+		this.kind = kind;
+		this.hungry = hungry;
+		this.thirst = thirst;
+		this.tan = tan;
+		this.dan = dan;
+		this.ji = ji;
+		this.vi = vi;
+		this.mu = mu;
+	}
+	
+	callFunc(){
+		alert(this.kind + ", " + this.hungry + ", " + this.thirst + ", " + this.tan + ", " + this.dan);
+	}
+}
+
+
+//const crab = new Crab("2", "20", "20", "20", "20", "20", "20", "20");
+				//crab.callFunc();
