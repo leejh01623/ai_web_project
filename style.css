@@ -5,6 +5,9 @@
 
 body {
 	background: linear-gradient(30deg, #2B65A8 0%, #2B65A8 60%, white 60%, white 100%);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 100vh;
 }
 
 .navbar-padding {
@@ -34,7 +37,7 @@ body {
 
 .top {
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .top_title {
@@ -132,17 +135,12 @@ body {
 }
 
 .g_1_item_btn {
-	width: 80%;
+	width: 90%;
 	height: 70px;
 	margin: 5px;
-	font-size: 19px;
-	font-family: "yanolja";
-	color: #3B3838;
-	background: #FFFFFF;
-	border: 3px solid #F3B15D;
-	border-radius: 10px;
-	box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-	transition: 0.15s;
+	background-color: #fff;
+	border: none;
+	outline: none;
 }
 
 .g_1_item_btn:hover {
@@ -161,6 +159,10 @@ body {
 .g_1_item_btn:focus {
 	background-color: #fff;
 	outline:0;
+}
+
+.g_1_item_img {
+	width: 100%;
 }
 
 .group_2_title {
@@ -183,17 +185,12 @@ body {
 }
 
 .g_2_item_btn {
-	width: 80%;
+	width: 90%;
 	height: 70px;
 	margin: 5px;
-	font-size: 18px;
-	font-family: "yanolja";
-	color: #3B3838;
-	background: #FFFFFF;
-	border: 3px solid #F3B15D;
-	border-radius: 10px;
-	box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-	transition: 0.15s;
+	background-color: #fff;
+	border: none;
+	outline: none;
 }
 
 .g_2_item_btn:hover {
