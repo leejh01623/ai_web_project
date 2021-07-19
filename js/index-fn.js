@@ -7,7 +7,7 @@ function gotoPage() {
 	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
 		//console.log("Client platform : Mobile");
 		location.href =
-			'intent://playzapangi.netlify.app/picturediary.html#Intent;scheme=http;package=com.android.chrome;end';
+			'intent://playzapangi.netlify.app/pictureDiary/picturediary.html#Intent;scheme=http;package=com.android.chrome;end';
 		//location.href = "picturediary.html";
 	} else {
 		//console.log("Client platform : PC");
@@ -20,7 +20,7 @@ function gotoCleanscorePage() {
 	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
 		//console.log("Client platform : Mobile");
 		location.href =
-			'intent://playzapangi.netlify.app/cleanscore.html#Intent;scheme=http;package=com.android.chrome;end';
+			'intent://playzapangi.netlify.app/cleanTest/cleanscore.html#Intent;scheme=http;package=com.android.chrome;end';
 		//location.href = "picturediary.html";
 	} else {
 		//console.log("Client platform : PC");
@@ -33,7 +33,7 @@ function gotoAbbreviationPage() {
 	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
 		//console.log("Client platform : Mobile");
 		location.href =
-			'intent://playzapangi.netlify.app/abbreviation.html#Intent;scheme=http;package=com.android.chrome;end';
+			'intent://playzapangi.netlify.app/abbreviationTest/abbreviation.html#Intent;scheme=http;package=com.android.chrome;end';
 		//location.href = "picturediary.html";
 	} else {
 		//console.log("Client platform : PC");
@@ -46,7 +46,7 @@ function gotoLottoPage() {
 	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
 		//console.log("Client platform : Mobile");
 		location.href =
-			'intent://playzapangi.netlify.app/lottoDraw.html#Intent;scheme=http;package=com.android.chrome;end';
+			'intent://playzapangi.netlify.app/lottoPrediction/lottoDraw.html#Intent;scheme=http;package=com.android.chrome;end';
 		//location.href = "picturediary.html";
 	} else {
 		//console.log("Client platform : PC");
@@ -59,7 +59,7 @@ function gotoSurviveGamePage() {
 	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
 		//console.log("Client platform : Mobile");
 		location.href =
-			'intent://playzapangi.netlify.app/survivegameDesc.html#Intent;scheme=http;package=com.android.chrome;end';
+			'intent://playzapangi.netlify.app/surviveTest/survivegameDesc.html#Intent;scheme=http;package=com.android.chrome;end';
 		//location.href = "picturediary.html";
 	} else {
 		//console.log("Client platform : PC");
@@ -72,7 +72,7 @@ function gotoMatchIdolPage() {
 	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
 		//console.log("Client platform : Mobile");
 		location.href =
-			'intent://playzapangi.netlify.app/matchIdol.html#Intent;scheme=http;package=com.android.chrome;end';
+			'intent://playzapangi.netlify.app/aiTest1/matchIdol.html#Intent;scheme=http;package=com.android.chrome;end';
 		//location.href = "picturediary.html";
 	} else {
 		//console.log("Client platform : PC");
@@ -85,7 +85,7 @@ function gotoFaceStylePage() {
 	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
 		//console.log("Client platform : Mobile");
 		location.href =
-			'intent://playzapangi.netlify.app/facestyle.html#Intent;scheme=http;package=com.android.chrome;end';
+			'intent://playzapangi.netlify.app/aiTest2/facestyle.html#Intent;scheme=http;package=com.android.chrome;end';
 		//location.href = "picturediary.html";
 	} else {
 		//console.log("Client platform : PC");
@@ -98,7 +98,7 @@ function gotoFaceLookPage() {
 	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
 		//console.log("Client platform : Mobile");
 		location.href =
-			'intent://playzapangi.netlify.app/facelook.html#Intent;scheme=http;package=com.android.chrome;end';
+			'intent://playzapangi.netlify.app/aiTest3/facelook.html#Intent;scheme=http;package=com.android.chrome;end';
 		//location.href = "picturediary.html";
 	} else {
 		//console.log("Client platform : PC");
