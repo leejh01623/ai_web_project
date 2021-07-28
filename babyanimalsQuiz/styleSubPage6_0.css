@@ -1,0 +1,80 @@
+@font-face {
+	src: url("./font/BMJUA_ttf.ttf");
+	font-family: "jua";
+}
+
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.nav-link {
+	line-height: 1.7;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+body {
+	background: url(./img/descbackimage.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100% 100%;
+}
+
+.title {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 1;
+	color: #fff;
+	font-size: 400%;
+	font-family: "jua";
+}
+
+.desc-div {
+	width: 380px;
+	margin: 0 auto;
+	padding: 10px;
+	border: solid 10px #fff;
+}
+
+.howtoplay {
+	text-align: center;
+	color: #fff;
+	font-size: 150%;
+	font-family: "jua";
+}
+
+.desc-text {
+	color: #fff;
+	line-height: 1.7;
+	font-size: 105%;
+	font-family: "jua";
+}
+
+.start-btn-div {
+	width: 380px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.start-btn {
+	width: 150px;
+	height: 50px;
+	background-color: #fff;
+	color: #053C3F;
+	border-radius: 50px;
+	box-shadow: 2px 3px 3px #053C3F;
+	font-size: 150%;
+	font-family: "jua";
+}

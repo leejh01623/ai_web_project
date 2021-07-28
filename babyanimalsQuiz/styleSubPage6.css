@@ -1,5 +1,5 @@
 @font-face {
-	src: url("BMJUA_ttf.ttf");
+	src: url("./font/BMJUA_ttf.ttf");
 	font-family: "jua";
 }
 
@@ -22,6 +22,178 @@
 }
 
 body {
-	background-color: #fce3c2;
+	background: url(./img/mainbackimage.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100% 100%;
 }
 
+.life-time-div {
+	width: 400px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.life-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 50px;
+	margin: 10px;
+	float: left;
+}
+
+.life-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(./img/life.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100% 100%;
+	width: 30px;
+	height: 40px;
+	margin-left: 1px;
+	margin-right: 1px;
+	float: left;
+}
+
+.life-x {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	width: 20px;
+	font-size: 20px;
+	font-family: "jua";
+	float: left;
+}
+
+.life-count {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	width: 30px;
+	margin-left: 2px;
+	margin-right: 5px;
+	margin-top: 2px;
+	float: left;
+}
+
+.life-count-text {
+	font-size: 33px;
+	font-family: "jua";
+}
+
+.time-div {
+	width: 250px;
+	background: #fff;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 20px;
+	float: left;
+}
+
+.time-progress-div {
+	width: 0px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: green;
+}
+
+.problem-num-div {
+	position: relative;
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.problem-num-text-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 35px;
+	margin: 0 auto;
+	background: #FF734B;
+	box-shadow: 2px 2px 2px grey;
+	border-radius: 50px;
+}
+
+.problem-num-text {
+	font-size: 25px;
+	font-family: "jua";
+	color: #fff;
+}
+
+.problem-img-div {
+	background: url(./img/problemback.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100% 100%;
+	width: 400px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.problem-img {
+	width: 350px;
+	height: 200px;
+	margin-left: auto;
+  	margin-right: auto;
+	display: block;
+}
+
+.answer-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 100px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.answer-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+	float: left;
+}
+
+.answer-text {
+	font-size: 30px;
+	font-family: "jua";
+}
+
+.choice-div {
+	width: 400px;
+	height: 145px;
+	margin: 0 auto;
+}
+
+.choice-line {
+	text-align: center;
+}
+
+.choice-btn {
+	width: 60px;
+	height: 60px;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.choice-text {
+	line-height: 50px;
+	vertical-align: center;
+	font-size: 40px;
+	font-family: "jua";
+}

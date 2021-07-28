@@ -1,0 +1,29 @@
+@font-face {
+	src: url("./font/BMJUA_ttf.ttf");
+	font-family: "jua";
+}
+
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.nav-link {
+	line-height: 1.7;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+body {
+	background: url(./img/successbackimage.png), url(./img/mainbackimage.png);
+	background-repeat: no-repeat;
+    background-position: center, center;
+	background-size: 400px 90%, 100% 100%;
+}
