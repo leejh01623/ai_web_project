@@ -3,7 +3,8 @@
 
 var life_count_id_2, life_count_id_1, life_count_id_0, time_progress_id, answer_id, problem_img_id, problem_num_text_id;
 var choice_arr, alphabet_arr, text_arr, text_line_arr, answer_tmp_arr;
-var problem_num, problem_img, answer, problem_count = 0, life_count = 3;
+var problem_num, problem_img, answer;
+var problem_count = 0, life_count = 3, end_problem_num = 102;
 
 var timeProgressChk = 0;
 var wrongOrtimeEnd = "";
@@ -234,7 +235,7 @@ function choiceFunc(num){
 			startTime = "";
 			console.log("problem_num : " + problem_num);
 
-			if(problem_num == 2){
+			if(problem_num == end_problem_num){
 				location.href = 'babyanimalsQuizSuccess.html?' + problem_num + '';
 			} else {
 				problem_count++;
