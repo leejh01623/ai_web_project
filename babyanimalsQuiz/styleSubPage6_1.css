@@ -29,32 +29,35 @@ body {
 }
 
 .result-img-div {
-	width: 200px;
+	width: 380px;
 	height: 200px;
 	margin: 0 auto;
-	margin-top: 80px;
+	margin-top: 50px;
+	text-align: center;
 }
 
 .result-img {
-	width: 100%;
+	width: 50%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: fill;
 }
 
 .result-text-div {
-	width: 200px;
+	width: 380px;
 	height: 100px;
+	text-align: center;
 	margin: 0 auto;
 }
 
 .result-text {
-	width: 100%;
+	width: 60%;
 	height: 100%;
 	object-fit: contain;
 }
 
 .restart-div {
-	width: 400px;
+	width: 380px;
+	height: 100px;
 	margin: 0 auto;
 	margin-top: 20px;
 	text-align: center;
@@ -69,4 +72,10 @@ body {
 	box-shadow: 2px 3px 3px #053C3F;
 	font-size: 150%;
 	font-family: "jua";
+}
+
+.result-addThis-div {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom : 10px;
 }

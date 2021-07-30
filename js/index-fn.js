@@ -67,6 +67,19 @@ function gotoSurviveGamePage() {
 	}
 }
 
+function gotobabyanimalsQuizPage() {
+	let filter = 'win16|win32|win64|mac|macintel';
+	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
+		//console.log("Client platform : Mobile");
+		location.href =
+			'intent://playzapangi.netlify.app/babyanimalsQuiz/babyanimalsQuizDesc.html#Intent;scheme=http;package=com.android.chrome;end';
+		//location.href = "picturediary.html";
+	} else {
+		//console.log("Client platform : PC");
+		location.href = 'babyanimalsQuiz/babyanimalsQuizDesc.html';
+	}
+}
+
 function gotoMatchIdolPage() {
 	let filter = 'win16|win32|win64|mac|macintel';
 	if (0 > filter.indexOf(navigator.platform.toLowerCase())) {

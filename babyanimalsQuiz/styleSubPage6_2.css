@@ -22,8 +22,63 @@
 }
 
 body {
-	background: url(./img/successbackimage.png), url(./img/mainbackimage.png);
+	background: url(./img/mainbackimage.png);
 	background-repeat: no-repeat;
-    background-position: center, center;
-	background-size: 400px 90%, 100% 100%;
+    background-position: center;
+	background-size: 100% 100%;
+}
+
+.success-div-img-1 {
+	width: 380px;
+	height: 380px;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.success-img-1 {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.success-div-btn-img {
+	width: 380px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+.success-div-btn {
+	position: absolute;
+	width: 380px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.success-btn {
+	width: 120px;
+	height: 50px;
+	background-color: #fff;
+	color: #053C3F;
+	border-radius: 50px;
+	box-shadow: 1px 2px 2px #053C3F;
+	font-size: 150%;
+	font-family: "jua";
+}
+
+.success-div-img-2 {
+	width: 110px;
+	margin: 0 0 0 auto;
+}
+
+.success-img-2 {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.success-addThis-div {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom : 10px;
 }
