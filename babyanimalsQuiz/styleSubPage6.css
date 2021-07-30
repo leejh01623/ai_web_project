@@ -14,11 +14,20 @@
 	font-weight: bold;
 }
 
-.nav-link {
+.navbar-collapse .navbar-nav .nav-item .nav-link {
 	line-height: 1.7;
 	color: #FFFFFF;
 	font-weight: bold;
 	font-size: 120%;
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: #FFFFFF;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 body {
@@ -99,7 +108,7 @@ body {
 	width: 0px;
 	height: 30px;
 	border-radius: 20px;
-	background-color: green;
+	background-color: #11B76C;
 }
 
 .problem-num-div {
@@ -166,7 +175,12 @@ body {
 	margin-left: 5px;
 	margin-right: 5px;
 	border-radius: 10px;
+	background-color: #fff;
 	float: left;
+}
+
+.answer-btn:focus{
+	outline: none;
 }
 
 .answer-text {
@@ -189,6 +203,11 @@ body {
 	height: 60px;
 	margin: 5px;
 	border-radius: 10px;
+	background-color: #fff;
+}
+
+.choice-btn:focus {
+	outline: none;
 }
 
 .choice-text {

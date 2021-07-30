@@ -10,22 +10,33 @@
 .navbar-light .navbar-brand {
 	line-height: 1.7;
 	text-align: right;
-	color: #000000;
+	color: #FFFFFF;
 	font-weight: bold;
 }
 
-.nav-link {
+.navbar-collapse .navbar-nav .nav-item .nav-link {
 	line-height: 1.7;
 	color: #FFFFFF;
 	font-weight: bold;
 	font-size: 120%;
 }
 
+.custom-toggler.navbar-toggler {
+	border-color: #FFFFFF;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 body {
 	background: url(./img/descbackimage.png);
 	background-repeat: no-repeat;
-    background-position: center;
-	background-size: 100% 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .title {
@@ -64,7 +75,7 @@ body {
 	height: 50px;
 	margin: 0 auto;
 	margin-top: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
@@ -77,4 +88,15 @@ body {
 	box-shadow: 2px 3px 3px #053C3F;
 	font-size: 150%;
 	font-family: "jua";
+}
+
+.start-btn:focus {
+	outline: none;
+}
+
+.bottom {
+	width: 100%;
+	color: white;
+	margin-bottom: 15px;
+	text-align: center;
 }
