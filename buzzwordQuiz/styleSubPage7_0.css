@@ -8,6 +8,11 @@
 	font-family: "gmarketMedium";
 }
 
+@font-face {
+	src: url("./font/Syi1570352276011.ttf");
+	font-family: "somin";
+}
+
 .navbar-padding {
 	padding: 3% 3%;
 }
@@ -131,6 +136,11 @@ body {
 	padding-top: 3px;
 	font-size: 17px;
 	font-family: "gmarketMedium";
+}
+
+.name-birth-sub-text {
+	font-size: 20px;
+	font-family: "somin";
 }
 
 .year-month-title-text {
