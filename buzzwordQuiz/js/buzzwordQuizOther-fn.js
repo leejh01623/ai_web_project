@@ -49,9 +49,7 @@ function setNextSubBtnDisable(){
 	if(subject_res === "제3교시"){
 		next_subject_btn_id.style.backgroundColor = "#d3d3d3";
 		next_subject_btn_id.disabled = true;
-	} else {
-		alert("메인으로를 눌러주세요.");
-	}
+	} 
 }
 
 function setGradeFunc(){
