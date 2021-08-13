@@ -128,6 +128,30 @@ body, html {
 	border-radius: 50px;
 	margin-top: 3px;
 	margin-left: 5px;
+	float: left;
+}
+
+.g_item_line_bottom_btn_new {
+	width: 35px;
+	height: 15px;
+	float: left;
+}
+
+.g_item_line_bottom_btn_new_text {
+	margin-top: -4px;
+	margin-left: 5px;
+	color: #FEE342;
+	font-size: 15px;
+	font-family: "yanolja";
+	text-shadow: -0.5px 0 #FF0000, 0 0.5px #FF0000, 0.5px 0 #FF0000, 0 -0.5px #FF0000;
+	animation: blink_effect 1.2s step-end infinite;
+	float: left;
+}
+
+@keyframes blink_effect {
+  50% {
+    opacity: 0;
+  }
 }
 
 .g_1_item {

@@ -83,8 +83,6 @@ function setProblem(){
 	} else if(0 <= ten_count && ten_count < 10){
 		var problem_sub_arr = problem_arr[problem_count].split('/');
 
-		console.log(problem_sub_arr);
-
 		// problem title
 		problem_title_text_id.innerHTML = problem_sub_arr[2];
 
@@ -156,8 +154,6 @@ function setProblemType(problem_sub_arr){
 }
 
 function setChoiceType(problem_sub_arr){
-	console.log("setChoiceType");
-	console.log(problem_sub_arr[4]);
 	if(problem_sub_arr[4] === "4"){
 		// 보기 4개
 		choice_div_id.innerHTML = "<div class='choice-line-div'><div class='choice-line-sub-div'><span>&#9312;&nbsp;</span><span class='choice-text' onclick='correctChkFunc(\"" + problem_sub_arr[3] + "\", this);'>" + problem_sub_arr[5] + "</span></div><div class='choice-line-sub-div'><span>&#9313;&nbsp;</span><span class='choice-text' onclick='correctChkFunc(\"" + problem_sub_arr[3] + "\", this);'>" + problem_sub_arr[6] + "</span></div></div><div class='choice-line-div'><div class='choice-line-sub-div'><span>&#9314;&nbsp;</span><span class='choice-text' onclick='correctChkFunc(\"" + problem_sub_arr[3] + "\", this);'>" + problem_sub_arr[7] + "</span></div><div class='choice-line-sub-div'><span>&#9315;&nbsp;</span><span class='choice-text' onclick='correctChkFunc(\"" + problem_sub_arr[3] + "\", this);'>" + problem_sub_arr[8] + "</span></div></div>";
@@ -171,7 +167,6 @@ function setChoiceType(problem_sub_arr){
 }
 
 function correctChkFunc(correctValue, choiceValue){
-	console.log(choiceValue.innerText);
 	var choiceValue_tmp = choiceValue.innerText;
 
 	if(correctValue === choiceValue_tmp){
@@ -188,13 +183,9 @@ function correctChkFunc(correctValue, choiceValue){
 }
 
 function correctOXChkFunc(correctValue, choiceValue){
-	console.log(choiceValue.alt);
 	var choiceValue_tmp = choiceValue.alt.split('_');
 	var choiceValue_tmp_ox = choiceValue_tmp[1];
 
-	console.log(choiceValue_tmp);
-	console.log(choiceValue_tmp_ox);
-	console.log(correctValue);
 	if(correctValue === choiceValue_tmp_ox){
 		//console.log("정답!!!");
 		var tmp = ten_count.toString();

@@ -25,7 +25,7 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://playzapangi.netlify.app/buzzwordQuiz/buzzwordQuizDesc.html" />
 		<meta property="og:title" content="Play 자판기 [유행어 능력평가]" />
-		<meta property="og:image" content="https://github.com/leejh01623/ai_web_project/blob/master/buzzwordQuiz/img/buzzwordQuizThumImg.PNG?raw=true" />
+		<meta property="og:image" content="https://github.com/leejh01623/ai_web_project/blob/master/buzzwordQuiz/img/buzzwordQuizThumbImg.PNG?raw=true" />
 		<meta property="og:description" content="이 귀여운 아기동물은 영어로 뭘까요?"/>
 		
 	</head>
@@ -120,10 +120,14 @@
 			</tr>
 		</table>
 
-		<!-- restart button -->
+		<!-- restart button & next subject button -->
 		<div class="restart-button-div">
 			<button class="restart-button" onclick="restartFunc();">
-				다시하기
+				메인으로
+			</button>
+			
+			<button class="restart-button" id="next_subject_btn_id" onclick="nextSubFunc();">
+				다음 교시
 			</button>
 		</div>
 		

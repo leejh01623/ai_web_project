@@ -1,6 +1,7 @@
 // buzzwordQuizResult.html
 			
-var subject_id, score_id, grade_id, check_id, day_text_id;
+var subject_id, score_id, grade_id, check_id, day_text_id, next_subject_btn_id;
+var subject_res, years_res;
 var score = 0;
 var problem_count_res = 1;
 
@@ -8,15 +9,17 @@ subject_id = document.getElementById("subject_id");
 score_id = document.getElementById("score_id");
 grade_id = document.getElementById("grade_id");
 day_text_id = document.getElementById("day_text_id");
+next_subject_btn_id = document.getElementById("next_subject_btn_id");
 
 getOXData();
 setGradeFunc();
 setDayFunc();
+setNextSubBtnDisable();
 
 function getOXData() {
 	const oxData = localStorage.getItem("oxObj");
-	var subject_res  = localStorage.getItem("subject");
-	var years_res = localStorage.getItem("years");
+	subject_res  = localStorage.getItem("subject");
+	years_res = localStorage.getItem("years");
 
 	subject_id.innerHTML = subject_res + " (" + years_res + ")";
 	if (oxData !== null) {
@@ -40,6 +43,15 @@ function getOXData() {
 		}
 	}
 	score_id.innerHTML = score + " 점";
+}
+
+function setNextSubBtnDisable(){
+	if(subject_res === "제3교시"){
+		next_subject_btn_id.style.backgroundColor = "#d3d3d3";
+		next_subject_btn_id.disabled = true;
+	} else {
+		alert("메인으로를 눌러주세요.");
+	}
 }
 
 function setGradeFunc(){
@@ -85,6 +97,23 @@ function setDayFunc(){
 
 function restartFunc(){
 	location.href = "./buzzwordQuizDesc.html";
+}
+
+function nextSubFunc(){
+	///buzzwordQuiz/buzzwordQuiz.html?제1교시%261990년대
+	switch(subject_res){
+		case "제1교시":
+			location.href = "./buzzwordQuiz.html?제2교시%262000년대";
+			break;
+		case "제2교시":
+			location.href = "./buzzwordQuiz.html?제3교시%262010년대";
+			break;
+		case "제3교시":
+			break;
+		default:
+			alert("메인으로를 눌러주세요.");
+			break;
+	}
 }
 
 localStorage.clear();

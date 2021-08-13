@@ -145,7 +145,10 @@ body {
 .restart-button {
 	width: 100px;
 	height: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
 	background-color: #F0EFED;
+	color: black;
 	text-align: center;
 	font-size: 18px;
 	font-family: "gmarketMedium";
