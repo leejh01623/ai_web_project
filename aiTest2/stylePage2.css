@@ -5,7 +5,6 @@ body {
 	background-color: #0F4C81;
 }
 
-
 .navbar-padding {
 	padding: 3% 3%;
 }
@@ -228,15 +227,11 @@ body {
 	margin-top: 5%;
 }
 
-.admin-2 {
-	width: 320px;
-	margin: 0 auto;
-	margin-top: 5%;
-}
-
 .bottom {
 	color: white;
 	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .name {

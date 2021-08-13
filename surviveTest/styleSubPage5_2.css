@@ -60,8 +60,7 @@ body {
 
 .newTest {
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 100px;
+	margin-top: 30px;
 }
 
 .button_refresh {
@@ -91,4 +90,18 @@ body {
 .button_refresh:focus {
 	background-color: #d09050;
 	outline:0;
+}
+
+.admin {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.bottom {
+	width: 100%;
+	color: white;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
 }

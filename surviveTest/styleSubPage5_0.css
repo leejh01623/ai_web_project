@@ -34,9 +34,11 @@ body {
 	background-color: #370547;
 	background: url(./img/survive_desc_img.jpg);
 	background-repeat: no-repeat;
-	height: 100vh;
-    background-position: center;
+	
     background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
 }
 
 .desc-text-div {
@@ -90,11 +92,16 @@ body {
 	outline:0;
 }
 
+.admin {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
 .bottom {
-	position: fixed;
-	bottom: 0; 
 	width: 100%;
 	color: white;
-	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-bottom: 20px;
 	text-align: center;
 }

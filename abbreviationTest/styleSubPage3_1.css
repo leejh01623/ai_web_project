@@ -137,3 +137,11 @@ body {
 	margin: 0 auto;
 	margin-top: 3%;
 }
+
+.bottom {
+	width: 100%;
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+}

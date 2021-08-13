@@ -1,0 +1,187 @@
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+
+		<title>Play 자판기</title>
+		<meta name="title" content="Play 자판기 [유행어 능력평가]">
+		<meta name="subject" content="이 귀여운 아기동물은 영어로 뭘까요?">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="RaccoonForest">
+		
+		<link rel="stylesheet" href="styleSubPage7_0.css" />
+		<link rel="canonical" href="https://playzapangi.netlify.app">
+		
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://playzapangi.netlify.app/buzzwordQuiz/buzzwordQuizDesc.html" />
+		<meta property="og:title" content="Play 자판기 [유행어 능력평가]" />
+		<meta property="og:image" content="https://github.com/leejh01623/ai_web_project/blob/master/babyanimalsQuiz/img/babyanimalsQuizThumbImg.png?raw=true" />
+		<meta property="og:description" content="이 귀여운 아기동물은 영어로 뭘까요?"/>
+	</head>
+	<body>
+		<!-- 네비게이션바 -->
+		<nav class="navbar navbar-expand-lg navbar-light navbar-padding">
+			<button
+				class="navbar-toggler custom-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html">RaccoonForest</a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<!--
+					<li class="nav-item">
+						<a class="nav-link" href="#">Notice</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					-->
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- main title -->
+		<div class="main-title-div">
+			<span class="main-title-text">2021년도 제1회</span>
+		</div>
+		
+		<!-- sub title -->
+		<div class="sub-title-div">
+			<span class="sub-title-text">유행어 능력평가</span>
+		</div>
+		
+		<!-- name&birth -->
+		<div class="name-birth-div">
+			<div class="name-div">
+				<span class="name-birth-title-text">성명</span>
+			</div>
+			<div class="name-sub-div">
+				
+			</div>
+			
+			<div class="birth-div">
+				<span class="name-birth-title-text">출생년월</span>
+			</div>
+			<div class="birth-sub-div-1">
+				
+			</div>
+			<div class="birth-sub-div-1">
+				
+			</div>
+			<div class="birth-sub-div-1">
+				
+			</div>
+			<div class="birth-sub-div-1">
+				
+			</div>
+			<div class="birth-sub-div-1">
+				<span class="year-month-title-text">년</span>
+			</div>
+			<div class="birth-sub-div-1">
+				
+			</div>
+			<div class="birth-sub-div-1">
+				
+			</div>
+			<div class="birth-sub-div-2">
+				<span class="year-month-title-text">월</span>
+			</div>
+		</div>
+		
+		<!-- top-line -->
+		<div class="div-line">
+		</div>	
+		
+		<!-- description -->
+		<div class="desc-div">
+			<!-- <img src="./img/quizDesc.PNG" class="desc-img"> -->
+			<span class="desc-text">
+				&#9675; 본 평가는 각 연대에 유행했던 인터넷용어, 신조어, 밈 등에 대해 자신이 얼마나 알고 있는지 파악할 수 있는 테스트 입니다.<br>&#9675; 출제된 문항 수는 한 교시 당 10문제이며, 풀이가 완료되는 즉시 채점결과가 제공됩니다.<br>&#9675; 원하는 시대의 교시를 선택하여 자유롭게 응시할 수 있습니다.<br>&#9675; 본 평가는 재미와 흥미를 위해 제작된 테스트이므로 과거를 추억하는 즐거운 마음으로 테스트에 임해주시길 바랍니다.
+			</span>
+		</div>	
+		
+		<!-- subject-1 button-->
+		<div class="subject-div">
+			<button class="subject-button-main" onclick="subjectOneFunc();">
+				<span class="subject-button-text">제1교시</span>
+			</button>
+			<button class="subject-button-sub" onclick="subjectOneFunc();">
+				<span class="subject-button-text">1990년대</span>
+			</button>
+		</div>
+		
+		<!-- subject-2 button-->
+		<div class="subject-div">
+			<button class="subject-button-main" onclick="subjectTwoFunc();">
+				<span class="subject-button-text">제2교시</span>
+			</button>
+			<button class="subject-button-sub" onclick="subjectTwoFunc();">
+				<span class="subject-button-text">2000년대</span>
+			</button>
+		</div>
+		
+		<!-- subject-3 button-->
+		<div class="subject-div"> 
+			<button class="subject-button-main" onclick="subjectThreeFunc();">
+				<span class="subject-button-text">제3교시</span>
+			</button>
+			<button class="subject-button-sub" onclick="subjectThreeFunc();">
+				<span class="subject-button-text">2010년대</span>
+			</button>
+		</div>
+		
+		<!-- bottom line -->
+		<div class="div-line">
+			
+		</div>
+		
+		<!-- bottom title -->
+		<div class="bottom-title-div">
+			<span class="bottom-title-text">플레이자판기평가원</span>
+		</div>
+		
+		<!-- admin 부분 -->
+		<div class="admin">
+			<ins class="kakao_ad_area" style="display:none;" 
+				 data-ad-unit    = "DAN-1hrj94pgf6yjq" 
+				 data-ad-width   = "320" 
+				 data-ad-height  = "100"></ins> 
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		</div>
+		
+		<!-- copyright 부분 -->
+		<div class="bottom">
+			<h6>ⓒ 2020. (RaccoonForest) all rights reserved.</h6>
+		</div>
+		
+		<!-- ///////////////////////////////////////////////////////////////// -->
+		<script src="js/buzzwordQuiz-fn.js"></script>
+		<!-- ///////////////////////////////////////////////////////////////// -->
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>

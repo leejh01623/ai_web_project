@@ -95,3 +95,17 @@ body {
 	margin: 0 auto;
 	margin-bottom : 10px;
 }
+
+.admin {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.bottom {
+	width: 100%;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}

@@ -25,9 +25,11 @@ body {
 	background-color: #f89879;
 	background: url(./img/muindo5.jpg);
 	background-repeat: no-repeat;
-	height: 100vh;
-    background-position: center;
+	
     background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
 }
 
 .day {
@@ -225,6 +227,20 @@ body {
 	font-size: 140%;
 	font-family: "jua";
 	text-shadow: 2px 2px 4px #000000;
+}
+
+.admin {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.bottom {
+	width: 100%;
+	color: white;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 

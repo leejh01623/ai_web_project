@@ -96,9 +96,16 @@ body {
 	outline: none;
 }
 
+.admin {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
 .bottom {
 	width: 100%;
 	color: white;
-	margin-bottom: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	text-align: center;
 }
