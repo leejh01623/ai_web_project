@@ -33,7 +33,7 @@ console.log(data);
 var temp = data[1].split('&');
 console.log(temp);
 
-var num = temp[0];
+var num = parseInt(temp[0]);
 console.log(num);
 
 var me = temp[1];
