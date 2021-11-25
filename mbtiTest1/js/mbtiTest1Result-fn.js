@@ -30,7 +30,7 @@ console.log(data);
 
 //var temp = location.href.split('?');
 //var data = temp[1];
-var temp = data[1].split('&');
+var temp = data[1].split('@');
 console.log(temp);
 
 var num = parseInt(temp[0]);
