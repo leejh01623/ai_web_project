@@ -3,19 +3,21 @@
 //var changeHeight = offsetHeight + 50;
 
 //document.getElementById("res_back_id").style.height = changeHeight + 'px';
-console.log(window.location.href);
-var currentURL = decodeURIComponent(window.location.href);
-console.log(currentURL);
 
-var addthis_share = {
-	url : currentURL,
-	title : "BBBBBBBBBB"
-}
+//console.log(window.location.href);
+//var currentURL = decodeURIComponent(window.location.href);
+//console.log(currentURL);
+
+//var addthis_share = {
+//	url : currentURL,
+//	title : "BBBBBBBBBB"
+//}
+
 
 // 넘어온 값 파싱
 var temp = location.href.split('?');
 var data = parseInt(temp[1]);
-var mun_e_chk = temp[2];
+var mun_e_chk = localStorage.getItem("mun_e_value");
 var res_arr;
 var title, subtitle, tag, desc, jinro, job_1_title, job_1_desc, job_2_title, job_2_desc;
 var mun_e_text_1, mun_e_text_2;
@@ -155,3 +157,7 @@ function setMBTIType(){
 function restartFunc() {
 	location.href = 'mbtiTest1Desc.html';
 }
+
+localStorage.clear();
+var test = localStorage.getItem("mun_e_value");
+console.log(test);
