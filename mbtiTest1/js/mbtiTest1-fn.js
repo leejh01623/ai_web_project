@@ -203,7 +203,8 @@ function setProblem(){
 	if(problem_sub_arr == "END"){
 		// 검사가 끝났으므로 결과페이지로 고고~
 		encodeTypeText();
-		location.href = 'mbtiTest1Result.html?num=' + mbti_num + '&me=' + mun_e_value;
+		var param = mbti_num + "&" + mun_e_value;
+		location.href = 'mbtiTest1Result.html?num=' + param;
 	} else {
 		// 문제별 배경 이미지 & 메모 이미지 변경
 		setBackGround(problem_sub_arr[3]);

@@ -13,16 +13,31 @@
 //	title : "BBBBBBBBBB"
 //}
 
-var currentURL = window.location.href;
-
-var addthis_share = {
-   url: currentURL
-}
-
 // 넘어온 값 파싱
+//const params = window.location.search;
+//var num = parseInt(getParameterByName('num'));
+//var me = getParameterByName('me');
+
+//var param = getParameterByName('num');
+
+// ?num=12&e
 const params = window.location.search;
-var num = parseInt(getParameterByName('num'));
-var me = getParameterByName('me');
+console.log(params);
+
+var data = params.split('=');
+//12&e
+console.log(data);
+
+//var temp = location.href.split('?');
+//var data = temp[1];
+var temp = data[1].split('&');
+console.log(temp);
+
+var num = temp[0];
+console.log(num);
+
+var me = temp[1];
+console.log(me);
 
 var res_arr;
 var title, subtitle, tag, desc, jinro, job_1_title, job_1_desc, job_2_title, job_2_desc;
