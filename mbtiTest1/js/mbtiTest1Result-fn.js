@@ -4,9 +4,12 @@
 
 //document.getElementById("res_back_id").style.height = changeHeight + 'px';
 
+var currentURL = decodeURIComponent(window.location.href);
+
+
 var addthis_share = {
-	url : "https://playzapangi.netlify.app/mbtitest1/mbtitest1result?6?e",
-	title : "AAAAAA"
+	url : currentURL,
+	title : "BBBBBBBBBB"
 }
 
 // 넘어온 값 파싱
