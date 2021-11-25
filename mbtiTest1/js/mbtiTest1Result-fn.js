@@ -13,6 +13,11 @@
 //	title : "BBBBBBBBBB"
 //}
 
+var currentURL = window.location.href;
+
+var addthis_share = {
+   url: currentURL
+}
 
 // 넘어온 값 파싱
 const params = window.location.search;
