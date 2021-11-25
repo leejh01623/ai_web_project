@@ -4,6 +4,11 @@
 
 //document.getElementById("res_back_id").style.height = changeHeight + 'px';
 
+var addthis_share = {
+	url : "https://playzapangi.netlify.app/mbtitest1/mbtitest1result?6?e",
+	title : "AAAAAA"
+}
+
 // 넘어온 값 파싱
 var temp = location.href.split('?');
 var data = parseInt(temp[1]);
