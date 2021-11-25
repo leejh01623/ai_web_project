@@ -15,12 +15,9 @@
 
 
 // 넘어온 값 파싱
-//var temp = location.href.split('?');
-//var data = parseInt(temp[1]);
-//var mun_e_chk = localStorage.getItem("mun_e_value");
-var params = url.searchParams;
-var num = params.get('num');
-var me = params.get('me');
+const params = window.location.search;
+var num = parseInt(getParameterByName('num'));
+var me = getParameterByName('me');
 
 var res_arr;
 var title, subtitle, tag, desc, jinro, job_1_title, job_1_desc, job_2_title, job_2_desc;
@@ -162,6 +159,9 @@ function restartFunc() {
 	location.href = 'mbtiTest1Desc.html';
 }
 
-//localStorage.clear();
-//var test = localStorage.getItem("mun_e_value");
-//console.log(test);
+function getParameterByName(name) { 
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); 
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), 
+		results = regex.exec(location.search); 
+	return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); 
+}

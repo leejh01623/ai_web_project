@@ -31,9 +31,7 @@ function setBtnHeightFunc(){
 	document.getElementById('main_center_button_bottom_id').style.height = "auto";
 
 	var button_top_offsetHeight = document.getElementById('main_center_button_top_id').offsetHeight;
-	console.log(button_top_offsetHeight);
 	var button_bottom_offsetHeight = document.getElementById('main_center_button_bottom_id').offsetHeight;
-	console.log(button_bottom_offsetHeight);
 
 	if(button_top_offsetHeight >= button_bottom_offsetHeight){
 		document.getElementById('main_center_button_bottom_id').style.height = document.getElementById('main_center_button_top_id').offsetHeight;
@@ -43,26 +41,18 @@ function setBtnHeightFunc(){
 }
 
 function setMBTITypeFunc(elmnt, type){
-	console.log(type_problem_count);
 	var problem_sub_arr = problem_arr[type_problem_count].split("/");
 	// 문과-이과
 	if(problem_sub_arr[4] == "0"){
 		mun_e_chk = elmnt.firstChild.nextSibling.firstChild.nodeValue;
-		//mun_e_chk = elmnt;
-
-		console.log(mun_e_chk.replace(/ /g, ""));
-
+		
 		if(mun_e_chk.replace(/ /g, "") == "문과"){
 			mun_e_value = "m";
-			//localStorage.setItem("mun_e_value", "m");
 		}
 
 		if(mun_e_chk.replace(/ /g, "") == "이과"){
 			mun_e_value = "e";
-			//localStorage.setItem("mun_e_value", "e");
 		}
-
-		console.log(mun_e_chk);
 	}
 
 	// E-I
@@ -78,10 +68,8 @@ function setMBTITypeFunc(elmnt, type){
 		if(problem_arr[problem_count].split("/")[4] != "1"){
 			if(type_value >= 0){
 				mbti_text = mbti_text + "E";
-				console.log(mbti_text);
 			} else if(type_value < 0){
 				mbti_text = mbti_text + "I";
-				console.log(mbti_text);
 			}
 		}
 	}
@@ -99,10 +87,8 @@ function setMBTITypeFunc(elmnt, type){
 		if(problem_arr[problem_count].split("/")[4] != "2"){
 			if(type_value >= 0){
 				mbti_text = mbti_text + "S";
-				console.log(mbti_text);
 			} else if(type_value < 0){
 				mbti_text = mbti_text + "N";
-				console.log(mbti_text);
 			}
 		}
 	}
@@ -120,10 +106,8 @@ function setMBTITypeFunc(elmnt, type){
 		if(problem_arr[problem_count].split("/")[4] != "3"){
 			if(type_value >= 0){
 				mbti_text = mbti_text + "T";
-				console.log(mbti_text);
 			} else if(type_value < 0){
 				mbti_text = mbti_text + "F";
-				console.log(mbti_text);
 			}
 		}
 	}
@@ -141,10 +125,8 @@ function setMBTITypeFunc(elmnt, type){
 		if(problem_arr[problem_count].split("/")[4] != "4"){
 			if(type_value >= 0){
 				mbti_text = mbti_text + "J";
-				console.log(mbti_text);
 			} else if(type_value < 0){
 				mbti_text = mbti_text + "P";
-				console.log(mbti_text);
 			}
 		}
 	}
