@@ -184,7 +184,7 @@ Kakao.Link.createDefaultButton({
 	content: {
 		title: '신조어 테스트',
 		description: '#신조어테스트 #줄임말테스트 #인싸용어 #MZ세대용어',
-		imageUrl: '',
+		imageUrl: 'https://github.com/leejh01623/ai_web_project/blob/master/abbreviationTest/img/abbreviationTestTumbImg.PNG?raw=true',
 		link: {
 			mobileWebUrl: curretnLink,
 			webUrl: curretnLink,

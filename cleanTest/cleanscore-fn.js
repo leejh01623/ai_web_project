@@ -105,7 +105,7 @@ Kakao.Link.createDefaultButton({
 	content: {
 		title: '청결도 테스트',
 		description: '#청결 #코로나바이러스 #개인방역 #개인위생',
-		imageUrl: '',
+		imageUrl: 'https://github.com/leejh01623/ai_web_project/blob/master/cleanTest/img/cleanTestThumbImg.PNG?raw=true',
 		link: {
 			mobileWebUrl: curretnLink,
 			webUrl: curretnLink,

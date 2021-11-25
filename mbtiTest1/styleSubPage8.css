@@ -1,0 +1,204 @@
+@font-face {
+	src: url("./font/BlackHanSans-Regular.ttf");
+	font-family: "BlackHanSans";
+}
+
+@font-face {
+	src: url("./font/gyunggi1000batang_Bold.ttf");
+	font-family: "gyunggi1000batang_Bold";
+}
+
+@font-face {
+	src: url("./font/gyunggi1000batang_Regular.ttf");
+	font-family: "gyunggi1000batang_Regular";
+}
+
+.navbar-padding {
+	padding: 3% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+	line-height: 1.7;
+	color: #000000;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: #000000;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+body {
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.main-back-div {
+	width: 400px;
+	height: 430px;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding-top: 10px;
+	background-image: url("./img/problem_back_1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.main-div {
+	width: 400px;
+	height: 360px;
+	padding-top: 50px;
+	background-image: url("./img/problem_memo_back_1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.main-top {
+	position: relative;
+	width: 350px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.main-top-div {
+	position: absolute;
+	margin-left: 30px;
+	margin-right: 20px;
+	top: 60%;
+    transform: translate(0, -50%);
+}
+
+.main-top-text {
+	font-size: 20px;
+	font-family: "BlackHanSans";
+}
+
+.main-top-line {
+	width: 310px;
+	height: 2px;
+	margin: 0 auto;
+	background-image: url("./img/problem_memo_top_line.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.main-center {
+	width: 350px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.main-center-button-top {
+	position: relative;
+	width: 350px;
+	height: 100px;
+}
+
+.main-center-button-1 {
+	display: table;
+	position: absolute;
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	background-image: url("./img/choice_a_1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.main-center-button-bottom {
+	position: relative;
+	width: 350px;
+	height: 100px;
+}
+
+.main-center-button-2 {
+	display: table;
+	position: absolute;
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	background-image: url("./img/choice_a_2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.main-center-button-text {
+	display: table-cell;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	font-size: 15px;
+	font-family: "gyunggi1000batang_Bold";
+}
+
+.main-bottom-line {
+	width: 300px;
+	height: 2px;
+	margin: 0 auto;
+	background-image: url("./img/problem_memo_bottom_line.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.main-bottom {
+	width: 350px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+.main-bottom-text {
+	display: flex;
+	float: right;
+	padding-right: 30px;
+	font-size: 10px;
+	font-family: "gyunggi1000batang_Bold";
+}
+
+.admin {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.bottom {
+	width: 100%;
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+}
