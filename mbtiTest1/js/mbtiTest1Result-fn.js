@@ -20,24 +20,30 @@
 
 //var param = getParameterByName('num');
 
-// ?num=12&e
+// ?param=12&e
 const params = window.location.search;
 console.log(params);
 
 var data = params.split('=');
-//12&e
+//12e
 console.log(data);
 
 //var temp = location.href.split('?');
 //var data = temp[1];
-var temp = data[1].split('@');
-console.log(temp);
 
-var num = parseInt(temp[0]);
+var num = parseInt(data[1].slice(0, -1));
+var me = data[1].substr(data[1].length-1, 1);
 console.log(num);
-
-var me = temp[1];
 console.log(me);
+
+//var temp = data[1].split('@');
+//console.log(temp);
+
+//var num = parseInt(temp[0]);
+//console.log(num);
+
+//var me = temp[1];
+//console.log(me);
 
 var res_arr;
 var title, subtitle, tag, desc, jinro, job_1_title, job_1_desc, job_2_title, job_2_desc;
