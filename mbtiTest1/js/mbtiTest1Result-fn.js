@@ -3,9 +3,9 @@
 //var changeHeight = offsetHeight + 50;
 
 //document.getElementById("res_back_id").style.height = changeHeight + 'px';
-
+console.log(window.location.href);
 var currentURL = decodeURIComponent(window.location.href);
-
+console.log(currentURL);
 
 var addthis_share = {
 	url : currentURL,
