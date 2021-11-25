@@ -54,12 +54,12 @@ function setMBTITypeFunc(elmnt, type){
 
 		if(mun_e_chk.replace(/ /g, "") == "문과"){
 			mun_e_value = "m";
-			localStorage.setItem("mun_e_value", "m");
+			//localStorage.setItem("mun_e_value", "m");
 		}
 
 		if(mun_e_chk.replace(/ /g, "") == "이과"){
 			mun_e_value = "e";
-			localStorage.setItem("mun_e_value", "e");
+			//localStorage.setItem("mun_e_value", "e");
 		}
 
 		console.log(mun_e_chk);
@@ -221,7 +221,7 @@ function setProblem(){
 	if(problem_sub_arr == "END"){
 		// 검사가 끝났으므로 결과페이지로 고고~
 		encodeTypeText();
-		location.href = 'mbtiTest1Result.html?' + mbti_num;
+		location.href = 'mbtiTest1Result.html?num=' + mbti_num + '&me=' + mun_e_value;
 	} else {
 		// 문제별 배경 이미지 & 메모 이미지 변경
 		setBackGround(problem_sub_arr[3]);

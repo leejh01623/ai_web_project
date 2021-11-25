@@ -15,9 +15,13 @@
 
 
 // 넘어온 값 파싱
-var temp = location.href.split('?');
-var data = parseInt(temp[1]);
-var mun_e_chk = localStorage.getItem("mun_e_value");
+//var temp = location.href.split('?');
+//var data = parseInt(temp[1]);
+//var mun_e_chk = localStorage.getItem("mun_e_value");
+var params = url.searchParams;
+var num = params.get('num');
+var me = params.get('me');
+
 var res_arr;
 var title, subtitle, tag, desc, jinro, job_1_title, job_1_desc, job_2_title, job_2_desc;
 var mun_e_text_1, mun_e_text_2;
@@ -45,10 +49,10 @@ setMBTIType();
 // 문과 이과 체크
 function munEChkFunc(){
 	// 1: 문과  2: 이과
-	if(mun_e_chk == "m"){
+	if(me == "m"){
 		mun_e_text_1 = "지금 문과인 당신에게는";
 		mun_e_text_2 = "내가 만약 이과라면?";
-	} else if(mun_e_chk == "e"){
+	} else if(me == "e"){
 		mun_e_text_1 = "지금 이과인 당신에게는";
 		mun_e_text_2 = "내가 만약 문과라면?";
 	}
@@ -88,10 +92,10 @@ function setMBTIRes(type){
 			desc.innerHTML = res_sub_arr[3];
 			jinro.innerHTML = res_sub_arr[4];
 
-			if(mun_e_chk == "m"){
+			if(me == "m"){
 				job_1_desc.innerHTML = res_sub_arr[5];
 				job_2_desc.innerHTML = res_sub_arr[6];
-			} else if(mun_e_chk == "e"){
+			} else if(me == "e"){
 				job_1_desc.innerHTML = res_sub_arr[6];
 				job_2_desc.innerHTML = res_sub_arr[5];
 			}
@@ -102,7 +106,7 @@ function setMBTIRes(type){
 }
 
 function setMBTIType(){
-	switch(data){
+	switch(num){
 		case 1:
 			setMBTIRes("ENTJ");
 			break;
@@ -158,6 +162,6 @@ function restartFunc() {
 	location.href = 'mbtiTest1Desc.html';
 }
 
-localStorage.clear();
-var test = localStorage.getItem("mun_e_value");
-console.log(test);
+//localStorage.clear();
+//var test = localStorage.getItem("mun_e_value");
+//console.log(test);
