@@ -1,18 +1,3 @@
-// 글자길이에 맞춰서 배경 메모 늘리기
-//var offsetHeight = document.getElementById('res_back_id').offsetHeight;
-//var changeHeight = offsetHeight + 50;
-
-//document.getElementById("res_back_id").style.height = changeHeight + 'px';
-
-//console.log(window.location.href);
-//var currentURL = decodeURIComponent(window.location.href);
-//console.log(currentURL);
-
-//var addthis_share = {
-//	url : currentURL,
-//	title : "BBBBBBBBBB"
-//}
-
 // 넘어 온 값 파싱
 const params = window.location.search;
 var data = params.split('=');

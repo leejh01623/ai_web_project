@@ -220,8 +220,6 @@ function setProblem(){
 
 		problem_count++;
 	}
-
-
 }
 
 function setBackGround(backValue){
