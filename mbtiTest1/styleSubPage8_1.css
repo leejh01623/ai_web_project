@@ -13,9 +13,8 @@
 	font-family: "gyunggi1000batang_Regular";
 }
 
-
 .navbar-padding {
-	padding: 3% 3%;
+	padding: 2% 3%;
 }
 
 .navbar-light .navbar-brand {
@@ -283,10 +282,31 @@ body {
 	margin-bottom: 10px;
 }
 
-.admin {
+.admin-1 {
 	width: 320px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.admin-2 {
+	width: 250px;
+	height: 250px;
 	margin: 0 auto;
 	margin-top: 10px;
+}
+
+.admin-3 {
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.bottom-1 {
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .bottom {
