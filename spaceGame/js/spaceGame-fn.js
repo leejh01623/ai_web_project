@@ -297,6 +297,7 @@ function animate(){
 					bestScore = score;
 				}
 			} else {
+				bestScore = score;
 				localStorage.setItem("score", score);
 			}
 			
