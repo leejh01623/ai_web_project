@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HCCECYYF4K"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-HCCECYYF4K');
+		</script>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1" />
+		
+		<title>Play 자판기</title>
+		<meta name="title" content="Play 자판기 [지구를 구해줘!!]">
+		<meta name="subject" content="지구를 향해 날아오는 운석과 지구를 침공하려는 UFO로부터 지구를 보호하자!!">
+		<meta name="keywords" content="간단한게임, 우주게임, 슈팅게임, 간단한슈팅게임, 지구, 운석, UFO, 운석파괴, 지구를구해줘, UFO침공, 간단한2D게임, 2D슈팅게임">
+		<meta name="description" content="지구 위험하쥬?? 운석 못막쥬?? 계속 떨어지쥬?? 외계인도 방문하쥬?? 응~못죽이쥬?? 빡치쥬??">
+		<meta name="author" content="RaccoonForest">
+		
+		<link rel="stylesheet" href="styleSubPage9.css">
+		<link rel="canonical" href="https://playzapangi.netlify.app/spaceGame/spaceGame.html">
+		
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://playzapangi.netlify.app/spaceGame/spaceGame.html" />
+		<meta property="og:title" content="Play 자판기 [지구를 구해줘!!]" />
+		<meta property="og:image" content="https://github.com/leejh01623/ai_web_project/blob/master/mbtiTest1/img/mbtiTest1ThumbImg.png?raw=true" />
+		<meta property="og:description" content="지구 위험하쥬?? 운석 못막쥬?? 계속 떨어지쥬?? 외계인도 방문하쥬?? 응~못죽이쥬?? 빡치쥬??"/>
+	</head>
+	<body>
+		<div class="admin-1">
+			<ins class="kakao_ad_area" style="display:none;" 
+				data-ad-unit    = "DAN-eqV6pe55trGgoFBr" 
+				data-ad-width   = "320" 
+				data-ad-height  = "100"></ins> 
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		</div>
+		
+		<div class="title-div" id="titleDiv">
+			<div class="title-sub-div" id="titleSubDiv">
+				<span class="title-span">지구를 구해줘!!</span>
+			</div>
+		</div>
+		
+		<div class="desc-div" id="descDiv">
+			<div class="desc-sub-div" id="descSubDiv">
+				<p class="space" id="spaceP">&nbsp;</p>
+				<span class="desc-span" id="descSpan"></span><br>
+				<p class="space" id="spaceP2">&nbsp;</p>
+				<div class="start-btn-div">
+					<button class="start-btn" id="startBtn">
+						Start
+					</button>
+				</div>
+				<p class="space" id="spaceP3">&nbsp;</p>
+			</div>
+		</div>
+		
+		<div class="bottom-img-div" id="bottomImgDiv">
+			<div class="bottom-img-sub-div" id="bottomImgSubDiv">
+				<img src="./img/earth.png" class="bottom-img"/>
+			</div>
+		</div>
+		
+		<div class="gameover-div" id="gameoverDiv">
+			<div class="gameover-sub-div" id="gameoverSubDiv">
+				<span class="gameover-span">GAME OVER</span>
+			</div>
+		</div>
+		
+		<div class="score-div" id="scoreDiv">
+			<div class="score-sub-div" id="scoreSubDiv">
+				<span class="newscore-span" id="newScore">0</span><br>
+				<span class="bestscore-span" id="bestScoreSpan">Best Score 0</span>
+				<p class="space" id="spaceP4">&nbsp;</p>
+				<div class="retry-btn-div">
+					<button class="retry-btn" id="retryBtn">
+						Retry
+					</button>
+				</div>
+				<p class="space" id="spaceP5">&nbsp;</p>
+			</div>
+		</div>
+
+		<div class="realtime-score-div" id="realtimeScoreDiv">
+			<div class="realtime-score-sub-div" id="realtimeScoreSubDiv">
+				<span class="realtime-score-span" id="realtimeScore">0</span>
+			</div>
+		</div>
+		
+		<canvas class="canvas1" id="canvas1"></canvas>
+		
+		<!-- admin-2 부분 -->
+		<div class="admin-2">
+			<ins class="kakao_ad_area" style="display:none;" 
+				data-ad-unit    = "DAN-ejw4dXniaN1ye8Km" 
+				data-ad-width   = "250" 
+				data-ad-height  = "250"></ins> 
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		</div>
+		
+		<!-- admin-3 부분 -->
+		<div class="admin-3">
+			<ins class="kakao_ad_area" style="display:none;" 
+				data-ad-unit    = "DAN-7bMhbrPPGkEWPcKr" 
+				data-ad-width   = "300" 
+				data-ad-height  = "250"></ins> 
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		</div>
+		
+		<!-- copyright 부분 -->
+		<div class="bottom">
+			<h3>ⓒ 2020. (RaccoonForest) all rights reserved.</h3>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="./js/spaceGame-fn.js"></script>
+	</body>
+</html>
