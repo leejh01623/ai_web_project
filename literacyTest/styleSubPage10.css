@@ -1,0 +1,128 @@
+.navbar-padding {
+	padding: 2% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+	line-height: 1.7;
+	color: #000000;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: #000000;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+body {
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.loading-div {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: white;
+	visibility: visible;
+}
+
+.spinner-border {
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+
+.main-div {
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+}
+
+.main-top-div {
+	height: 50px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+}
+
+.main-top-img-div {
+	display: inline-block;
+	vertical-align: top;
+    width: 30px;
+    height: 50px;
+}
+
+.main-top-title-div {
+	display: inline-block;
+	vertical-align: top;
+    width: 200px;
+    height: 50px;
+	padding-top: 7px;
+}
+
+.main-top-title {
+	
+}
+
+.main-top-img {
+	width: 100%;
+    height: 100%;
+}
+
+.main-line {
+	height: 1px;
+	clear: both;
+	background: black;
+}
+
+.main-problem-div {
+	font-size: 17px;
+	margin: 5px;
+}
+
+.admin-1 {
+	width: 320px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.admin-2 {
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.admin-3 {
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.bottom {
+	width: 100%;
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+}

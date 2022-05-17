@@ -1,0 +1,101 @@
+.navbar-padding {
+	padding: 2% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+	line-height: 1.7;
+	color: #000000;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: #000000;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+body {
+	background-color: #D2F0FD;
+	background-repeat: no-repeat;
+	
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.desc-back-div {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: #75C2C0;
+}
+
+.desc-back-img {
+	position: absolute;
+	width: 100%;
+    height: 100%;
+}
+
+.desc-back-start-button {
+	position: absolute;
+	width: 160px;
+	height: 45px;
+	margin: 0 auto;
+	margin-top: 350px;
+	margin-left: 115px;
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.desc-back-start-button-img {
+	width: 100%;
+    height: 100%;
+}
+
+.admin-1 {
+	width: 320px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.admin-2 {
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.admin-3 {
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.disqus-div {
+	margin: 10px;
+}
+
+.bottom {
+	width: 100%;
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+

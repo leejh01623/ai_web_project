@@ -1,0 +1,180 @@
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCCECYYF4K"></script>
+		<script>
+			//window.dataLayer = window.dataLayer || [];
+			//function gtag(){dataLayer.push(arguments);}
+			//gtag('js', new Date());
+
+			//gtag('config', 'G-HCCECYYF4K');
+		</script> -->
+		
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		
+		<!-- font preload -->
+		<link rel="preload" as="font" href="./font/ChosunKm.TTF" crossorigin="anonymous">
+		<link rel="preload" as="font" href="./font/ChosunSm.TTF" crossorigin="anonymous">
+		<link rel="preload" as="font" href="./font/KoPubWorld_Dotum_Medium.ttf" crossorigin="anonymous">
+		<link rel="preload" as="font" href="./font/nanumsongulssi_nuritnurit.ttf" crossorigin="anonymous">
+
+		<title>Play 자판기</title>
+		<meta name="title" content="Play 자판기 [문해력테스트]">
+		<meta name="subject" content="읽을 수는 있는데... 무슨 말이지? Σ(っ °Д °;)っ">
+		<meta name="keywords" content="해력테스트, 문해력검사, 문해력자가진단, 문해력진단검사, 성인문해력테스트, 학생문해력테스트, 청소년문해력, 당신의문해력, 문해력간단테스트, 문해력평가, 문해력문제, 문해력검사">
+		<meta name="description" content="당신의 문해력을 테스트해 보세요.">
+		<meta name="author" content="RaccoonForest">
+		
+		<link rel="stylesheet" href="styleSubPage10_1.css" />
+		<link rel="canonical" href="https://playzapangi.netlify.app/literacyTest/literacyTestDesc.html">
+		
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://playzapangi.netlify.app/literacyTest/literacyTestDesc.html" />
+		<meta property="og:title" content="Play 자판기 [문해력테스트]" />
+		<meta property="og:image" content="https://github.com/leejh01623/ai_web_project/blob/master/literacyTest/img/literacyTestThumbImg.png?raw=true" />
+		<meta property="og:description" content="당신의 문해력을 테스트해 보세요."/>
+	</head>
+	<body>
+		
+		<div class="loading-div" id="loadingDiv">
+			<div class="spinner-border text-info" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+		
+		<!-- 네비게이션바 -->
+		<nav class="navbar navbar-expand-lg navbar-light navbar-padding">
+			<button
+				class="navbar-toggler custom-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html">RaccoonForest</a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<!--
+					<li class="nav-item">
+						<a class="nav-link" href="#">Notice</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					-->
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- admin-1 부분 -->
+		<div class="admin-1">
+			<ins class="kakao_ad_area" style="display:none;" 
+				data-ad-unit    = "DAN-XtPjwdRnkknB7iWh" 
+				data-ad-width   = "320" 
+				data-ad-height  = "100"></ins> 
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		</div>
+		
+		<!-- description 부분 -->
+		<div class="desc-back-div" id="descBackDiv">
+			<div class="res-title-div">
+				<span id="resTitle">2022년도 Play자판기 문해능력고사 문제지</span>
+			</div>
+			<div class="res-top-div">
+				<div class="res-top-img-div">
+					<img src="./img/main_top_left.png" class="res-top-img">
+				</div>
+				<div class="res-top-title-div">
+					<span class="res-top-title" id="resTopTitle">테스트 결과</span>
+				</div>
+				<div class="res-top-img-div">
+					<img src="./img/main_top_right.png" class="res-top-img">
+				</div>
+			</div>
+			<div class="res-my-div">
+				<span id="resMy">나의 문해력은?</span>
+			</div>
+			
+			<div class="res-level-div">
+				<span id="resLevel"></span>
+			</div>
+			
+			<div class="res-desc-div">
+				<div class="res-desc-title-div">
+					<span class="res-desc-title-sub-div" id="resDescTitle">
+						
+					</span>
+				</div>
+				<div class="res-desc-sub-div">
+					<span class="res-desc-sub-sub-div" id="resDescSub">
+						
+					</span>
+				</div>
+			</div>
+			
+			<div class="share-div">
+				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<div class="addthis_inline_share_toolbox_t3s9"></div>
+			</div>
+			
+			<div class="res-restart-div">
+				<div class="res-restart-button" id="restartBtn">
+					<img src="./img/res_restart.png" class="res-restart-button-img">
+				</div>
+			</div>
+		</div>
+		
+		<!-- admin-2 부분 -->
+		<div class="admin-2">
+			<ins class="kakao_ad_area" style="display:none;" 
+				data-ad-unit    = "DAN-jvKD7lt3UapYPKnM" 
+				data-ad-width   = "250" 
+				data-ad-height  = "250"></ins> 
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		</div>
+
+		<!-- admin-3 부분 -->
+		<div class="admin-3">
+			<ins class="kakao_ad_area" style="display:none;" 
+				data-ad-unit    = "DAN-IRDoZ4VeFoU9kI9R" 
+				data-ad-width   = "300" 
+				data-ad-height  = "250"></ins> 
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		</div>
+		
+		<!-- copyright 부분 -->
+		<div class="bottom">
+			<h6>ⓒ 2020. (RaccoonForest) all rights reserved.</h6>
+		</div>
+		
+		<!-- ///////////////////////////////////////////////////////////////// -->
+		<script type="module" src="./js/literacyTestResult-fn.js"></script>
+		<!-- ///////////////////////////////////////////////////////////////// -->
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1f0db73bbe7b4a">			</script>
+	</body>
+</html>

@@ -173,6 +173,10 @@ body {
 	text-align: center;
 }
 
+.disqus-div {
+	margin: 10px;
+}
+
 .bottom {
 	width: 100%;
 	color: black;
