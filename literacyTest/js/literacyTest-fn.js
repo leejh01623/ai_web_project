@@ -13,19 +13,6 @@ var score = 0;
 var titleDiv;
 var problemImgDiv;
 var problemDiv;
-// https://stackoverflow.com/questions/11355147/font-face-changing-via-javascript
-
-// To Do 
-// raw 데이터 완성하기 OK!
-// 폰트적용하기 OK!
-// 이미지 해상도 한번 더 보기 OK!
-// raw 데이터에 정답 추가하고, score 변수 만들기 OK!
-// 결과 페이지 만들기 OK!
-// 공유버튼 어떻게 할지
-// 코드 정리
-// 폰트 첫 번째 페이지일 떄 미리 로드해놓고 할 수 있는지 OK!
-// 정답 보기 클릭 한후에 해당 텍스트 볼드 주고 1~2초 정도 텀 준후 페이지 이동
-// 페이지 마다 로딩바 화면 만들기
 
 // raw.txt 읽어오기
 readFile("./raw/raw.txt");
@@ -259,6 +246,7 @@ function setMainDivBackground(num){
 	}
 }
 
+// 폰트 설정
 function setFont(fontStyle, font, textSpan, fontSize, lineHeight){
 	fontStyle.load().then(function(loaded_face) {
 		// use font here
@@ -432,13 +420,6 @@ function readFile(file){
 }
 
 document.fonts.ready.then(function() {
-	//Run after all  FontFaceSets are loaded
-	//console.log(document.fonts.status);
 	loadingDiv.style.visibility = 'hidden';
 });
 
-var stopFunc = function (e) {
-	e.preventDefault();
-	e.stopPropagation();
-	return false;
-};

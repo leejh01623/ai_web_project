@@ -112,7 +112,5 @@ window.onload = function(){
 };
 
 document.fonts.ready.then(function() {
-	//Run after all  FontFaceSets are loaded
-	//console.log(document.fonts.status);
 	loadingDiv.style.visibility = 'hidden';
 });
