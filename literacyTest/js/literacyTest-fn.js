@@ -13,6 +13,7 @@ var score = 0;
 var titleDiv;
 var problemImgDiv;
 var problemDiv;
+var mainBottomText;
 
 // raw.txt 읽어오기
 readFile("./raw/raw.txt");
@@ -20,13 +21,22 @@ readFile("./raw/raw.txt");
 mainTopTitle = document.getElementById("mainTopTitle");
 mainDiv = document.getElementById("mainDiv");
 mainProblem = document.getElementById("mainProblem");
+mainBottomText = document.getElementById("mainBottomText");
 
 setMainTopTitle();
 
 setProblem(problemCount);
 
+setMainBottomText(problemCount);
+
 function setMainTopTitle(){
 	setFont(chosunKmfont, "chosunkm", mainTopTitle, "33px", "normal");
+}
+
+function setMainBottomText(bottomCount){
+	setFont(kdmfont, "kdm", mainBottomText, "15px", "normal");
+	var count = parseInt(bottomCount) + 1;
+	mainBottomText.innerHTML = count + " / 10";
 }
 
 function setCorrectDiv(num, problemArr){
@@ -125,6 +135,8 @@ function setCorrectDiv(num, problemArr){
 			// 클릭 이벤트 리스너 추가
 			if(correctMainSpan != ""){
 				correctMainSpan.addEventListener('click', (e) => {
+					window.scrollTo(0,0);
+					
 					// 클릭한 후에 보기 영역 클릭 안되게 방지!!
 					correctDiv.style.pointerEvents = "none";
 					
@@ -149,6 +161,7 @@ function setCorrectDiv(num, problemArr){
 						
 						if(num < 10){
 							setProblem(num);
+							setMainBottomText(num);
 						} else {
 							gotoResultPage();
 						}
@@ -233,14 +246,16 @@ function setMainDivBackground(num){
 	}
 	
 	mainDiv.style.width = "400px";
-	if(num == 6){
-		mainDiv.style.height = "700px";
+	if(num == 5){
+		mainDiv.style.height = "500px";
+	} else if(num == 6){
+		mainDiv.style.height = "730px";
 	} else if(num == 7) {
-		mainDiv.style.height = "600px";
+		mainDiv.style.height = "630px";
 	} else if(num == 8) {
-		mainDiv.style.height = "550px";
+		mainDiv.style.height = "560px";
 	} else if(num == 9) {
-		mainDiv.style.height = "600px";
+		mainDiv.style.height = "610px";
 	} else {
 		mainDiv.style.height = "450px";
 	}

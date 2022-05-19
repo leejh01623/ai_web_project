@@ -51,6 +51,7 @@ body {
 }
 
 .main-div {
+	position: relative;
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -97,6 +98,17 @@ body {
 .main-problem-div {
 	font-size: 17px;
 	margin: 5px;
+}
+
+.main-bottom-div {
+	position: absolute;
+	width: 400px;
+	bottom: 10px;
+	text-align: center;
+}
+
+.main-bottom-text {
+	
 }
 
 .admin-1 {
