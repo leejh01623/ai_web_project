@@ -135,7 +135,7 @@ function setCorrectDiv(num, problemArr){
 			// 클릭 이벤트 리스너 추가
 			if(correctMainSpan != ""){
 				correctMainSpan.addEventListener('click', (e) => {
-					window.scrollTo(0,0);
+					
 					
 					// 클릭한 후에 보기 영역 클릭 안되게 방지!!
 					correctDiv.style.pointerEvents = "none";
@@ -162,6 +162,7 @@ function setCorrectDiv(num, problemArr){
 						if(num < 10){
 							setProblem(num);
 							setMainBottomText(num);
+							window.scrollTo(0,0);
 						} else {
 							gotoResultPage();
 						}
