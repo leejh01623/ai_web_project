@@ -106,7 +106,7 @@ function setCorrectDiv(num, problemArr){
 					setFont(kdmfont, "kdm", correctMainSpan, "15px", "1.6");
 					
 					if(num == 0){
-						correctMainSpan.style.width = "70px";
+						correctMainSpan.style.width = "100px";
 						correctMainSpan.style.display = "inline-block";
 						correctMainSpan.style.textAlign = "center";
 					} else if(num == 1){
@@ -114,7 +114,7 @@ function setCorrectDiv(num, problemArr){
 						correctMainSpan.style.display = "inline-block";
 						correctMainSpan.style.textAlign = "center";
 					} else if(num == 3){
-						correctMainSpan.style.width = "100px";
+						correctMainSpan.style.width = "70px";
 						correctMainSpan.style.display = "inline-block";
 						correctMainSpan.style.textAlign = "center";
 					} else if(num == 7){
@@ -247,17 +247,17 @@ function setMainDivBackground(num){
 	
 	mainDiv.style.width = "400px";
 	if(num == 5){
-		mainDiv.style.height = "500px";
+		//mainDiv.style.height = "500px";
 	} else if(num == 6){
-		mainDiv.style.height = "730px";
+		//mainDiv.style.height = "730px";
 	} else if(num == 7) {
-		mainDiv.style.height = "630px";
+		//mainDiv.style.height = "630px";
 	} else if(num == 8) {
-		mainDiv.style.height = "560px";
+		//mainDiv.style.height = "560px";
 	} else if(num == 9) {
-		mainDiv.style.height = "610px";
+		//mainDiv.style.height = "610px";
 	} else {
-		mainDiv.style.height = "450px";
+		//mainDiv.style.height = "450px";
 	}
 }
 
@@ -354,13 +354,13 @@ function setCorrectSubDiv(num, problemArr, correctDiv){
 			correctSubSpan.style.display = "inline-block";
 			
 			if(num == 0){
-				correctSubSpan.style.width = "70px";
+				correctSubSpan.style.width = "100px";
 				correctSubSpan.style.textAlign = "center";
 			} else if(num == 1){
 				correctSubSpan.style.width = "100px";
 				correctSubSpan.style.textAlign = "center";
 			} else if(num == 3){
-				correctSubSpan.style.width = "100px";
+				correctSubSpan.style.width = "70px";
 				correctSubSpan.style.textAlign = "center";
 			} else if(num == 7){
 				correctSubSpan.style.width = "100px";
