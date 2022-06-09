@@ -59,7 +59,7 @@ body {
 	position: absolute;
 	width: 250px;
 	height: 50px;
-	top: 50px;
+	top: 60px;
 	left: 70px;
 	text-align: center;
 }
@@ -73,13 +73,13 @@ body {
 	position: absolute;
 	width: 140px;
 	height: 90px;
-	top: 100px;
+	top: 110px;
 	left: 125px;
 	text-align: center;
 }
 
 .desc-back-top-score-text {
-	font-size: 63px;
+	font-size: 51px;
 	font-family: "tmonsori";
 }
 
