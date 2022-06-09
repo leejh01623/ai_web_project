@@ -57,7 +57,11 @@ function startTimer(duration, isPause){
 
 // 상단 라운드 번호 set
 function setTopRoundNum(){
-	roundText.innerHTML = "Round " + roundNum;
+	if(pageCount == 0){
+		roundText.innerHTML = "Round " + roundNum;
+	} else {
+		roundText.innerHTML = "정답 확인!";
+	}
 }
 
 // 문제 이미지 set
@@ -81,6 +85,7 @@ document.addEventListener('click', (e) => {
 	if(answer == "num1" || answer == "num2" || answer == "num3" || answer == "num4" || answer == "num5"){
 		calcScore(answer);
 		setProblemImg();
+		setTopRoundNum();
 		nextBtn.innerHTML = "<img src='./img/next_button.png' id='nextBtnId' style='width: 100%; height: 100%;'>";
 	}
 	
@@ -105,19 +110,6 @@ function setProgress(){
 	roundNumProgress.innerHTML = roundNum + " / 10";
 	roundNumProgress.style.width = parseInt(roundNum) * 10 + "%";
 }
-
-/*
-// 다음 문제 함수
-nextBtn.addEventListener('click', () => {
-	roundNum++;
-	pageCount = 0;
-	setTopClockNum();
-	setTopRoundNum();
-	nextBtn.innerHTML = "";
-	setProblemImg();
-	setProgress();
-});
-*/
 
 // 점수 계산 함수
 function calcScore(answer){
