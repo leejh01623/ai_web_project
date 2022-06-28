@@ -1,0 +1,344 @@
+@font-face {
+	src: url("../font/Syi1570352276011.ttf");
+	font-family: "somin";
+}
+
+.nav-div {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.navbar-padding {
+	padding: 2% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+	line-height: 1.7;
+	color: #000000;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: #000000;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+body {
+	background-color: white;
+	background-repeat: no-repeat;
+	
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.main-back-div {
+	position: relative;
+	width: 680px;
+	height: 844px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: white;
+	border: 1px solid black;
+}
+
+.main-top-div {
+	height: 62px;
+	margin: 0 auto;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+.main-top-title-div {
+	float: left;
+	width: 405px;
+	height: 50px;
+	margin: 5px;
+	text-align: center;
+}
+
+.main-top-title {
+	font-size: 35px;
+	font-family: "somin";
+	font-weight: bold;
+}
+
+.main-top-weather-div {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+}
+
+.main-top-weather-div:hover {
+	background: #cdcfd1;
+}
+
+.weather-button {
+	width: 100%;
+	height: 100%;
+}
+
+.main-top-date {
+	float: left;
+	height: 100%;
+	text-align: center;
+}
+
+.main-top-date-text {
+	display:inline-block;
+	margin-top: 7px;
+	font-size: 30px;
+	font-family: "somin";
+	font-weight: bold;
+}
+
+.main-top-date-weather {
+	width: 50px; 
+	height: 50px; 
+	margin: 0 auto; 
+	margin-top: 5px;
+}
+
+.main-picture-div {
+	width: 660px;
+	height: 400px;
+	margin: 0 auto;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+.picture-canvas {
+	background-color: white;
+}
+
+.main-edit-div {
+	height: 62px;
+	margin: 0 auto;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+.edit-button {
+	width: 100%;
+	height: 100%;
+}
+
+.main-edit-line-div {
+	float: left;
+	width: 265px;
+	height: 50px;
+	margin: 5px;
+}
+
+.dropdown-menu {
+	width: 265px;
+}
+
+.main-edit-color-div {
+	float: left;
+	width: 100px;
+	height: 50px;
+	margin: 5px;
+}
+
+.main-edit-color-div:hover {
+	background: #cdcfd1;
+}
+
+.main-edit-pen-erase-div {
+	float: left;
+	width: 80px;
+	height: 50px;
+	margin: 5px;
+	border: 1px solid black;
+}
+
+.main-edit-pen-erase-div:hover {
+	background: #cdcfd1;
+}
+
+
+.weather-edit-button:hover {
+	
+}
+
+.main-title-div {
+	height: 60px;
+	margin: 0 auto;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+.main-title {
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: transparent;
+	font-size: 35px;
+	font-family: 'somin';
+	font-weight: bold;
+}
+
+.main-desc-div {
+	position: relative;
+	height: 200px;
+	margin: 0 auto;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+.main-desc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: none;
+	resize: none;
+	background: transparent;
+	font-size: 35px;
+	font-family: 'somin';
+	font-weight: bold;
+}
+
+.main-desc-count {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	font-family: 'somin';
+	font-size: 35px;
+}
+
+table {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+} 
+
+tr {
+	border: 1px solid black;
+}
+
+td {
+	width: 10%;
+	height: 20%;
+	font-size: 20px;
+	font-family: "somin";
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.main-res-button-div {
+	width: 150px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.main-res-button-text {
+	width: 100%;
+	height: 100%;
+	font-size: 33px;
+	font-family: "somin";
+	font-weight: bold;
+}
+
+.admin-1 {
+	width: 320px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.bottom {
+	width: 100%;
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+@media(max-width: 700px){
+	.main-back-div {
+		width: 400px;
+		height: 676px;
+	}
+	
+	.main-top-title-div {
+		width: 125px;
+	}
+	
+	.main-top-title {
+		font-size: 33px;
+	}
+	
+	.main-top-date-text {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+	
+	.main-top-date-weather {
+		width: 30px; 
+		height: 30px; 
+		margin-top: 10px;
+	}
+	
+	.main-picture-div {
+		width: 380px;
+		height: 250px;
+	}
+	
+	.main-edit-line-div {
+		width: 115px;
+	}
+	
+	.dropdown-menu {
+		width: 115px;
+	}
+	
+	.main-edit-color-div {
+		width: 60px;
+	}
+	
+	.main-edit-pen-erase-div {
+		width: 50px;
+	}
+	
+	.main-title-div {
+		height: 40px;
+		margin: 0 auto;
+		margin: 10px;
+		border: 1px solid black;
+	}
+	
+	.main-title {
+		font-size: 25px;
+	}
+	
+	.main-desc {
+		font-size: 25px;
+	}
+}
+
+@media(max-width: 940px){
+	.nav-div {
+		width: auto;
+	}
+	
+	
+}

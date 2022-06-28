@@ -48,330 +48,437 @@
 	</head>
 	<body>		
 		<!-- body 영역 -->
-		<div class="background_img">
-			<div class="top">
-				<div class="top_title">
-					Play 자판기
-				</div>
+		<div class="main-div">
+			<div class="top-div">
+				플레이자판기
 			</div>
+			
+			<div class="middle-div">
+				<div class="middle-left-div">
+					<div class="middle-left-title">
+						Play Fun
+					</div>
+					
+					<div class="middle-left-item-list">
+						<!-- 순간기억력 테스트 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img class="img" src="./img/instantMemoryTest.png" alt="instantMemoryTest">
+								</div>
+								
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
 
-			<div class="middle">
-				<div class="middle_left">
-					<div class="middle_left_top">
-						<div class="group_1_title">
-							Play Fun
-						</div>
-						
-						<div class="g_item_line">
-							<!-- 순간기억력 테스트 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotoinstantMemoryTestPage();">
-									<img class="g_1_item_img" src="img/instantMemoryTest.png" alt="instantMemoryTest"/>
-								</button>
+										</div>
+										<div class="new-text">
+											New
+										</div>
+									</div>
+								</div>
 							</div>
 							
-							<!-- 문해력 테스트 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotoliteracyTestPage();">
-									<img class="g_1_item_img" src="img/literacyTest.png" alt="literacyTest"/>
-								</button>
+							<div class="click-div instantMemoryTest">
+							
+							</div>
+						</div>
+						
+
+						<!-- 문해력 테스트 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/literacyTest.png" alt="literacyTest">
+								</div>
+								
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+											New
+										</div>
+									</div>
+								</div>
 							</div>
 							
-							<!-- MBTI TEST 1 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotombtiTest1Page();">
-									<img class="g_1_item_img" src="img/mbtiTest1.png" alt="mbtiTest1"/>
-								</button>
-							</div>
-						</div>
-						
-						<div class="g_item_line_bottom">
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									<div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-									
-									<div class="g_item_line_bottom_btn_new">
-										<span class="g_item_line_bottom_btn_new_text">New</span>
-									</div>
-								</div>
-							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									<div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-									
-									<div class="g_item_line_bottom_btn_new">
-										<span class="g_item_line_bottom_btn_new_text">New</span>
-									</div>
-								</div>
-							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									<div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-									
-									<div class="g_item_line_bottom_btn_new">
-										<span class="g_item_line_bottom_btn_new_text">New</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="g_item_line">
-							<!-- Space Game -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotospaceGamePage();">
-									<img class="g_1_item_img" src="img/spaceGame.png" alt="spaceGame"/>
-								</button>
-							</div>
+							<div class="click-div literacyTest">
 							
-							<!-- 유행어 능력평가 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotobuzzwordQuizPage();">
-									<img class="g_1_item_img" src="img/buzzwordQuizIcon_1.PNG" alt="buzzwordQuizIcon_1"/>
-								</button>
 							</div>
-							
-							<!-- 아기동물퀴즈 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotobabyanimalsQuizPage();">
-									<img class="g_1_item_img" src="img/babyanimalsQuiz.png" alt="babyanimalsQuiz"/>
-								</button>
-							</div>
-						</div>
-						
-						<div class="g_item_line_bottom">
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									<div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-								</div>
-							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									 <div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-								</div>
-							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									 <div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="g_item_line">
-							<!-- 청결도 테스트 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotoCleanscorePage();">
-									<img class="g_1_item_img" src="img/cleantest.png" alt="cleantest"/>
-								</button>
-							</div>
-							
-							<!-- 그림일기 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotoPage();">
-									<img class="g_1_item_img" src="img/picturediary.png" alt="picturediary"/>
-								</button>
-							</div>
-							
-							<!-- 행운 로또 에측 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotoLottoPage();">
-									<img class="g_1_item_img" src="img/lotto.png" alt="lotto"/>
-								</button>
-							</div>
-						</div>
-						
-						<div class="g_item_line_bottom">
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									<div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-								</div>
-							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									 <div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-								</div>
-							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									 <div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="g_item_line">
-							<!-- 신조어 테스트 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotoAbbreviationPage();">
-									<img class="g_1_item_img" src="img/abbreviation.png" alt="abbreviation"/>
-								</button>
-							</div>
-							
-							<!-- 무인도 인생극장 -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="gotoSurviveGamePage();">
-									<img class="g_1_item_img" src="img/survive.png" alt="survive"/>
-								</button>
-							</div>
-							
-							<!-- ??? -->
-							<div class="g_1_item">
-								<button class="g_1_item_btn" onclick="developingFunc();">
-									<img class="g_1_item_img" src="img/comming1.png" alt="comming"/>
-								</button>
-							</div>
-						</div>
-						
-						<div class="g_item_line_bottom">
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									<div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-								</div>
-							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									 <div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-								</div>
-							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									 <div class="g_item_line_bottom_btn_red">
-										 
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="group_2_title">
-							Play AI Test
 						</div>
 
-						<div class="g_item_line">
-							<!-- 나와 닮은 아이돌은? -->
-							<div class="g_2_item">
-								<button class="g_2_item_btn" onclick="gotoMatchIdolPage();">
-									<img class="g_1_item_img" src="img/ai1.png" alt="ai1"/>
-								</button>
+						<!-- MBTI TEST 1 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/mbtiTest1.png" alt="mbtiTest1">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+											New
+										</div>
+									</div>
+								</div>
 							</div>
-							<!-- 나의 얼굴형은? -->
-							<div class="g_2_item">
-								<button class="g_2_item_btn" onclick="gotoFaceStylePage();">
-									<img class="g_1_item_img" src="img/ai2.png" alt="ai2"/>
-								</button>
-							</div>
-							<!-- 나의 얼굴상은? -->
-							<div class="g_2_item">
-								<button class="g_2_item_btn" onclick="gotoFaceLookPage();">
-									<img class="g_1_item_img" src="img/ai3.png" alt="ai3"/>
-								</button>
+							
+							<div class="click-div mbtiTest1">
+							
 							</div>
 						</div>
-						
-						<div class="g_item_line_bottom">
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									<div class="g_item_line_bottom_btn_red">
-										 
+
+						<!-- Space Game -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/spaceGame.png" alt="spaceGame">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									 <div class="g_item_line_bottom_btn_red">
-										 
+							
+							<div class="click-div spaceGame">
+							
+							</div>
+						</div>
+
+						<!-- 유행어 능력평가 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/buzzwordQuizIcon_1.PNG" alt="buzzwordQuizIcon_1">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="g_item_line_bottom_btn_section">
-								<div class="g_item_line_bottom_btn">
-									 <div class="g_item_line_bottom_btn_red">
-										 
+							
+							<div class="click-div buzzwordQuiz">
+							
+							</div>
+						</div>
+
+						<!-- 아기동물퀴즈 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/babyanimalsQuiz.png" alt="babyanimalsQuiz">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
 									</div>
 								</div>
+							</div>
+							
+							<div class="click-div babyanimalsQuiz">
+							
+							</div>
+						</div>
+
+						<!-- 청결도 테스트 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/cleantest.png" alt="cleantest">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="click-div cleanTest">
+							
+							</div>
+						</div>
+
+						<!-- 그림일기 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/picturediary.png" alt="picturediary">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="click-div pictureDiary">
+							
+							</div>
+						</div>
+
+						<!-- 행운 로또 에측 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/lotto.png" alt="lotto">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="click-div lottoPrediction">
+							
+							</div>
+						</div>
+
+						<!-- 신조어 테스트 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/abbreviation.png" alt="abbreviation">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="click-div abbreviationTest">
+							
+							</div>
+						</div>
+
+						<!-- 무인도 인생극장 -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/survive.png" alt="survive">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="click-div surviveTest">
+							
+							</div>
+						</div>
+
+						<!-- ??? -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/comming1.png" alt="comming">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="click-div comming1">
+							
 							</div>
 						</div>
 					</div>
 					
-					<div class="middle_left_bottom">
-						<div class="middle_left_bottom_title">
-							RaccoonForest
+					<div class="middle-left-title" style="border-radius: 0px;">
+						Play AI Test
+					</div>
+					
+					<div class="middle-left-item-list">
+						<!-- 나와 닮은 아이돌은? -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/ai1.png" alt="ai1">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="click-div aiTest1">
+							
+							</div>
+						</div>
+
+						<!-- 나의 얼굴형은? -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/ai2.png" alt="ai2">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="click-div aiTest2">
+							
+							</div>
+						</div>
+
+						<!-- 나의 얼굴상은? -->
+						<div class="middle-item-div">
+							<div class="middle-img-text-div">
+								<div class="middle-item">
+									<img src="./img/ai3.png" alt="ai3">
+								</div>
+								<div class="middle-item-button-div">
+									<div class="middle-item-button">
+										<div class="red-button">
+
+										</div>
+										<div class="new-text">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="click-div aiTest3">
+							
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="middle_right">
-					<div class="middle_right_title">
-						RaccoonForest
-					</div>
-					<div class="middle_right_top">
-						<MARQUEE class="middle_right_top_move" scrollamount=3>영업중</MARQUEE>
-					</div>
-					<div class="middle_right_cash">
-						<img src="./img/cash_input.png" class="middle_right_cash_img"/>
-					</div>
-					<div class="middle_right_middle">
+				<div class="middle-right-div">
+					<div class="middle-right-title">
 						
 					</div>
-					<div class="middle_right_coin">
-						<img src="./img/coin_input.png" class="middle_right_coin_img"/>
+					<div class="middle-right-top">
+						<div class="middle-right-item">
+							<MARQUEE class="middle_right_top_move" scrollamount=3>영업중</MARQUEE>
+						</div>
 					</div>
-					<div class="middle_right_bottom">
-						
+					<div class="middle-right-cash">
+						<div class="middle-right-item">
+							<div style="width: 90%; height: 40px; margin: 0 auto;">
+								<img src="./img/cash_input.png" alt="cash_input">
+							</div>
+						</div>
+					</div>
+					<div class="middle-right-middle">
+						<div class="middle-right-item" style="height: 30px; border: 1px solid #A6A6A6; border-radius: 5px;">
+							
+						</div>
+					</div>
+					<div class="middle-right-coin">
+						<div style="width: 100%; height: 50px;">
+							<img src="./img/coin_input.png" alt="coin_input">
+						</div>
+					</div>
+					<div class="middle-right-bottom">
+						<div class="middle-right-item" style="width: 50px;">
+							
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="bottom">
-
+			
+			<div class="bottom-div">
+				<div class="bottom-item">
+					RaccoonForest
+				</div>
 			</div>
 		</div>
 		
 		<div class="admin-1">
-			<!--
-			<div style="width:320px; height: 100px;">
-
+			<div class="admin-div">
+				<ins class="kakao_ad_area" style="display:none;" 
+					 data-ad-unit    = "DAN-rkxa9uond84h" 
+					 data-ad-width   = "320" 
+					 data-ad-height  = "100"></ins> 
 			</div>
-			 -->
-			<ins class="kakao_ad_area" style="display:none;" 
-			 data-ad-unit    = "DAN-rkxa9uond84h" 
-			 data-ad-width   = "320" 
-			 data-ad-height  = "100"></ins> 
-
 		</div>
 		
-		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-		
-		<div class="bottom">
+		<div class="copyright">
 			<h6>ⓒ 2020. (RaccoonForest) all rights reserved.</h6>
 		</div>
 		
+		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
 		<script src="js/index-fn.js"></script>
 		
 		<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	</body>
 	<!--Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HCCECYYF4K"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-HCCECYYF4K');
+		</script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="styleSubPage1.css" />
+		<title>Play 자판기</title>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	</head>
+
+	<body onload="init()">
+		<div style="
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+				">
+			<div
+				style="
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				">
+				<textarea id="dailytitleTextarea" cols="25" rows="5" style="font-size: 16pt; margin: 10px;" placeholder="일기를 써주세요.&#13;&#10;&#40;최대 50자&#41;" onKeyUp="javascript:textSizeChk(this,'50')"></textarea>
+			</div>
+
+			<div 
+				 style="
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				">
+				<button type="button" id="textareaInput" class="btn btn-success" style="margin-left: 5px; margin-right: 5px;" onclick="inputFunc()">입력</button>
+				<button type="button" id="textareaCancel" class="btn btn-success" style="margin-left: 5px; margin-right: 5px;" onclick="cancelFunc()">닫기</button>
+			</div>
+		</div>
+		
+		<script src="picturediary-fn.js"></script>
+	</body>
+</html>

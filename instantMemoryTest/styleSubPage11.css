@@ -1,6 +1,11 @@
 @font-face {
-	src: url("./font/TMONMONSORI.TTF");
+	src: url("../font/TMONMONSORI.TTF");
 	font-family: "tmonsori";
+}
+
+.nav-div {
+	width: 940px;
+	margin: 0 auto;
 }
 
 .navbar-padding {
@@ -42,8 +47,8 @@ body {
 
 .main-back-div {
 	position: relative;
-	width: 400px;
-	height: 400px;
+	width: 680px;
+	height: 650px;
 	margin: 0 auto;
 	margin-top: 10px;
 	background: white;
@@ -51,28 +56,28 @@ body {
 
 .main-top-div {
 	position: relative;
-	width: 400px;
-	height: 70px;
+	width: 680px;
+	height: 100px;
 }
 
 .main-top-back-div {
 	position: absolute;
-	width: 400px;
-	height: 40px;
+	width: 680px;
+	height: 60px;
 	margin-top: 20px;
 	background: #fbf3dc;
 	text-align: center;
 }
 
 .main-top-back-text {
-	font-size: 27px;
+	font-size: 42px;
 	font-family: "tmonsori";
 }
 
 .main-top-img-div {
 	position: absolute;
-	width: 70px;
-	height: 70px;
+	width: 90px;
+	height: 90px;
 	margin-left: 15px;
 }
 
@@ -84,23 +89,23 @@ body {
 
 .main-top-img-text {
 	position: absolute;
-	font-size: 48px;
+	font-size: 60px;
 	font-family: "tmonsori";
-	top: 6px;
-	left: 22px;
+	top: 10px;
+	left: 29px;
 }
 
 .main-top-next-button-div {
 	position: absolute;
-	width: 80px;
-	height: 50px;
-	left: 290px;
+	width: 100px;
+	height: 60px;
+	left: 530px;
 	margin-top: 15px;
 }
 
 .main-problem-div {
-	width: 280px;
-	height: 280px;
+	width: 480px;
+	height: 480px;
 	border: 2px solid black;
 	box-shadow: 3px 3px;
 	margin: 0 auto;
@@ -113,40 +118,40 @@ body {
 }
 
 .problem-top-div {
-	width: 280px;
+	width: 480px;
 	padding: 10px;
 }
 .problem-top-text {
-	font-size: 15px;
+	font-size: 30px;
 	font-family: "tmonsori";
 }
 .problem-bottom-div {
-	width: 280px;
-	height: 180px;
+	width: 480px;
+	height: 380px;
 	padding: 10px;
 }
 .problem-bottom-num {
 	display: inline-block;
-	width: 40px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 	margin-right: 10px;
 	margin-bottom: 3px;
-	font-size: 17px;
+	font-size: 30px;
 	font-family: "tmonsori";
 	text-align: center;
 }
 .problem-bottom-text {
 	display: inline-block;
-	width: 200px;
-	height: 30px;
+	width: 380px;
+	height: 60px;
 	margin-bottom: 3px;
-	font-size: 17px;
+	font-size: 30px;
 	font-family: "tmonsori";
 }
 
 .main-problem-number-div {
-	width: 300px;
-	height: 40px;
+	width: 500px;
+	height: 50px;
 	margin: 0 auto;
 	margin-top: 5px;
 	padding-top: 10px;
@@ -183,4 +188,84 @@ body {
 	margin-top: 15px;
 	margin-bottom: 20px;
 	text-align: center;
+}
+
+@media(max-width: 700px){
+	.main-back-div {
+		width: 400px;
+		height: 400px;
+	}
+	
+	.main-top-div {
+		width: 400px;
+		height: 70px;
+	}
+	
+	.main-top-back-div {
+		width: 400px;
+		height: 40px;
+	}
+	
+	.main-top-back-text {
+		font-size: 27px;
+	}
+	
+	.main-top-img-div {
+		width: 70px;
+		height: 70px;
+	}
+	
+	.main-top-img-text {
+		font-size: 48px;
+		top: 6px;
+		left: 22px;
+	}
+	
+	.main-top-next-button-div {
+		width: 80px;
+		height: 50px;
+		left: 290px;
+		margin-top: 15px;
+	}
+
+	.main-problem-div {
+		width: 280px;
+		height: 280px;
+	}
+	
+	.problem-top-div {
+		width: 280px;
+	}
+	
+	.problem-top-text {
+		font-size: 15px;
+	}
+	
+	.problem-bottom-div {
+		width: 280px;
+		height: 180px;
+	}
+	
+	.problem-bottom-num {
+		width: 40px;
+		height: 30px;
+		font-size: 17px;
+	}
+	
+	.problem-bottom-text {
+		width: 200px;
+		height: 30px;
+		font-size: 17px;
+	}
+	
+	.main-problem-number-div {
+		width: 300px;
+		height: 40px;
+	}
+}
+
+@media(max-width: 940px){
+	.nav-div {
+		width: auto;
+	}
 }

@@ -23,7 +23,7 @@ function setScoreComment(score){
 			comment = "깜빡깜빡<br>금붕어 기억력...<br>우리 좀 더<br>분발해 보아요!!";
 			break;
 		case 5: case 6:
-			comment = "조금만 더 집중해서 기억해 보는 건<br>어떨까요? ";
+			comment = "조금만 더 집중해서<br>기억해 보는 건<br>어떨까요? ";
 			break;
 		case 7: case 8:
 			comment = "기억력이<br>평균 이상이시군요!!";
