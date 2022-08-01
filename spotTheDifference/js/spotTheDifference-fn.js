@@ -7,7 +7,8 @@ var lifeCount = 3;
 var life1 = document.getElementById("life1");
 var life2 = document.getElementById("life2");
 var life3 = document.getElementById("life3");
-var timerBar = document.getElementById("timerBar")
+var timerBar = document.getElementById("timerBar");
+var clock;
 
 var imgNum = 1;
 var imgLeft = document.getElementById("imgLeft");
@@ -76,6 +77,7 @@ setInit();
 
 function setInit(){
 	corCount = 0;
+	clearInterval(clock);
 	
 	if(imgNum == 6){
 		showRes("success");
@@ -230,8 +232,8 @@ function setTopClockNum(){
 	var endTime = 100;
 	var isPause = false;
 	var rI = document.getElementById("rightImg");
-	timerBar.style.width = endTime + "%";
 	
+	timerBar.style.width = endTime + "%";
 	rI.onload = function(){
 		startTimer(endTime, isPause);
 	};
@@ -239,19 +241,20 @@ function setTopClockNum(){
 
 // 타이머 함수
 function startTimer(endTime, isPause){
-	var x = setInterval(function() {
+	clock = setInterval(function() {
 		if(!isPause){
 			endTime--;
+			//console.log(endTime);
 			timerBar.style.width = endTime + "%";
 			//timerBar.innerHTML = endTime;
 			
 			if(endTime < 0){
-				clearInterval(x);
+				clearInterval(clock);
 				isPause = true;
 				//clockNum.innerHTML = "0";
 				//setProblemText();
 				showRes("fail");
-			} 
+			}
 		}
 	}, 300);
 }
