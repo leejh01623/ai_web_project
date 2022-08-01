@@ -6,6 +6,9 @@ document.addEventListener('click', (e) => {
 
 function gotoPage(item){
 	switch(item){
+		case "spotTheDifference":
+			location.href = "spotTheDifference/spotTheDifferenceDesc.html";
+			break;
 		case "instantMemoryTest":
 			location.href = "instantMemoryTest/instantMemoryTestDesc.html";
 			break;
