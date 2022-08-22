@@ -1,0 +1,199 @@
+@font-face {
+	src: url("../font/TMONMONSORI.TTF");
+	font-family: "tmonsori";
+}
+
+.nav-div {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.navbar-padding {
+	padding: 2% 3%;
+}
+
+.navbar-light .navbar-brand {
+	line-height: 1.7;
+	text-align: right;
+	color: #000000;
+	font-weight: bold;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+	line-height: 1.7;
+	color: #000000;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: #000000;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+body {
+	background-color: white;
+	background-repeat: no-repeat;
+	
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.desc-back-div {
+	position: relative;
+	width: 600px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: #57ddac;
+}
+
+.desc-back-title-div {
+	position: absolute;
+	width: 500px;
+	height: 145px;
+	top: 70px;
+	left: 50px;
+	text-align: center;
+}
+
+.desc-back-title {
+	color: white;
+	text-shadow: 2px 2px 2px gray;
+	font-size: 50px;
+	font-family: "tmonsori";
+}
+
+.desc-back-sub-title-div {
+	position: absolute;
+	width: 500px;
+	height: 100px;
+	top: 220px;
+	left: 50px;
+	text-align: center;
+}
+
+.desc-back-sub-title {
+	color: white;
+	text-shadow: 2px 2px 2px gray;
+	font-size: 22px;
+	font-family: "tmonsori";
+}
+
+.desc-back-start-button {
+	position: absolute;
+	width: 250px;
+	height: 70px;
+	top: 370px;
+	left: 175px;
+	padding-top: 8px;
+	border: none;
+	border-radius: 40px;
+	background: white;
+	box-shadow: 2px 2px 2px gray;
+	text-align: center;
+}
+
+.desc-back-start-button-text {
+	color: #57ddac;
+	font-size: 40px;
+	font-family: "tmonsori";
+}
+
+.admin-1 {
+	width: 320px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.admin-2 {
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.admin-3 {
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.disqus-div {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.bottom {
+	width: 100%;
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+@media(max-width: 700px){
+	.desc-back-div {
+		width: 350px;
+		height: 350px;
+	}
+	
+	.desc-back-title-div {
+		position: absolute;
+		width: 300px;
+		height: 120px;
+		top: 30px;
+		left: 25px;
+		text-align: center;
+	}
+
+	.desc-back-title {
+		color: white;
+		font-size: 40px;
+		font-family: "tmonsori";
+	}
+
+	.desc-back-sub-title-div {
+		position: absolute;
+		width: 300px;
+		height: 80px;
+		top: 155px;
+		left: 25px;
+		text-align: center;
+	}
+
+	.desc-back-sub-title {
+		color: white;
+		font-size: 17px;
+		font-family: "tmonsori";
+	}
+	
+	.desc-back-start-button {
+		width: 150px;
+		height: 40px;
+		top: 270px;
+		left: 100px;
+	}
+	
+	.desc-back-start-button-text {
+		font-size: 20px;
+	}
+}
+
+@media(max-width: 940px){
+	.nav-div {
+		width: auto;
+	}
+	
+	.disqus-div {
+		width: auto;
+		margin: 10px;
+	}
+}
