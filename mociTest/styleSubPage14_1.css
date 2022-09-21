@@ -45,73 +45,98 @@ body {
 	background-size: 100% 100%;
 }
 
-.desc-back-div {
+.result-back-div {
 	position: relative;
 	width: 600px;
 	height: 500px;
 	margin: 0 auto;
 	margin-top: 10px;
 	background: #14203D;
+	border: 1px solid white;
 }
 
-.desc-back-tag-div {
+.result-back-title-div {
+	position: absolute;
+	width: 500px;
+	height: 50px;
+	top: 30px;
+	left: 50px;
+	text-align: center;
+}
+
+.result-back-title {
+	color: white;
+	font-size: 30px;
+	font-family: "sans";
+}
+
+.result-back-score-div {
+	position: absolute;
+	width: 500px;
+	height: 90px;
+	top: 90px;
+	left: 50px;
+	text-align: center;
+}
+
+.result-back-score {
+	color: white;
+	font-size: 65px;
+	font-family: "sans";
+}
+
+.result-back-desc-div {
+	position: absolute;
+	width: 500px;
+	height: 210px;
+	top: 200px;
+	left: 50px;
+	text-align: center;
+}
+
+.result-back-desc {
+	color: white;
+	font-size: 20px;
+	font-family: "sans";
+}
+
+.result-back-normal-desc-div {
+	position: absolute;
+	width: 500px;
+	height: 150px;
+	top: 200px;
+	left: 50px;
+	text-align: center;
+}
+
+.result-back-normal-desc {
+	color: white;
+	font-size: 40px;
+	font-family: "sans";
+}
+
+.result-back-button-div {
 	position: absolute;
 	width: 150px;
-	height: 130px;
-	top: 40px;
-	left: 40px;
-	padding-top: 52px;
+	height: 40px;
+	top: 430px;
+	left: 225px;
+	padding-top: 3px;
 	text-align: center;
-	background: url(./img/desc_tag.png);
-	background-repeat: no-repeat;
-	
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-	
+	border: 2px solid white;
+	border-radius: 20px;
 }
 
-.desc-back-tag {
+.result-back-restart {
 	color: white;
 	font-size: 25px;
 	font-family: "sans";
 }
 
-.desc-back-title-div {
-	position: absolute;
-	width: 500px;
-	height: 90px;
-	top: 170px;
-	left: 50px;
+.share-div {
+	height: 50px;
+	margin-top: 20px;
 	text-align: center;
-	
-}
-
-.desc-back-title {
-	color: white;
-	font-size: 70px;
-	font-family: "sans";
-}
-
-.desc-back-start-button {
-	position: absolute;
-	width: 250px;
-	height: 70px;
-	top: 300px;
-	left: 175px;
-	padding-top: 8px;
-	border: none;
-	border-radius: 40px;
-	background: white;
-	box-shadow: 2px 2px 2px #a1a7b5;
-	text-align: center;
-}
-
-.desc-back-start-button-text {
-	color: #14203D;
-	font-size: 40px;
-	font-family: "sans";
 }
 
 .admin-1 {
@@ -134,11 +159,6 @@ body {
 	margin-top: 10px;
 }
 
-.disqus-div {
-	width: 940px;
-	margin: 0 auto;
-}
-
 .bottom {
 	width: 100%;
 	color: black;
@@ -148,43 +168,64 @@ body {
 }
 
 @media(max-width: 700px){
-	.desc-back-div {
+	.result-back-div {
 		width: 350px;
-		height: 300px;
+		height: 350px;
 	}
 	
-	.desc-back-tag-div {
-		width: 100px;
-		height: 80px;
+	.result-back-title-div {
+		width: 330px;
+		height: 30px;
 		top: 20px;
 		left: 10px;
-		padding-top: 33px;
 	}
 
-	.desc-back-tag {
-		font-size: 17px;
+	.result-back-title {
+		font-size: 22px;
+	}
+
+	.result-back-score-div {
+		width: 330px;
+		height: 70px;
+		top: 55px;
+		left: 10px;
+	}
+
+	.result-back-score {
+		font-size: 50px;
+	}
+
+	.result-back-desc-div {
+		width: 330px;
+		height: 160px;
+		top: 130px;
+		left: 10px;
+	}
+
+	.result-back-desc {
+		font-size: 14px;
 	}
 	
-	.desc-back-title-div {
-		width: 320px;
+	.result-back-normal-desc-div {
+		width: 330px;
 		height: 120px;
-		top: 100px;
-		left: 15px;
-	}
-
-	.desc-back-title {
-		font-size: 45px;
-	}
-
-	.desc-back-start-button {
-		width: 150px;
-		height: 40px;
-		top: 190px;
-		left: 100px;
+		top: 130px;
+		left: 10px;
 	}
 	
-	.desc-back-start-button-text {
-		font-size: 20px;
+	.result-back-normal-desc {
+		font-size: 30px;
+	}
+
+	.result-back-button-div {
+		width: 100px;
+		height: 30px;
+		top: 285px;
+		left: 125px;
+	}
+
+	.result-back-restart {
+		font-size: 17px;
 	}
 }
 
@@ -193,8 +234,4 @@ body {
 		width: auto;
 	}
 	
-	.disqus-div {
-		width: auto;
-		margin: 10px;
-	}
 }

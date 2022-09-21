@@ -29,7 +29,7 @@
 		<meta name="description" content="강박증상을 스스로 진단해 볼 수 있는 테스트입니다.">
 		<meta name="author" content="RaccoonForest">
 		
-		<link rel="stylesheet" href="styleSubPage14.css" />
+		<link rel="stylesheet" href="styleSubPage14_1.css" />
 		<link rel="canonical" href="https://playzapangi.netlify.app/mociTest/mociTestDesc.html">
 		
 		<meta property="og:type" content="website" />
@@ -72,6 +72,7 @@
 			</nav>
 		</div>
 		
+		
 		<!-- admin-1 부분 -->
 		<div class="admin-1">
 			<ins class="kakao_ad_area" style="display:none;" 
@@ -81,28 +82,26 @@
 			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 		</div>
 		
-		<!-- main 부분 -->
-		<div class="main-back-div" id="mainBackDiv">
-			<div class="main-back-intro-div" id="mainIntro">
-				
+		<!-- description 부분 -->
+		<div class="result-back-div">
+			<div class="result-back-title-div">
+				<span class="result-back-title">나의 강박행동 점수는?</span>
 			</div>
-			<div class="main-back-problem-div" id="mainProblem">
-				
+			<div class="result-back-score-div">
+				<span class="result-back-score" id="resultScore"></span>
 			</div>
-			<div class="main-back-button-div" id="mainButton">
-				<div class="main-back-intro-button-div" id="mainBackIntroButtonDiv">
-					<span class='main-back-button' id='mainIntroButton'>테스트 시작하기</span>
-				</div>
-				<div class="main-back-left-button-div" id="mainBackLeftButtonDiv">
-					<span class='main-back-button' id="mainBackLeftButton">예</span>
-				</div>
-				<div class="main-back-right-button-div" id="mainBackRightButtonDiv">
-					<span class='main-back-button' id="mainBackRightButton">아니오</span>
-				</div>
+			<div class="result-back-desc-div">
+				<span class="result-back-desc" id="resultDesc"></span>
 			</div>
-			<div class="main-back-count-div">
-				<span class="main-back-count" id="mainCount"></span>
+			<div class="result-back-button-div" id="restartBtnDiv">
+				<span class="result-back-restart" id="restartBtn">다시하기</span>
 			</div>
+			
+		</div>
+		
+		<div class="share-div">
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<div class="addthis_inline_share_toolbox_t3s9"></div>
 		</div>
 		
 		<!-- admin-2 부분 -->
@@ -127,9 +126,9 @@
 		<div class="bottom">
 			<h6>ⓒ 2020. (RaccoonForest) all rights reserved.</h6>
 		</div>
-
+		
 		<!-- ///////////////////////////////////////////////////////////////// -->
-		<script src="./js/mociTest-fn.js"></script>
+		<script src="./js/mociTestResult-fn.js"></script>
 		
 		<!-- ///////////////////////////////////////////////////////////////// -->
 		

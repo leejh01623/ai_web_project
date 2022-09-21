@@ -1,6 +1,6 @@
 @font-face {
-	src: url("../font/TMONMONSORI.TTF");
-	font-family: "tmonsori";
+	src: url("../font/GmarketSansTTFMedium.ttf");
+	font-family: "sans";
 }
 
 .nav-div {
@@ -58,15 +58,15 @@ body {
 	position: absolute;
 	width: 550px;
 	height: 90px;
-	top: 50px;
+	top: 35px;
 	left: 25px;
 	line-height: 1.6;
 }
 
 .main-back-intro {
 	color: white;
-	font-size: 25px;
-	font-family: "tmonsori";
+	font-size: 22px;
+	font-family: "sans";
 }
 
 .main-back-problem-div {
@@ -80,14 +80,30 @@ body {
 .main-back-problem {
 	color: white;
 	font-size: 35px;
-	font-family: "tmonsori";
+	font-family: "sans";
+}
+
+.main-back-result-div {
+	position: absolute;
+	width: 550px;
+	height: 110px;
+	top: 100px;
+	left: 25px;
+	text-align: center;
+	line-height: 1.3;
+}
+
+.main-back-result {
+	color: white;
+	font-size: 45px;
+	font-family: "sans";
 }
 
 .main-back-intro-button-div {
 	position: absolute;
 	width: 250px;
 	height: 60px;
-	top: 240px;
+	top: 300px;
 	left: 175px;
 	padding-top: 10px;
 	border: none;
@@ -95,6 +111,7 @@ body {
 	background: white;
 	box-shadow: 2px 2px 2px #a1a7b5;
 	text-align: center;
+	z-index: 2;
 }
 
 .main-back-res-button-div {
@@ -142,7 +159,7 @@ body {
 .main-back-button {
 	color: #14203D;
 	font-size: 30px;
-	font-family: "tmonsori";
+	font-family: "sans";
 }
 
 .main-back-count-div {
@@ -157,14 +174,13 @@ body {
 .main-back-count {
 	color: white;
 	font-size: 20px;
-	font-family: "tmonsori";
+	font-family: "sans";
 }
 
 .admin-1 {
 	width: 320px;
 	height: 100px;
 	margin: 0 auto;
-	border: 1px solid black;
 }
 
 .admin-2 {
@@ -172,7 +188,6 @@ body {
 	height: 250px;
 	margin: 0 auto;
 	margin-top: 10px;
-	border: 1px solid black;
 }
 
 .admin-3 {
@@ -180,84 +195,6 @@ body {
 	height: 250px;
 	margin: 0 auto;
 	margin-top: 10px;
-	border: 1px solid black;
-}
-
-.res-div-back {
-	display: none;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.6);
-	z-index: 999;
-}
-
-.res-div {
-	display: none;
-	position: absolute;
-	width: 450px;
-	height: 450px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: white;
-	z-index: 1000;
-}
-
-.res-text-div {
-	position: absolute;
-	width: 300px;
-	height: 200px;
-	top: 50px;
-	left: 75px;
-}
-
-table {
-	width: 100%;
-	height: 100%;
-	background-color: #57ddac;
-	border-collapse: collapse;
-}
-
-td {
-	text-align: center;
-	color: white;
-	border: 0.5px solid white;
-	font-size: 25px;
-	font-weight: bold;
-	font-family: "tmonsori";
-	text-shadow: 2px 2px 2px gray;
-}
-
-.res-restart-div {
-	position: absolute;
-	width: 170px;
-	height: 50px;
-	top: 290px;
-	left: 140px;
-	text-align: center;
-	border-radius: 30px;
-	padding-top: 4px;
-	background: #57ddac;
-	box-shadow: 2px 2px 2px gray;
-}
-
-.res-restart-text {
-	color: white;
-	text-shadow: 2px 2px 2px gray;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: "tmonsori";
-}
-
-.share-div {
-	position: absolute;
-	height: 50px;
-	top: 360px;
-	left: 100px;
 }
 
 .bottom {
@@ -277,13 +214,13 @@ td {
 	.main-back-intro-div {
 		width: 320px;
 		height: 90px;
-		top: 30px;
+		top: 20px;
 		left: 15px;
 		line-height: 1.8;
 	}
 	
 	.main-back-intro {
-		font-size: 19px;
+		font-size: 14px;
 	}
 	
 	.main-back-problem-div {
@@ -296,11 +233,22 @@ td {
 	.main-back-problem {
 		font-size: 23px;
 	}
+	
+	.main-back-result-div {
+		width: 330px;
+		height: 90px;
+		top: 70px;
+		left: 10px;
+	}
+
+	.main-back-result {
+		font-size: 35px;
+	}
 
 	.main-back-intro-button-div {
 		width: 160px;
 		height: 50px;
-		top: 220px;
+		top: 230px;
 		left: 95px;
 	}
 	
@@ -316,6 +264,7 @@ td {
 		height: 50px;
 		top: 180px;
 		left: 50px;
+		padding-top: 12px;
 	}
 
 	.main-back-right-button-div {
@@ -323,6 +272,7 @@ td {
 		height: 50px;
 		top: 180px;
 		left: 200px;
+		padding-top: 12px;
 	}
 
 	.main-back-button {
@@ -338,39 +288,6 @@ td {
 
 	.main-back-count {
 		font-size: 13px;
-	}
-	
-	.res-div {
-		width: 350px;
-		height: 350px;
-	}
-	
-	.res-text-div {
-		width: 280px;
-		height: 180px;
-		top: 20px;
-		left: 35px;
-	}
-	
-	td {
-		width: 50%;
-		font-size: 20px;
-	}
-	
-	.res-restart-div {
-		width: 130px;
-		height: 40px;
-		top: 230px;
-		left: 110px;
-	}
-
-	.res-restart-text {
-		font-size: 20px;
-	}
-
-	.share-div {
-		top: 290px;
-		left: 50px;
 	}
 }
 

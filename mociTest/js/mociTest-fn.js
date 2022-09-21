@@ -15,6 +15,9 @@ var mainCount = document.getElementById("mainCount");
 init();
 
 function init(){
+	problemNum = 0;
+	score = 0;
+	
 	readFile("./raw/raw.txt");
 	
 	setFunc();
@@ -31,20 +34,20 @@ function setFunc(){
 		var introYesStr = insertText(problemList[1], yesNum-1, yesNum+2, "<span style='color: #ffcc4a;'>", "</span>");
 		
 		var noNum = introYesStr.indexOf("아니오");
-		var noStr = introYesStr.substring(noNum-1, noNum+4);
+		var noStr = introYesStr.substring(noNum-1, noNum+3);
 		
-		var introYesNoStr = insertText(introYesStr, noNum-1, noNum+4, "<span style='color: #ffcc4a;'>", "</span>");
+		var introYesNoStr = insertText(introYesStr, noNum-1, noNum+3, "<span style='color: #ffcc4a;'>", "</span>");
 		
 		mainIntro.innerHTML = "<span class='main-back-intro'>" + introYesNoStr + "</span>";
 		
 		mainBackLeftButtonDiv.style.display = "none";
 		mainBackRightButtonDiv.style.display = "none";
-		
-	} else if(problemNum === 30) {
-		// last problem
+	} else if(problemNum === 31) {
+		// result
 		mainIntro.style.display = "none";
 		
-		mainProblem.innerHTML = "<span class='main-back-problem'>" + problemList[0] + ". " + problemList[1] + "</span>";
+		mainProblem.className = "main-back-result-div";
+		mainProblem.innerHTML = "<span class='main-back-result'>" + problemList[1] + "</span>";
 		
 		mainBackIntroButtonDiv.style.display = "block";
 		mainBackIntroButtonDiv.className = "main-back-res-button-div";
@@ -52,7 +55,7 @@ function setFunc(){
 		mainBackLeftButtonDiv.style.display = "none";
 		mainBackRightButtonDiv.style.display = "none";
 		
-		mainCount.innerHTML = problemNum + " / 30";
+		mainCount.innerHTML = "";
 	} else {
 		// problem
 		mainIntro.style.display = "none";
@@ -69,25 +72,38 @@ function setFunc(){
 }
 
 document.addEventListener('click', (e) => {
-	//console.log(e.target.innerText);
-	if(e.target.id == "mainBackIntroButtonDiv" && e.target.innerText == "테스트 시작하기"){
+	if(e.target.id == "mainBackIntroButtonDiv" && e.target.children[0].innerText == "테스트 시작하기"){
 		problemNum++;
 		setFunc();
 	} else if(e.target.id == "mainIntroButton" && e.target.innerText == "테스트 시작하기") {
 		problemNum++;
 		setFunc();
-	} else if(e.target.id == "mainBackIntroButtonDiv" && e.target.innerText == "결과 확인") {
-		alert("aaaaa");
+	} else if(e.target.id == "mainBackIntroButtonDiv" && e.target.children[0].innerText == "결과 확인") {
+		gotoResultPage();
 	} else if(e.target.id == "mainIntroButton" && e.target.innerText == "결과 확인") {
-		alert("aaaaa");
+		gotoResultPage();
 	} else if(e.target.id == "mainBackLeftButtonDiv" || e.target.id == "mainBackLeftButton"){
+		calcScore("yes");
 		problemNum++;
 		setFunc();
 	} else if(e.target.id == "mainBackRightButtonDiv" || e.target.id == "mainBackRightButton"){
+		calcScore("no");
 		problemNum++;
 		setFunc();
 	}
 });
+
+function calcScore(chk){
+	if(chk === "yes"){
+		score = score + 2;
+	} else if(chk === "no"){
+		score = score + 1;
+	}
+}
+
+function gotoResultPage(){
+	location.href = "./mociTestResult.html?" + score;
+}
 
 function readFile(file){
 	var rawFile = new XMLHttpRequest();

@@ -6,6 +6,9 @@ document.addEventListener('click', (e) => {
 
 function gotoPage(item){
 	switch(item){
+		case "mociTest":
+			location.href = "mociTest/mociTestDesc.html";
+			break;
 		case "metaCognitionTest":
 			location.href = "metaCognitionTest/metaCognitionTestDesc.html";
 			break;
